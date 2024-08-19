@@ -1,0 +1,881 @@
+
+
+body{
+    background: url(../imagenes/fondo.jpg) fixed orange;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 80%;
+    margin: auto;
+    border: inset #885c0b 15px;
+}
+main{
+    width: 80%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: groove #883d0b 15px;
+    border-radius: 2rem;
+    margin-top: 1em;
+}
+footer{
+    width: 50%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: groove #885c0b 15px;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+
+h1 > span{
+    display: none;
+}
+header > h1 {
+    background: url(../imagenes/tloulogo.png) #d8a250 no-repeat;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+}
+header{
+    text-align: center;
+}
+
+#abrir{
+    display: none;
+}
+
+nav > ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0600;
+    border: ridge 5px #b96b04;
+}
+nav  ul li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-left: 1.8%;
+    width: 7.5rem;
+    background-color: #d8a250;
+    border: #885c0b outset 5px;
+}
+nav ul li:first-child{
+    margin-left: -0.2rem;
+}
+nav ul #licerrar{
+    display: none;
+}
+
+#lista {
+    position: relative;
+    display: inline-block;
+}
+#submenu {
+    position: absolute;
+    display: none;
+    padding-left: 0;
+    padding-top: 3%;
+    margin: 0;
+    margin-top: 0.89em;
+    margin-left: -1.05rem;
+
+}
+
+#submenu li{
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: #885c0b inset 4px;
+}
+
+#submenu2 {
+    position: absolute;
+    display: none;
+    margin-left: 6em;
+    margin-top: -2.36rem;
+}
+
+nav ul li a{
+    color: #3a2601;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #965500;
+}
+ul #lista:hover #submenu{
+    display: block;
+} 
+#lippales:hover #submenu2{
+    display: block;
+}
+
+
+main a{
+    color: #883d0b;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2{
+    font-family: 'Josefin Sans', 'Gill Sans', sans-serif;
+    font-size: 2.1em;
+    margin-left: 2rem;
+    color: #d14014;
+}
+h3{
+    font-family: 'Josefin Sans', 'Gill Sans', sans-serif;
+    font-size: 1.7em;
+    margin-left: 2rem;
+    color: #7e290f;
+}
+
+#intro{
+    margin-top: 6rem;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#intro p{
+    font-size: 1em;
+    line-height: 25px;
+}
+
+.izq{
+    display: inline-block;
+    width: 50%;
+}
+#intro .der{
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    left: 7.9%;
+}
+#sinopsis .der{
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    left: 7.9%;
+}
+
+.der img{
+    max-width: 100%;
+}
+
+#sinopsis{
+    margin-top: 5rem;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#sinopsis p{
+    font-size: 1em;
+    line-height: 25px;
+    margin-top: 0;
+}
+
+
+
+#personajes{
+    margin-top: 6rem;
+}
+#personajes p{
+    line-height: 25px;
+    margin: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#personajes img{
+    max-width: 90%;
+}
+#personajes h2{
+    margin-left: 7%;
+}
+
+#ppales{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#joel{
+    width: 45%;
+    text-align:center;
+    background-color: #c8ffc8;
+    border-radius: 2rem;
+    border: outset darkolivegreen 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+#joel img{
+    border: darkolivegreen 4px inset;
+    border-radius: 2rem;
+}
+#joel h4{
+    font-size: 1.7em;
+    color: #374421;
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+#ellie{
+    width: 45%;
+    text-align:center;
+    background-color: #ffd0c8;
+    border-radius: 2rem;
+    border: outset #6b362f 6px;
+    display: inline-block;
+    position: relative;
+    left: 7.9%;
+}
+#ellie img{
+    border: #6b362f 4px inset;
+    border-radius: 2rem;
+}
+#ellie h4{
+    font-size: 1.7em;
+    color: #4e2722;
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+#tommy{
+    width: 45%;
+    text-align:center;
+    background-color: #c8eeff;
+    border-radius: 2rem;
+    border: outset #2f496b 6px;
+    display: inline-block;
+    margin-top: 3em;
+    vertical-align: top;
+}
+#tommy img{
+    border: #2f496b 4px inset;
+    border-radius: 2rem;
+}
+#tommy h4{
+    font-size: 1.7em;
+    color: #212a44;
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+#tess{
+    width: 45%;
+    text-align:center;
+    background-color: #ffd89d;
+    border-radius: 2rem;
+    border: outset #997023 6px;
+    margin-top: 3em;
+    display: inline-block;
+    position: relative;
+    left: 7.9%;
+}
+#tess img{
+    border: #997023 4px inset;
+    border-radius: 2rem;
+}
+#tess h4{
+    font-size: 1.7em;
+    color: #4e3f22;
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+
+
+#recurr{
+    margin-top: 6rem;
+    text-align:center;
+}
+#recurr h3{
+    text-align: left;
+    margin-left: 7rem;
+}
+#recurr article{
+    margin: 1rem 0.2rem;
+}
+
+#recurr article:nth-child(even){
+    width: 30%;
+    text-align:center;
+    background-color: #fffad2;
+    border-radius: 2rem;
+    border: outset #b4aa52 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+#recurr article:nth-child(even) img{
+    border: #b4aa52 4px inset;
+    border-radius: 2rem;
+}
+#recurr article:nth-child(even) h4{
+    font-size: 1.5em;
+    color: #685500;
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+#recurr article:nth-child(odd){
+    width: 30%;
+    text-align:center;
+    background-color: #f7ddbc;
+    border-radius: 2rem;
+    border: inset #94682f 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+#recurr article:nth-child(odd) img{
+    border: #94682f 4px outset;
+    border-radius: 2rem;
+}
+#recurr article:nth-child(odd) h4{
+    font-size: 1.5em;
+    color: #683700;
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+
+
+#capitulos{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7rem;
+}
+#capitulos li{
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+}
+#capitulos h3{
+    margin-bottom: 2.5rem;
+}
+li::marker{
+    color: #5a2706;
+}
+#capitulos h2+div{
+    width: 100%;
+    background: url(../imagenes/fireflies.png) no-repeat;
+    background-position: 90%;
+}
+
+
+#capitulos article:nth-child(odd){
+    border-radius: 2rem;
+    border: ridge #94682f 8px;
+    padding: 1em;
+    margin-top: 1.5em;
+    background: url(../imagenes/hojas.png) no-repeat #f7ddbc;
+    background-position: 39rem -3rem;
+}
+#capitulos article:nth-child(even){
+    border-radius: 2rem;
+    border: ridge #b4aa52 8px;
+    padding: 1em;
+    margin-top: 1.5em;
+    background: url(../imagenes/hojas.png) no-repeat #fffad2;
+    background-position: 39rem -22%;
+}
+#capitulos article p {
+    line-height: 25px;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 1.5em;
+}
+
+
+#capitulos :not(.listacaps) div{
+    text-align: center;
+    width: 80%;
+    height: calc(80vw * 315 / 560);
+    max-width: 560px;
+    max-height: 315px;
+    margin: auto;
+}
+iframe{
+    border-radius: 2rem;
+    border: groove #7e290f 8px;
+    width: 95%;
+    height: 95%;
+}
+
+
+#feedback{
+    margin-top: 7rem;
+}
+#feedback h2{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#feedback p{
+    font-size: 1.2rem;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#feedback form{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#feedback input:not(#enviar){
+    width: 35%;
+    padding: 1.5%;
+    margin-bottom: 2%;
+    height: 1%;
+    font-size: 1.2rem;
+    border: outset #883d0b 0.3rem;
+}
+#feedback input:nth-child(even){
+    margin-left: 17%;
+}
+#feedback input:not(#enviar):nth-child(odd){
+    margin-left: 2.5%;
+}
+#archivo{
+    display: inline;
+    margin-left: 14.5%;
+    vertical-align: top;
+}
+#feedback textarea{
+    margin-left: 2.5%;
+    width: 35%;
+    font-size: 1.2rem;
+    padding: 1.5%;
+    resize:none;
+    border: outset #883d0b 0.3rem;
+}
+#enviar{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1.5%;
+    margin-top: 3%;
+    margin-bottom: 2%;   
+    width: 25%;
+    background-color: #f7ddbc;
+    border: outset #d14014 0.3rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+footer ul{
+    margin: 0;
+    padding: 0
+}
+footer img{
+    background-color: #f7ddbc;
+    border: outset 0.3rem #883d0b;
+    padding: 1.9%;
+    margin-bottom: 2%;
+    max-width: 90%;
+}
+footer li{
+    display: inline-block;
+    width: auto;
+    background-color: #f7ddbc;
+    border: outset 0.3rem #883d0b;
+    padding: 1.9%;
+    color: #411507;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#datos{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+}
+
+
+@media screen and (min-width:576px) and (max-width:1100px) {
+abbr{
+    text-decoration: none;
+}    
+body{
+    background: none;
+}
+header{
+    width: 100%;
+    border: none;
+} 
+main{
+    width: 100%;
+    border: none;
+    border-top: groove #883d0b 9px;
+    border-bottom: groove #883d0b 9px;
+    border-radius: 2rem;
+}
+footer{
+    width: 80%;
+    margin-top: 1rem;
+    border-width: 8px;
+}
+
+nav ul li{
+    margin-left: 0.5%;
+    width: 7rem;
+}
+nav ul li:first-child a{
+    margin-left: -5%;
+}
+nav ul #licerrar{
+    display: none;
+}
+ul #lista:hover #submenu{
+    display: none;
+} 
+#lippales:hover #submenu2{
+    display: none;
+}
+
+#intro{
+    margin-top: 4rem;
+}
+#intro .der{
+    margin-top: 1rem;
+}
+
+#sinopsis .izq{
+    display: block;
+    width: 100%;
+}
+#sinopsis .der{
+    display: block;
+    width: 100%;
+    left: 0;
+    margin-top: 2rem;
+}
+
+#personajes{
+    margin-top: 5rem;
+}
+#personajes #recurr article{
+    width: 45%;
+}
+
+#capitulos{
+    margin-left: 0;
+    margin-right: 0;
+}
+.listacaps ol{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#capitulos article:nth-child(even){
+    border-left: 0;
+    border-right: 0;
+}
+#capitulos article:nth-child(odd){
+    border-left: 0;
+    border-right: 0;
+}
+
+#feedback input:not(#enviar){
+    width: 40%;
+    font-size: 1rem;
+}
+#feedback input:nth-child(even) {
+    margin-left: 7%;
+}
+#feedback textarea{
+    width: 40%;
+    font-size: 1rem;
+}
+
+}
+
+
+
+@media screen and (max-width:800px) {
+header > h1 {
+    background: url(../imagenes/tloulogomovil.png) #d8a250 no-repeat;
+    height: 12vh;
+    background-position: center;
+}
+
+nav{
+    background-color: black;
+    border: ridge 3px #b96b04;
+}
+#abrir{
+    display: block;
+    background: url(../imagenes/hamburguesa.png) no-repeat center center;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+}
+nav ul #licerrar{
+    display: block;
+}
+#cerrar{
+    display: block;
+    background: url(../imagenes/cerrar.png) no-repeat;
+    background-position: center;
+    width: 8.6rem;
+    height: 2.5rem;
+    font-size: 0;
+}
+
+ul #lista:hover #submenu{
+    display: none;
+} 
+#lippales:hover #submenu2{
+    display: none;
+}
+
+nav #barra{
+    display: none;
+}
+#barra:target{
+    display: block;
+    position: absolute;
+    width: 12rem;
+    margin-left: -3px;
+    border: ridge 3px #b96b04;
+}
+#barra li{
+    display: block;
+}
+nav ul li:first-child {
+    margin: auto;
+}
+nav ul li{
+    margin: auto;
+    width: 7rem;
+}
+nav ul li:first-child a {
+    margin-left: -5%;
+}
+nav ul li:last-child{
+    padding: 0;
+    width: 8.6rem;
+}
+
+
+
+#intro .izq{
+    display: block;
+    width: 100%;
+}
+#intro .der{
+    display: none;
+}
+
+#personajes #ppales article{
+    display: block;
+    width: 98%;
+}
+#ellie{
+    left: 0;
+    margin-top: 3rem;
+}
+#tess{
+    left: 0;
+}
+
+#capitulos .listacaps {
+    line-height: 30px;
+}
+
+#feedback form {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+#feedback input:not(#enviar){
+    display: block;
+    margin-bottom: 4%;
+    padding: 2.5%;
+}
+#feedback input:not(#enviar):nth-child(odd) {
+    margin-left: 0;
+}
+#feedback input:nth-child(even) {
+    margin-left: 0;
+}
+#feedback input:not(#enviar) {
+    width: 93.7%;
+}
+#feedback textarea{
+    width: 93.7%;
+    margin-left: 0;
+    padding: 2.5%;
+    margin-bottom: 3.8%;
+}
+#enviar{
+    margin-bottom: 4%;
+}
+
+footer{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+}
+
+
+
+@media screen and (max-width:576px) {
+abbr{
+    text-decoration: none;
+}    
+body{
+    background: none;
+}
+header{
+    width: 100%;
+    border: none;
+} 
+main{
+    width: 100%;
+    border: none;
+    border-top: groove #883d0b 9px;
+    border-bottom: groove #883d0b 9px;
+    border-radius: 2rem;
+}
+footer{
+    width: 100%;
+    margin-top: 1rem;
+    border-width: 8px;
+}
+
+h2{
+    margin-left: 0;
+    text-align: center;
+}
+h3{
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+#recurr h3{
+    margin-left: 0;
+    text-align: center;
+}
+#capitulos h3{
+    margin-bottom: 0.5rem;
+}
+
+#intro{
+    margin-top: 4rem;
+}
+
+#sinopsis{
+    margin-top: 4rem;
+}
+#sinopsis .izq{
+    display: block;
+    width: 100%;
+}
+#sinopsis .der{
+    display: block;
+    width: 100%;
+    left: 0;
+    margin-top: 2rem;
+}
+
+#personajes{
+    margin-top: 5rem;
+}
+#ppales{
+    margin-left: 0;
+    margin-right: 0;
+}
+#personajes #ppales article{
+    display: block;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+}
+#ellie{
+    left: 0;
+    margin-top: 1.5rem;
+}
+#tess{
+    left: 0;
+    margin-top: 1.5rem;
+}
+#tommy{
+    margin-top: 1.5rem;
+}
+
+#recurr{
+    margin-top: 5rem;
+}
+#personajes #recurr article{
+    width: 100%;
+    margin: 0.6rem 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#capitulos .listacaps{
+    background: none;
+    line-height: 30px;
+}
+.listacaps ol {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#capitulos{
+    margin-left: 0;
+    margin-right: 0;
+}
+#capitulos article:nth-child(even){
+    border-left: 0;
+    border-right: 0;
+}
+#capitulos article:nth-child(odd){
+    border-left: 0;
+    border-right: 0;
+}
+
+#feedback input:not(#enviar) {
+    font-size: 1rem;
+}
+#feedback textarea{
+    font-size: 1rem;
+}
+#enviar{
+    padding: 2%;
+    font-size: 1.2rem;
+}
+
+footer h2{
+    margin-bottom: 0.5rem;
+}
+footer li{
+    font-size: 1.1rem;
+    margin-bottom: 1%;    
+}
+footer li:last-child{
+    margin-bottom: 3%;
+}
+footer #datos{
+    display: block;
+    margin: auto;
+    width: 17rem;
+}
+footer img{
+    margin-bottom: 0;
+}
+
+
+}
