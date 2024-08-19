@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chagreen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/assets/img/icon_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/icon_favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="container-fluid">
+
+        <h1 id="logo" class="ms-2">Chagreen</h1>
+        
+        <nav class="row navbar navbar-expand-lg bg-dark py-4">
+            <div class="container m-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Botón hamburguesa">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barra">
+                    <ul class="navbar-nav text-center ms-auto">
+                        <li class="nav-item pt-4 pt-lg-0">
+                            <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nuestro-te">Nuestro té</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center ps-lg-2">
+                            <a class="nav-link p-0" href="#" data-bs-toggle="modal" data-bs-target="#modal_alumna">
+                                <img src="assets/img/alumna_marron.png" alt="Ícono de un perfil">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="container-fluid p-0">
+        <div id="banners" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#banners" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                <button type="button" data-bs-target="#banners" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                <button type="button" data-bs-target="#banners" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                
+                <picture class="carousel-item active">
+                        <source media="(min-width: 768px )" srcset="assets/img/banner1_pc.png">
+                        <source media="(min-width: 577px )" srcset="assets/img/banner1_tablet.png">
+                        <img class="d-block w-100" src="assets/img/banner1_mobile.png" alt="Banner de la marca que contiene una tetera y un té.">
+                </picture>
+                
+                <picture class="carousel-item">
+                        <source media="(min-width: 768px )" srcset="assets/img/banner2_pc.png">
+                        <source media="(min-width: 577px )" srcset="assets/img/banner2_tablet.png">
+                        <img class="d-block w-100" src="assets/img/banner2_mobile.png" alt="Banner de un descuento del 40% en productos seleccionados.">
+                </picture>
+
+                <picture class="carousel-item">
+                        <source media="(min-width: 768px )" srcset="assets/img/banner3_pc.png">
+                        <source media="(min-width: 577px )" srcset="assets/img/banner3_tablet.png">
+                        <img class="d-block w-100" src="assets/img/banner3_mobile.png" alt="Banner del té matcha 100% orgánico.">
+                </picture>
+                
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#banners" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#banners" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <main>
+
+        <section id="sobre-nosotros" class="py-5 bg-color-claro">
+            <article class="container">
+
+                <div class="row gap-4">
+                    <div class="col-md">
+                        <h2 class="fw-bold pb-4 color-brown">Sobre Chagreen</h2>
+                        <p>Somos un emprendimiento fundado en 2016, dedicado a la venta de <strong>té natural en diversas variedades y accesorios</strong> provenientes de Japón, China e India. Ofrecemos tés orgánicos y empaques reciclables, comprometidos con la sostenibilidad.</p>
+                        <p>Nuestra misión es <strong>invitar a la comunidad argentina a disfrutar de la experiencia y relajación</strong> que brinda nuestro té, mientras descubren la rica cultura asiática. Creemos que cada taza de té es una oportunidad para conectarse con las tradiciones de Oriente, promoviendo paz y bienestar. <strong>Queremos ser un puente entre Argentina y Asia</strong> , compartiendo productos de alta calidad.</p>
+                    </div>
+    
+                    <figure class="col-md">
+                        <picture>
+                            <source media="(min-width: 992px )" srcset="assets/img/sobre_nosotros_pc.png">
+                            <source media="(min-width: 768px )" srcset="assets/img/sobre_nosotros_tablet.png">
+                            <img src="assets/img/sobre_nosotros_mobile.png" alt="Imagen de una taza de té verde matcha con el logo de la marca." class="w-100 rounded-4">
+                        </picture>
+                    </figure>
+                </div>
+
+            </article>
+        </section>
+    
+        <section id="nuestro-te" class="py-5 bg-color-green">
+
+            <article class="container">
+
+                <div class="row flex-row-reverse gap-4">
+
+                    <div class="col-md">
+                        <h2 class="fw-bold pb-4 color-brown">Nuestro té</h2>
+                        <p>En nuestra tienda, nos enorgullecemos de ofrecer una selecta variedad de <strong>tés de la más alta calidad.</strong>  Desde el té blanco hasta el té negro, cada uno de nuestros productos ha sido cuidadosamente seleccionado de las mejores plantaciones alrededor de Asia. Además, ofrecemos accesorios como teteras, cuencos y tazas.</p>
+                        <ul class="p-0">
+                            <li class="fw-bold mb-2 border-bottom border-2 pb-2">100% orgánico</li>
+                            <li class="fw-bold mb-2 border-bottom border-2 pb-2">Alta calidad</li>
+                            <li class="fw-bold mb-2 border-bottom border-2 pb-2">Té personalizado</li>
+                            <li class="fw-bold mb-2 border-bottom border-2 pb-2">Cada mes armamos packs especiales</li>
+                        </ul>
+                    </div>
+
+                    <figure class="col-md">
+                        <picture>
+                            <source media="(min-width: 992px )" srcset="assets/img/sobre_te_pc.png">
+                            <source media="(min-width: 768px )" srcset="assets/img/sobre_te_tablet.png">
+                            <img src="assets/img/sobre_te_mobile.png" alt="Imagen que contiene cuatro sabores de tés en hebras." class="w-100 rounded-4">
+                        </picture>
+                    </figure>
+
+                </div>
+
+            </article>
+            
+        </section>
+    
+        <section id="productos" class="py-5 bg-color-claro">
+
+            <article class="container">
+
+                <h2 class="fw-bold pb-4 text-md-center color-brown">Productos</h2>
+
+                <div class="row mx-1 justify-content-md-center">
+
+                    <article class="col-sm-6 col-lg-4 col-xxl mb-4">
+
+                        <div class="card border-0 h-100">
+                            <figure class="card-img-top">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="assets/img/productos/producto1_pc.png">
+                                    <source media="(min-width: 768px)" srcset="assets/img/productos/producto1_tablet.png">
+                                    <img src="assets/img/productos/producto1_mobile.png" alt="Imagen de té rojo en hebras Pu erh Yunnan" class="w-100">
+                                </picture>
+                            </figure>
+                            <div class="card-body">
+                                <h3 class="card-title color-brown fs-4">Té rojo Pu erh Yunnan</h3>
+                                <p class="card-text mt-4">Proveniente de China, es famoso por ser un té adelgazante, diurético y que ayuda a bajar el colesterol en la sangre.</p>
+                            </div>
+                            <div class="card-footer row align-items-center border-0">
+                                <p class="fs-4 color-brown col my-3">$3460</p>
+                                <a href="#" class="card-link fs-5 btn btn-lg btn-primary border-0 rounded-pill px-3 col my-3" data-bs-toggle="modal" data-bs-target="#modal_producto">Agregar</a>
+                            </div>
+                        </div> 
+
+                    </article>
+                    <article class="col-sm-6 col-lg-4 col-xxl mb-4">
+
+                        <div class="card border-0 h-100">
+                            <figure class="card-img-top">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="assets/img/productos/producto2_pc.png">
+                                    <source media="(min-width: 768px)" srcset="assets/img/productos/producto2_tablet.png">
+                                    <img src="assets/img/productos/producto2_mobile.png" alt="Imagen de té verde en hebras Genmaicha" class="w-100">
+                                </picture>
+                            </figure>
+                            <div class="card-body">
+                                <h3 class="card-title color-brown fs-4">Té verde Genmaicha</h3>
+                                <p class="card-text mt-4">Proveniente de Japón, es una mezcla de té verde Bancha con arroz tostado inflado y palomitas de maíz. Bajo en teína.</p>
+                            </div>
+                            <div class="card-footer row align-items-center border-0">
+                                <p class="fs-4 color-brown col my-3">$3460</p>
+                                <a href="#" class="card-link fs-5 btn btn-lg btn-primary border-0 rounded-pill px-3 col my-3" data-bs-toggle="modal" data-bs-target="#modal_producto">Agregar</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="col-sm-6 col-lg-4 col-xxl mb-4">
+
+                        <div class="card border-0 h-100">
+                            <figure class="card-img-top">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="assets/img/productos/producto3_pc.png">
+                                    <source media="(min-width: 768px)" srcset="assets/img/productos/producto3_tablet.png">
+                                    <img src="assets/img/productos/producto3_mobile.png" alt="Imagen de té amarillo en hebras Yellow Sun." class="w-100">
+                                </picture>
+                            </figure>
+                            <div class="card-body">
+                                <h3 class="card-title color-brown fs-4">Té amarillo Yellow Sun</h3>
+                                <p class="card-text mt-4">Proveniente de China, un té suave, sutilmente tostado y ahumado, con notas a nueces y arroz. Alto contenido en antioxidantes.</p>
+                            </div>
+                            <div class="card-footer row align-items-center border-0">
+                                <p class="fs-4 color-brown col my-3">$4560</p>
+                                <a href="#" class="card-link fs-5 btn btn-lg btn-primary border-0 rounded-pill px-3 col my-3" data-bs-toggle="modal" data-bs-target="#modal_producto">Agregar</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="col-sm-6 col-lg-4 col-xxl mb-4">
+
+                        <div class="card border-0 h-100">
+                            <figure class="card-img-top">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="assets/img/productos/producto4_pc.png">
+                                    <source media="(min-width: 768px)" srcset="assets/img/productos/producto4_tablet.png">
+                                    <img src="assets/img/productos/producto4_mobile.png" alt="Imagen de té verde en hebras Sencha" class="w-100">
+                                </picture>
+                            </figure>
+                            <div class="card-body">
+                                <h3 class="card-title color-brown fs-4">Té verde Sencha China</h3>
+                                <p class="card-text mt-4">Muy popular en China, es muy rico en antioxidantes y bajo en teína, por lo que puede ser consumido a cualquier hora del día.</p>
+                            </div>
+                            <div class="card-footer row align-items-center border-0">
+                                <p class="fs-4 color-brown col my-3">$3460</p>
+                                <a href="#" class="card-link fs-5 btn btn-lg btn-primary border-0 rounded-pill px-3 col my-3" data-bs-toggle="modal" data-bs-target="#modal_producto">Agregar</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="col-sm-6 col-lg-4 col-xxl mb-4">
+
+                        <div class="card border-0 h-100">
+                            <figure class="card-img-top">
+                                <picture>
+                                    <source media="(min-width: 992px)" srcset="assets/img/productos/producto5_pc.png">
+                                    <source media="(min-width: 768px)" srcset="assets/img/productos/producto5_tablet.png">
+                                    <img src="assets/img/productos/producto5_mobile.png" alt="Imagen de té blanco en hebras Pai Mu Tan" class="w-100">
+                                </picture>
+                            </figure>
+                            <div class="card-body">
+                                <h3 class="card-title color-brown fs-4">Té blanco Pai Mu Tan</h3>
+                                <p class="card-text mt-4">Procedente de Fujian en China y cosechado en primavera, es un té muy rico en antioxidantes y bajo en teína.</p>
+                            </div>
+                            <div class="card-footer row align-items-center border-0">
+                                <p class="fs-4 color-brown col my-3">$3800</p>
+                                <a href="#" class="card-link fs-5 btn btn-lg btn-primary border-0 rounded-pill px-3 col my-3" data-bs-toggle="modal" data-bs-target="#modal_producto">Agregar</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    
+                </div>
+                
+
+            </article>
+    
+        </section>
+    
+        <section id="galeria" class="py-5 bg-color-green">
+
+            <article class="container">
+
+                <h2 class="fw-bold pb-4 text-md-center color-brown">Galería</h2>
+                <p class="text-md-center">Explorá nuestra galería de fotos y descubrí la fascinante experiencia del té. Nuestra galería celebra la diversidad y la historia de esta milenaria bebida.</p>
+                <p class="text-md-center">Conocé la plantación y recolección de las hojas de té y cómo influye en <strong>el sabor y la calidad</strong> de tu taza favorita.</p>
+
+                <div class="row">
+                    <figure class="col-sm-12 col-md-6 col-lg-4 p-3 m-0">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/img/galeria/recolecta_te_tablet.png">
+                            <img src="assets/img/galeria/recolecta_te_mobile.png" alt="Imagen de una canasta con hojas de té." class="w-100 rounded-4">
+                        </picture>
+                        <figcaption class="figure-caption pt-2 fw-semibold color-brown">Recolecta de hojas de té.</figcaption>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4 p-3 m-0">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/img/galeria/plantacion_tablet.png">
+                            <img src="assets/img/galeria/plantacion_mobile.png" alt="Imagen de un campo de plantación de té." class="w-100 rounded-4">
+                        </picture>
+                        <figcaption class="figure-caption pt-2 fw-semibold color-brown">Plantación de té.</figcaption>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4 p-3 m-0">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/img/galeria/juego_de_te_tablet.png">
+                            <img src="assets/img/galeria/juego_de_te_mobile.png" alt="Imagen de un juego de té tradicional." class="w-100 rounded-4">
+                        </picture>
+                        <figcaption class="figure-caption pt-2 fw-semibold color-brown">Juego de té.</figcaption>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4 p-3 m-0">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/img/galeria/taza_te_tablet.png">
+                            <img src="assets/img/galeria/taza_te_mobile.png" alt="Imagen de una taza de té tradicional chino." class="w-100 rounded-4">
+                        </picture>
+                        <figcaption class="figure-caption pt-2 fw-semibold color-brown">Taza de té tradicional chino.</figcaption>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4 p-3 m-0">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/img/galeria/te_matcha_tablet.png">
+                            <img src="assets/img/galeria/te_matcha_mobile.png" alt="Imagen de la preparación del té matcha japonés." class="w-100 rounded-4">
+                        </picture>
+                        <figcaption class="figure-caption pt-2 fw-semibold color-brown">Té Matcha japonés.</figcaption>
+                    </figure>
+                    <figure class="col-sm-12 col-md-6 col-lg-4 p-3 m-0">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="assets/img/galeria/ceremonia_te_tablet.png">
+                            <img src="assets/img/galeria/ceremonia_te_mobile.png" alt="Imagen de una ceremonia del té." class="w-100 rounded-4">
+                        </picture>
+                        <figcaption class="figure-caption pt-2 fw-semibold color-brown">Ceremonia del té.</figcaption>
+                    </figure>
+                </div>
+        
+            </article>
+            
+        </section>
+    
+        <section id="contacto" class="py-5 bg-color-claro">
+
+            <article class="container">
+
+                <div class="row gap-4">
+                    <div class="col-lg">
+                        <h2 class="fw-bold pb-4 color-brown">Contacto</h2>
+
+                        <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" name="nombre-form">
+                                <label for="nombre" class="form-label">Nombre</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su email" name="email-form">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="phone" pattern="11[0-9]{4}-[0-9]{4}" placeholder="Ingrese su teléfono" name="tel-form" required aria-describedby="formato">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <div id="formato" class="form-text">Ingrese el número en el siguiente formato: 110000-0000.</div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="comentario" maxlength="120" placeholder="Envianos un comentario" required style="height: 200px; resize: none;"></textarea>
+                                <label for="comentario" class="form-label">Comentario</label>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="recibirNov">
+                                <label class="form-check-label" for="recibirNov">Recibir novedades y promociones.</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary border-0 rounded-pill px-5 py-2">Enviar</button>
+                            
+                        </form>
+
+                    </div>
+
+                    <figure class="col-lg">
+                        <div class="ratio ratio-1x1">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.57334971973!2d-58.41053821101194!3d-34.57515443475588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57a4147c5c7%3A0xfc930bf72fdf871f!2zSmFyZMOtbiBKYXBvbsOpcw!5e0!3m2!1ses!2sar!4v1719077453311!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </figure>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+    
+    <footer class="container-fluid bg-color-brown">
+
+        <div class="row p-5 pb-2 align-items-center justify-content-center color-claro">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                <figure>
+                    <img src="assets/img/logo-f.png" alt="Logo de Chagreen">
+                </figure>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-8 text-center">
+                <nav class="navbar navbar-expand-lg justify-content-center justify-content-lg-end ">
+                    <ul class="navbar-nav color-claro">
+                        <li class="nav-item">
+                            <a class="nav-link color-claro" href="#sobre-nosotros">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-claro" href="#nuestro-te">Nuestro té</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-claro" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-claro" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-claro" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-sm-12 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-end mt-2 mb-4 gap-3">
+
+                <figure class="mb-3 mb-sm-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_alumna">
+                        <img src="assets/img/alumna.png" alt="Ícono de un perfil.">
+                    </a>
+                </figure>
+
+                <ul class="list-unstyled list-inline d-flex flex-row m-0">
+                    <li class="list-inline-item ms-2">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="assets/img/icono_ig.png" alt="Ícono de Instagram">
+                        </a>
+                    </li>
+                    <li class="list-inline-item ms-2">
+                        <a href="https://web.whatsapp.com" target="_blank">
+                            <img src="assets/img/icono_whatsapp.png" alt="Ícono de WhatsApp">
+                        </a>
+                    </li>
+                    <li class="list-inline-item ms-2">
+                        <a href="https://www.gmail.com" target="_blank">
+                            <img src="assets/img/icono_gmail.png" alt="Ícono de Gmail">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 pt-3 border-top">
+                <p class="text-center fs-small">Copyright © 2024 - Todos los derechos reservados</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!--Modal-->
+    <div class="modal fade" id="modal_producto" tabindex="-1" role="dialog" aria-labelledby="agregar_producto" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="agregar_producto">¡Agregado!</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>El producto ha sido agregado al carrito exitosamente.</p>
+                    <figure class="mt-5 text-center">
+                        <img src="assets/img/icono_carrito.png" alt="Ícono de un carrito de compras.">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_alumna" tabindex="-1" role="dialog" aria-labelledby="datos_alumna" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-color-green color-brown">
+                    <h2 class="modal-title" id="datos_alumna">Datos de la alumna</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Botón de cierre">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <figure>
+                        <img src="assets/img/foto-perfil.png" alt="Imagen de la alumna.">
+                    </figure>
+
+                    <ul id="datos-alumna">
+                        <li>Nancy Correa Cardozo</li>
+                        <li>17/12/2002 (21 años)</li>
+                        <li><a href="mailto:nancy.correa@davinci.edu.ar">nancy.correa@davinci.edu.ar</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
