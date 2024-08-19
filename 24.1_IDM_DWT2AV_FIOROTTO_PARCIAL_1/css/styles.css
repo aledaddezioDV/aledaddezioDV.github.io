@@ -1,0 +1,717 @@
+/*ESTILOS GENERALES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../elementos_graficos/imgs_otros/fondo_pagina.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    backdrop-filter: blur(5px);
+}
+
+section, header, footer {
+    width: 85%;
+    margin: auto;
+    background-color: rgba(255,255,255,0.7);
+}
+
+section, #fondo-contacto {
+  padding: 2em 0;
+}
+
+#formulario-contacto {
+  padding: 0;
+}
+
+#fondo-articulos {
+  width: 85%;
+  margin: auto;
+  padding: 1em;
+  background-color: rgba(68, 131, 226, 0.5);
+  border-radius: 15px;
+  color: white;
+}
+
+.columna {
+  display: inline-block;
+  margin: 1em;
+}
+
+i {
+  font-size: 1.7em;
+  color: white;
+  transition: color 0.3s ease-in
+}
+
+i:hover {
+  color: black;
+}
+
+i span {
+  font-size: 0;
+}
+
+
+/*HEADER*/
+
+h1 {
+  font-size: 0;
+  background-image: url("../elementos_graficos/imgs_otros/banner_header.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25vh;
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+    background-color: rgb(68, 131, 226);
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+    font-size: 1.1em;
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a{
+  transition: color 0.3s ease-in;
+}
+
+nav li a:hover {
+  color:BLACK;
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+}
+
+.abrir-menu-hamburguesa {
+    display: none;
+}
+ 
+/*Textos*/
+
+section h2 {
+    padding: 1em 10% 0.5em 10%; 
+    font-size: 1.75em;
+    text-transform: uppercase;
+}
+
+section h3 {
+    padding: 1em 10% 0.5em 10%; 
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+section h4 {
+    padding: 0em 10% 0.5em 10%; 
+    color: grey;
+    font-size: 1.1em;
+}
+
+section p {
+    padding: 0 10% 0 10%;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+/*Intro*/
+
+.datos-generales {
+    padding: 1.3em 10% 0 11%;
+    font-size: 1.1em;
+}
+
+#introduccion p:last-of-type {
+  margin: 0.7rem 0;
+}
+
+.datos-generales li {
+    list-style-type: "\25BA";
+    padding-left: 1%;
+  }
+
+  li > span {
+    font-weight: bold;
+  }
+
+#introduccion img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  margin-top: 1em;
+}
+
+/*Caracteristicas*/
+#video-caracts{
+  margin: 1em auto;
+  display: block;
+  border: none;
+  padding-bottom: 2em;
+}
+
+.video {
+  width: 100%;
+  height: calc(80vw * 315/560);
+  max-width: 560px;
+  max-height: 315px;
+  margin: auto;
+}
+
+.primer-video {
+  max-width: 75%;
+  max-height: 500px;
+  padding-bottom: 2em;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+article .columna iframe {
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+article .columna {
+  width: 40%;
+  text-align: left;
+}
+
+article img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+#caracteristicas {
+  text-align: center;
+}
+
+#caracteristicas .columna {
+  text-align: left;
+  vertical-align: middle;
+}
+
+#coop p {
+  margin-bottom: 1em;
+}
+/*Personajes*/
+
+#personajes-div {
+  padding: 0 5%;
+  text-align: center;
+}
+
+#personajes-div .tarjeta-personajes {
+  margin: auto;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgba(68, 131, 226, 0.7);
+  transition: 0.3s;
+  margin: 1em;
+  width: 25%;
+  border-radius: 15px;
+}
+
+.tarjeta-personajes:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.tarjeta-personajes img {
+  width: 100%;
+}
+
+.container h4,.container h3 {
+  padding: 0.3em 1em;
+  background-color: rgba(68, 131, 226, 0.7);
+}
+
+.container h3 {
+  font-weight: bold;
+}
+
+.container h3, .container p {
+  color: white;
+}
+
+.container h4{
+  color: rgba(255,255,255,0.7);
+  padding: 1em;
+  border-bottom: 1px solid white;
+}
+
+.container p{
+  padding: 1em;
+}
+
+.ver-mas button {
+  display: none;
+}
+
+  /*Galeria*/
+
+  #galeria {
+    text-align: center;
+  }
+
+  #galeria h3 {
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  
+  #galeria .columna {
+    width: 25%;
+    padding: 1em;
+    display: inline-block;
+  }
+
+#galeria .columna img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+  /*Form*/
+
+  #fondo-contacto {
+    background-color: rgba(173, 195, 214,0.7);
+  }
+
+  form .columna {
+    margin-left: 10%;
+  }
+  
+  form .columna input, form .columna label {
+    margin-left: 0%;
+  }
+
+  form input, form textarea, form label{
+    display: block;
+    border: none;
+    background: none;
+    padding: 0.5em 0em 0.5em 0;
+    margin-left: 10%;
+  }
+
+  form input, form textarea {
+    border-bottom: 1px solid grey;
+  }
+  .col-baja {
+    margin-bottom: 1em;
+  }
+
+  form input:focus, form textarea:focus {
+    outline: none;
+  }
+
+  #fondo-contacto p {
+    margin: 1em 0;
+  }
+  
+  form label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  form textarea {
+    padding-bottom: 0;
+    resize: none;
+  }
+
+  form input[type="submit"]{
+    width: 10%;
+    height: 40px;
+    margin: 0% 10%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+  }
+
+  #divEnviar {
+    padding: 2em 0 2em 0;
+  }
+
+  ::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+  }
+
+  #enviado-correctamente {
+    display: none;
+    color: rgb(50, 165, 50);
+    padding-top: 1em;
+    font-weight: bold;
+  }
+
+/*Footer*/
+
+footer {
+    background-color: rgba(68, 131, 226, 0.7);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer img {
+  max-width: 250px;
+  margin: auto;
+  display: block;
+}
+
+/*col2*/
+.columna:last-of-type {
+  vertical-align: top;
+}
+
+footer ul {
+  padding: 1em;
+}
+
+footer ul li {
+  padding-left: 0.5em;
+  text-align: left;
+}
+
+#datos-alumno {
+  display: inline-block;
+}
+
+#datos-alumno li {
+  list-style-type: "\25BA";
+  padding-bottom: 0;
+}
+
+#redes {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 2em;
+  gap: 1em;
+  justify-content: center;
+}
+
+#boton-volver{
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s color ease-in;
+} 
+
+#boton-volver:hover {
+  color: rgb(240, 93, 240);
+}
+
+/*QUERY 1: mobile*/
+
+@media screen and (max-width: 767px) {
+  
+  /*GENERALES*/
+  #cuerpo {
+    background-image: url("../elementos_graficos/imgs_otros/mobile/fondo_pagina_mobile.webp") !important; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+  section, header, footer {
+    width: 100%;
+    margin: auto;
+  }
+
+  section h2, section h3, section h4, section p {
+    text-align: center;
+  }
+
+  .columna {
+    display: block;
+    margin: auto;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+}
+
+section h3 {
+    font-size: 1.3em;
+}
+
+section h4 {
+    color: grey;
+    font-size: 1.1em;
+}
+
+section p, section li {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+  /*nav*/
+  h1 {
+    background-image: url("../elementos_graficos/imgs_otros/mobile/banner_header_mobile.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+  nav {
+    padding: 1em;
+    position: relative;
+  }
+
+  .abrir-menu-hamburguesa {
+    display: block;
+    font-size: 1.3em;
+    margin-left: 10%;
+    background-color: rgba(68, 131, 226, 1);
+    border: none;
+    color: white;
+  }
+
+  .abrir-menu-hamburguesa span {
+    font-size: 0;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    margin-left: 10%;
+    background-color: rgba(68, 131, 226, 1);
+    font-size: 1.1em;
+  }
+
+  nav li {
+    font-size: 18px;
+    padding-bottom: 0.3em;
+    display: block;
+    border-bottom: 1px solid white;;
+  }
+
+/*Caracts*/
+
+  #fondo-articulos .columna {
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  #fondo-articulos .columna p {
+    padding: 0.5em 0 1em 0;
+  }
+
+  #fondo-articulos {
+    width: 85%;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    color: black;
+  }
+
+  iframe, article .columna iframe {
+    display: block;
+    border: none;
+  }
+
+  .primer-video {
+    height: 300px;
+    padding-bottom: 0em;
+  }
+
+  /*PERSONAJES*/
+  #personajes .tarjeta-personajes {
+    width: 70%;
+    display: block;
+    margin: 2em auto;
+  }
+
+  #personajes .tarjeta-personajes:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .ver-mas button {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .ver-mas p {
+    display: none;
+  }
+
+  .ver-mas button:focus + p {
+    display: block;
+  }
+
+  .ver-mas button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+    color: white;
+    transition: color 0.3s ease-in;
+  }
+
+  .ver-mas button:hover i, .ver-mas i:hover button {
+    color: black
+  }
+
+  .ver-mas > button:hover {
+    color: black;
+  }
+
+  .ver-mas i {
+    margin-left: 0.2em;
+    font-size: 1.2em;
+  }
+
+  /*GALERIA*/
+  #galeria .columna {
+    width: 90%;
+    padding: 1em;
+    display: inline-block;
+  }
+
+  /*Footer*/
+  footer {
+    padding: 2em 0;
+  }
+  
+  footer .columna:last-child {
+    padding: 1em;
+  }
+  
+  #datos-alumno {
+    list-style-position: inside;
+  }
+  
+  form, #fondo-contacto h2, #fondo-contacto p, form ::placeholder {
+    text-align: center;
+  }
+
+  form input, form textarea, form .columna input,  form .columna, form label{
+    margin: 10px auto;
+    display: block;
+  }
+
+  form label {
+    margin-top: 1em;
+    padding-bottom: 0;
+  }
+
+  form input[type="submit"]{
+    width: 30%;
+    height: 44px;
+    margin: auto;
+  }
+}
+
+/*QUERY 2: tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*GENERALES*/
+
+  #cuerpo {
+    background-image: url("../elementos_graficos/imgs_otros/tablet/fondo_pagina_tablet.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  section, header, footer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .columna {
+    margin: auto;
+  }
+
+  section h2, section h3, section h4, section p {
+    text-align: center;
+  }
+
+  /*header*/
+  h1 {
+    background-image: url("../elementos_graficos/imgs_otros/tablet/banner_header_tablet.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  /*caracts*/
+  article .columna {
+    display: block;
+    width: 100%;
+    padding: 2em 0;
+  }
+
+  #fondo-articulos {
+    background-color: transparent;
+    color: black;
+  }
+
+
+
+  /*personajes*/
+  #personajes .tarjeta-personajes {
+    width: 40%;
+    margin: 2em 2em;
+  }
+
+  #personajes .tarjeta-personajes:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /*galeria*/
+  #galeria .columna {
+    width: 40%;
+    padding: 1em;
+    display: inline-block;
+  }
+
+  /*formulario*/
+  #fondo-contacto h2, #fondo-contacto p {
+    text-align: left;
+  }
+  form input[type="submit"]{
+    width: 20%;
+    height: 40px;
+  }
+
+  /*footer columna*/
+  footer .columna {
+    margin: 1em;
+  }
+}
+

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/styles.css"> <!--estilos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/fkk2ivq.css">
+    <link rel="icon" type="image/jpg" href="elementos_graficos/imgs_otros/mobile/logo_mobile.png" sizes="32x32"> <!--icono de la pagina en navegador-->
+    <title>Parcial 1 IDM - Mateo Fiorotto. Tales Of Vesperia: Definitive Edition</title>
+</head>
+<body id="cuerpo">
+    <header id="inicio">
+        <h1>Tales of Vesperia: Definitive Edition</h1> 
+        <div id="indice-pagina">
+            <!--CREAR SUBMENU-->
+            <nav id="navbar">
+                <button class="abrir-menu-hamburguesa" onclick="abrirHamburguesa()"><i class="fa-solid fa-bars"><span>Abrir menu hamburguesa</span></i></button>
+                <ul id="ul-indice">
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#personajes">Personajes</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#formulario-contacto">Novedades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+                <p>Creada para la celebración de su décimo aniversario, <strong lang="en">Tales of Vesperia: Definitive Edition</strong> trae uno de los
+                <em>JRPGs más adorados de todas las consolas modernas</em>. Tales of Vesperia, una de las entregas más populares de la serie 'Tales of' 
+                <em>vuelve con una resolución de pantalla mejorada y personajes, eventos y trajes que no habían aparecido nunca fuera de Japón</em>.</p>
+                <p>Comienza una lucha de poder en una civilización que depende de una <strong>antigua tecnología Blastia</strong> y el
+                imperio que la controla. El <em>destino de dos amigos que recorren caminos separados se entrelaza en una
+                aventura épica que amenaza la existencia de todos</em>.</p>
+                <ul class="datos-generales">
+                    <li><span>Fecha de lanzamiento:</span> 11/01/2019</li>
+                    <li><span>Géneros:</span> Rol</li>
+                    <li><span>Desarrollador:</span> BANDAI NAMCO Studios Inc</li>
+                    <li><span>Plataformas:</span> Xbox One, PlayStation 4, Nintendo Switch y PC</li>
+                </ul>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_otros/mobile/intro_mobile.webp">
+                        <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_otros/tablet/intro_tablet.webp">
+                        <img alt="Banner tales of vesperia, personajes" src="elementos_graficos/imgs_otros/intro.webp">
+                    </picture>
+                </figure>
+            <!--Imagen grande-->
+        </section>
+        <section id="caracteristicas">
+            <h2>Características principales</h2>
+            <p class="descripcion">En esta sección se veran <strong>características sobre el vídeojuego</strong> desarollado en esta página web, al igual que un trailer del videojuego.</p>
+            <figure class="video primer-video">
+                <iframe id="video-caracts" src="https://www.youtube.com/embed/k1Ckq16U6iI?si=_gjM7djU8nGMh4Dv" title="Trailer Tales of Vesperia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        <div id="fondo-articulos">
+            <article id="regresa"> 
+                <div class="columna">
+                    <h3>Una querida historia que regresa</h3>
+                    <p>La <strong>historia de un joven héroe en busca de justicia</strong> que cautivó a los fans de 'Tales of' vuelve a Xbox One,
+                    PlayStation 4, Nintendo Switch y PC. Vuelve al <em>fantástico mundo de Terca Lumireis</em>, que ahora luce como
+                    nunca antes, gracias a una resolución nativa mejorada.</p>
+                </div>
+                <div class="columna">
+                    <figure class="video">
+                        <iframe src="https://www.youtube.com/embed/4_Ldc36BYYU?si=sFgdPpzqwm6I1Epc" title="Una querida historia que regresa" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </figure>
+                </div>
+            </article>
+            <article id="edicion">
+                <div class="columna">
+                    <h3>Todo en una misma edición</h3>
+                    <p>¡Sumérgete en la <strong>Definitive Edition</strong> de Tales of Vesperia con <em>sus gráficos actualizados, una increíble banda
+                    sonora, emocionantes minijuegos, jefes y todo un guardarropa nunca antes publicado!</em></p>
+                </div>
+                <div class="columna">
+                    <img alt="todo en una edicion" src="elementos_graficos/imgs_caracteristicas/caracteristicas_1.webp">
+                </div>
+            </article>
+            <article id="grupo-refuerza">
+                <div class="columna">
+                    <h3>El grupo se refuerza</h3>
+                    <p><strong>Yuri</strong> emprende su aventura con <strong>Estelle</strong>, una joven noble; <strong>Karol</strong>, un chico en busca de un gremio en el que
+                    integrarse; <strong>Rita</strong>, una erudita excéntrica; <strong>Raven</strong>, un relajado arquero; <strong>Judith</strong>, una misteriosa dragona; y
+                    <strong>Repede</strong>, un perro que fuma en pipa... Y, además, <em>se incluyen dos nuevos personajes jugables:</em> <strong>Flynn Scifo</strong>, el
+                    rival y mejor amigo del personaje principal; y <strong>Patty Fleur</strong>, una joven pirata que quiere recuperar sus recuerdos
+                    perdidos.</p>
+                </div>
+                <div class="columna">
+                    <figure class="video">
+                        <iframe src="https://www.youtube.com/embed/bo5xnYoOc54?si=EEciQ-Z_766uq2kw" title="El grupo se refuerza" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </figure>
+                </div>
+            </article>
+            <article id="lucha-estilo">
+                <div class="columna">
+                    <h3>Lucha con estilo</h3>
+                    <p>¡Reúne a tu equipo favorito y disfruta de <em>emocionantes combates en tiempo real con sus habilidades y Artes
+                    Místicas!</em> Tales of Vesperia: Definitive Edition cuenta con una <strong>versión especial del LMBS</strong> (sistema de combate
+                    dinámico lineal, por sus siglas en inglés) que ya es un emblema en la franquicia 'Tales of'. <em>Los jugadores
+                    controlarán a un miembro del grupo en tiempo real, mientras que los otros tres estarán controlados por la IA y
+                    harán exactamente lo que se le haya indicado a través de una serie de órdenes personalizadas</em>. Durante los
+                    combates, <em>los jugadores podrán cambiar entre los cuatro personajes en cualquier momento</em>, <strong>así como emplear
+                    ataques físicos, lanzar artes o incluso recurrir a poderosas artes místicas</strong>.</p>
+                </div>
+                <div class="columna">
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_caracteristicas/caracteristicas_2_responsive.webp">
+                            <img alt="lucha con estilo" src="elementos_graficos/imgs_caracteristicas/caracteristicas_2.webp">
+                        </picture>
+                    </figure>
+                </div>
+            </article>
+            <article id="coop">                
+                <h3>¡Une fuerzas con tus amigos!</h3>
+                <p>Utilizando el sistema de <strong>co-op local</strong>, también puedes optar por sumar <em>hasta 3 jugadores más</em>, cada uno
+                controlando uno de los 9 personajes disponibles. ¡Redescubre esta emocionante historia con amigos o
+                familia!</p>
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_otros/mobile/logo_mobile.png">
+                        <img alt="Modo cooperativo - Logo de Tales of vesperia" src="elementos_graficos/imgs_otros/logo.png">
+                    </picture>
+                </figure>
+            </article>
+        </div>
+        </section>
+        <section id="personajes">
+            <h2>Personajes</h2>
+            <p class="descripcion">En esta sección podrás ver varios personajes que aparecen en la historia del juego y que son jugables</p>
+            <div id="personajes-div">
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/yuri_2.webp">
+                                <img alt="Personaje: Yuri Lowell" src="elementos_graficos/imgs_personajes/imgs_escritorio/yuri.webp">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                        <h3>Yuri Lowell</h3>
+                        <h4>Interpretado por: Kosuke Toriumi (JP) / Troy Baker/Grant George (EN)</h4>
+                        <div class="ver-mas">
+                            <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p>El <strong>personaje principal del juego</strong>, un joven que <em>vive en los barrios bajos de la capital</em>, <strong>Zaphias</strong>, y ayuda a los
+                            necesitados. Es muy sarcástico y cínico pero tiene una buena formación. Al igual que su amigo de la infancia
+                            Flynn, una vez fue un caballero, lo que le dio la libertad de hacer viajes cortos fuera de su ciudad natal, pero
+                            se retiró debido a su aversión al gobierno. Ahora <strong>trabaja como guardaespaldas</strong>. Envidioso de Flynn, decide
+                            irse de la ciudad por su cuenta. <em>Después de los hechos que lo llevaron a ser encarcelado, conoce a la princesa
+                            Estelle y parten juntos</em> para descubrir el mundo más allá de la capital, Zaphias.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/stelle_2.webp">
+                                <img alt="Personaje: Estellise Sidos Heurassein" src="elementos_graficos/imgs_personajes/imgs_escritorio/stelle.webp">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                            <h3>Estellise Sidos Heurassein</h3>
+                            <h4>Interpretada por: Mai Nakahara (JP) / Eden Riegel (EN)</h4>
+                            <div class="ver-mas">
+                            <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p>Si bien <strong>su nombre real es Estellise</strong>, Yuri la apoda "Estelle", nombre que adopta por el resto de la aventura.
+                                <em>Permaneció encerrada durante mucho tiempo en su castillo de Zaphias</em> donde <strong>aprendió a luchar con espada</strong>.
+                                Queriendo explorar el mundo, aprovecha la oportunidad y se va con Yuri fuera de la capital. Está muy
+                                sorprendida de lo que descubre sobre el mundo y le gusta aprender leyendo libros.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/flynn_2.webp">
+                                <img src="elementos_graficos/imgs_personajes/imgs_escritorio/flynn.webp" alt="Personaje: Flynn Scifo">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                        <div class="ver-mas">
+                        <h3>Flynn Scifo</h3>
+                        <h4>Interpretado por: Mamoru Miyano (JP) / Sam Riegel (EN)</h4>
+                        <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                        <p>Un <strong>caballero que lucha con espada y escudo</strong>. <em>Compartió su infancia con Yuri aunque estuvieron muy
+                            contrastados, tanto física como éticamente</em>. Tiene los mismos ideales de ayudar a los demás, pero antepone
+                            los intereses del gobierno. Como caballero, viaja regularmente para matar monstruos.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/repede_2.webp">
+                                <img src="elementos_graficos/imgs_personajes/imgs_escritorio/repede.webp" alt="Personaje: Repede">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                        <h3>Repede</h3>
+                        <h4>Interpretado por: Makoto Ishii</h4>
+                        <div class="ver-mas">
+                        <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p>Si, <strong>es un perro</strong>. Si, <em>tiene una pipa</em>. Si eso no los convence de probar este juego, nada lo hará. Es muy
+                                amigable con los que acepta, pero odia cuando alguien que no conoce intenta tocarlo.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                            <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/rita_2.webp">
+                            <img src="elementos_graficos/imgs_personajes/imgs_escritorio/rita.webp" alt="Personaje: Rita Mordio">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                        <h3>Rita Mordio</h3>
+                        <h4>Interpretada por: Rika Morinaga (JP) / Michelle Ruff (EN)</h4>
+                        <div class="ver-mas">
+                        <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p>Una <strong>investigadora de Aspio</strong> que <em>estudia Blastia y odia que la interrumpan durante su investigación</em>. Es una
+                                persona solitaria a la que no le gusta entablar relaciones con nadie. Karol la fastidia y no duda en ponerla en
+                                su lugar cuando tiene la oportunidad.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/karol_2.webp">
+                                <img src="elementos_graficos/imgs_personajes/imgs_escritorio/karol.webp" alt="Personaje: Karol Capel">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                        <h3>Karol Capel</h3>
+                        <h4>Interpretado por: Kumiko Watanabe (JP) / Julie Ann Taylor (EN)</h4>
+                        <div class="ver-mas">
+                        <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p><strong>Es un niño pequeño</strong> que <em>dice ser parte del gremio "Les Lames Chasseresses"</em>. Ciertas circunstancias lo harán
+                                unirse al grupo de Yuri. A pesar de su buen humor, es bastante tímido y carece de confianza en sí mismo.</p>
+                        </div>
+                        </div>
+                    </div>
+                
+             
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/judith_2.webp">
+                                <img src="elementos_graficos/imgs_personajes/imgs_escritorio/judith.webp" alt="Personaje: Judith">
+                          </picture>
+                        </figure>
+                        <div class="container">
+                        <h3>Judith</h3>
+                        <h4>Interpretada por: Aya Hisakawa (JP) / Alison Lees-Taylor (EN)</h4>
+                        <div class="ver-mas">
+                        <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p>Judith es <strong>una mujer joven y bonita</strong> <em>de la tribu Krytian Moviéndose sobre la espalda de un dragón llamado
+                                Ba'Ul</em>. A pesar de unirse al grupo, Judith tiene una misision secreta y no dejará que nada le impida cumplirla.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/raven_2.webp">
+                                <img src="elementos_graficos/imgs_personajes/imgs_escritorio/raven.webp" alt="Personaje: Raven">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                        <h3>Raven</h3>
+                        <h4>Interpretado por: Eiji Takemoto (JP) / Joe J. Thomas (EN)</h4>
+                        <div class="ver-mas">
+                        <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p><strong>Un hombre misterioso</strong> al que le gustan las cosas sencillas. <em>Conoce a Yuri al comienzo del juego mientras
+                                están en la cárcel</em>. Tiende a molestar al grupo con sus bromas, pero sabe cómo ponerse serio cuando es
+                                necesario. Sin embargo, sufre de un pasado del que no quiere hablar.</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-personajes">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_personajes/imgs_responsive/patty_2.webp">
+                                <img src="elementos_graficos/imgs_personajes/imgs_escritorio/patty.webp" alt="Personaje: Patty Fleur">
+                            </picture>
+                        </figure>
+                        <div class="container">
+                        <h3>Patty Fleur</h3>
+                        <h4>Interpretada por: Chiwa Saïto (JP) / Sandy Fox (EN)</h4>
+                        <div class="ver-mas">
+                        <button>Ver más<i class="fa-solid fa-chevron-down"></i></button>
+                            <p><strong>Una joven pirata</strong> que <em>viaja por el mundo en busca del romance y el legendario tesoro del famoso pirata
+                                Aifread</em>. A pesar de su apariencia, tiene una personalidad y forma de expresarse más acordes a las de un
+                                anciano.</p>
+                        </div>
+                        </div>
+                    </div>
+        </div>       
+        </section>
+        <section id="galeria">
+        <h2>Imágenes del juego</h2>
+            <div class="columna">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_galeria/mobile/galeria1_mobile.webp">
+                        <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_galeria/tablet/galeria1_tablet.webp">
+                        <img alt="Captura galería 1" src="elementos_graficos/imgs_galeria/galeria1.webp">
+                    </picture>
+                </figure>
+            </div>
+            <div class="columna">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_galeria/mobile/galeria2_mobile.webp">
+                        <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_galeria/tablet/galeria2_tablet.webp">
+                        <img alt="Captura galería 2" src="elementos_graficos/imgs_galeria/galeria2.webp">
+                    </picture>
+                </figure>
+            </div>
+            <div class="columna">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_galeria/mobile/galeria3_mobile.webp">
+                        <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_galeria/tablet/galeria3_tablet.webp">
+                        <img alt="Captura galería 3" src="elementos_graficos/imgs_galeria/galeria3.webp">
+                    </picture>
+                </figure>
+            </div>
+            <div class="columna">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_galeria/mobile/galeria4_mobile.webp">
+                        <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_galeria/tablet/galeria4_tablet.webp">
+                        <img alt="Captura galería 4" src="elementos_graficos/imgs_galeria/galeria4.webp">
+                    </picture>
+                </figure>
+            </div>
+            <div class="columna">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_galeria/mobile/galeria5_mobile.webp">
+                        <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_galeria/tablet/galeria5_tablet.webp">
+                        <img alt="Captura galería 5" src="elementos_graficos/imgs_galeria/galeria5.webp">
+                    </picture>
+                </figure>
+            </div>
+            <div class="columna">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="elementos_graficos/imgs_galeria/mobile/galeria6_mobile.webp">
+                        <source media="(max-width: 1023px)" srcset="elementos_graficos/imgs_galeria/tablet/galeria6_tablet.webp">
+                        <img alt="Captura galería 6" src="elementos_graficos/imgs_galeria/galeria6.webp">
+                    </picture>
+                </figure>
+            </div>
+        </section>
+        <section id="formulario-contacto">
+            <div id="fondo-contacto">
+            <h2>Novedades</h2>
+            <p>Completa estos datos para darte novedades como juegos o series sobre Tales of Vesperia</p>
+
+            <form autocomplete="off" id="formulario" action="#" method="post" enctype="multipart/form-data">
+                <div class="columna">
+                    <label for="nombre">Nombre</label>
+                    <input placeholder="Escriba su nombre" type="text" id="nombre" name="nombre">
+                </div>
+                <div class="columna">
+                    <label for="correo">Correo</label>
+                    <input placeholder="Escriba su correo" type="email" id="correo" name="correo">
+                </div>
+                <div class="col-baja">
+                    <label for="nacimiento">Teléfono</label>
+                    <input placeholder="Escriba su telefono" type="number" id="nacimiento" name="nacimiento">
+                </div>
+                    <label for="mensaje">Comentario</label>
+                    <textarea placeholder="Deje su opinión" id="mensaje" name="mensaje"></textarea>
+                    <div id="divEnviar">
+                        <input id="btn-enviar" onclick="enviarFormulario()" type="submit" value="Enviar">
+                        <p id="enviado-correctamente">¡Formulario enviado correctamente!</p> 
+                 </div>  
+                </form>
+             </div>
+        </section>
+    </main>
+    <footer>
+        <div class="columna">
+            <img id="foto-mateo" src="elementos_graficos/imgs_otros/foto-mateo.webp" alt="Foto Mateo Fiorotto">
+        </div>
+        <div class="columna">
+        
+            <h2>Datos del alumno</h2>
+                <ul id="datos-alumno">
+                    <li><span>Nombre Completo:</span> Mateo Fiorotto</li>
+                    <li><span>Mail:</span> mateo.fiorotto@davinci.edu.ar</li>
+                    <li><span>Fecha de nacimiento:</span> 27/04/2004</li>
+                </ul>
+                <!--YO use font awesome pero se puede realizar los iconos con el background image y los sprites para optimizarlo mas
+                En este caso como es FW no consume casi nada.-->
+                <ul id="redes">
+                    <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/mateo-fiorotto/"><i class="fa-brands fa-linkedin"><span>Linkedin</span></i></a></li>
+                    <li><a id="instagram" target="_blank" href="https://www.instagram.com/mateo.fiorotto_"><i class="fa-brands fa-instagram"><span>Instagram</span></i></a></li>
+                    <li><a id="youtube" target="_blank" href="https://youtube.com/@elmaateex"><i class="fa-brands fa-youtube"><span>YouTube</span></i></a></li>
+                    <li><a id="tiktok" target="_blank" href="https://www.tiktok.com/@maateex"><i class="fa-brands fa-tiktok"><span>TikTok</span></i></a></li>
+                </ul>
+                <a href="#inicio" id="boton-volver">VOLVER AL INICIO</a>
+            </div>
+        <!--Agregar RRSS con sprites - bg image-->
+    </footer>
+    <script src="https://kit.fontawesome.com/3f449505af.js" crossorigin="anonymous"></script>
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
