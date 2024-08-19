@@ -1,0 +1,528 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f9faff;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2, h3, h4 {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #064685;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+h3, h4{
+    font-size: 1.4rem;
+}
+
+strong, span {
+    font-weight: 600;
+    font-style: normal;
+}
+  
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+
+#img-banner {
+    width: 100%;
+}
+
+input,textarea, select {
+    font: inherit;
+}
+
+textarea {
+    width: 100%;
+}
+
+main > section:not(:first-of-type) {
+    padding: 1.5rem 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*---------------Barra de navegación y logo-----------------*/
+
+header{
+    text-align: center;
+    background-color: #f9faff;
+    height: 7em;
+    line-height: 7em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header #logo {
+    background: url('../assets/img/logo.png') no-repeat;
+    width: 190px;
+    height: 85px;
+    font-size: 0;
+    display: inline-block;
+}
+
+nav {
+    position: fixed;
+    top: 1.3em;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#hamburguesa li {
+    text-indent: -100px;
+    overflow: hidden;
+    margin-top: .5em;
+    margin-left: .6em;
+    width: 2.5em;
+}
+
+#hamburguesa li a {
+    background: url('../assets/img/menu.png') no-repeat center center;
+    background-size: cover;
+    display: block;
+    height: 2.5em;
+}
+
+#hamburguesa li:last-child a{
+    background: url('../assets/img/menu-cerrar.png') no-repeat center center;
+}
+
+#hamburguesa li:last-child {
+    display: none;
+}
+
+nav:target #barra {
+    left: 0;
+}
+
+nav:target #hamburguesa li:first-child {
+    display: none;
+}
+
+nav:target #hamburguesa li:last-child {
+    display: block;
+}
+
+#barra {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 90px;
+    left: -100%;
+    background:#f9faff;
+    transition: left .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#barra li {
+    margin: 1em;
+    width: 80%;
+}
+
+#barra li a {
+    border-radius: 20px;
+    display: block;
+    background:  #064685;
+    color: #f9faff;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+#banner{
+    position: relative;
+    top: 7em;
+    z-index: -1;
+}
+
+/*-----------------Introducción-------------------*/
+#intro {
+    margin-top: 8rem;
+}
+
+#intro .left ul {
+    margin: 2em 0;
+    padding: 1em;
+    border-radius: 20px;
+    background-color:  #064685;
+}
+
+#intro ul li {
+    color: #f9faff;
+    padding: 0.2em 0;
+    border-bottom: 1px solid #f9faff;
+    margin: .5em;
+    font-size: .8em;
+}
+#intro ul li:last-child{
+    border-bottom: 0;
+}
+
+/*-----------------Características-------------------*/
+/*Video*/
+#caract > figure:first-child {
+    font-size: 0;
+    text-align: center;
+}
+
+#caract figure #div-iframe{
+    width: 80vw;
+    height: calc(80vw * 315 / 560);
+    max-width: 560px;
+    max-height: 315px;
+    background: black;
+    margin: auto;
+}
+
+#caract > p , #formulario > p{
+    padding-bottom: 1.4em;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#caract article, #personajes article {
+    margin: 1.5em 0;
+    border: 2px solid #064685;
+    border-radius: 20px;
+    padding: 1.7em;
+    max-width: 100%;
+    background-color: rgb(207, 222, 255);
+}
+
+#caract article h3, #personajes h4 {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #064685;
+    padding-bottom: .2em;
+}
+
+#caract figure {
+    margin-bottom: 1.8em;
+}
+
+/*-----------------Personajes-------------------*/
+#personajes article {
+    background-color: white;
+}
+#personajes h2 {
+    margin-bottom: .4em;
+}
+
+#personajes h3 {
+    color: rgb(95, 39, 146);
+}
+
+#personajes article p:first-of-type {
+    text-align: center;
+    font-size: .8em;
+    color: rgb(95, 39, 146);
+    margin:.7em 0;
+    margin-bottom: 1.4em;
+}
+
+#personajes-recurr h3 {
+    margin-top: 2em;
+}
+
+/*----------------Galería-------------------*/
+#galeria #capturas figure {
+    padding-bottom: .8em;
+}
+
+/*----------------Formulario-------------------*/
+#formulario form div {
+    margin-bottom: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    color: #064685;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+input, select, textarea {
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+textarea {
+    resize: none;
+}
+
+#formulario form div p {
+    font-size: .8em;
+    padding-left: .5em;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 2px solid #064685;
+}
+
+input[type="submit"] {
+    padding: .6em;
+    width: 40%;
+    background-color: #064685;
+    color: #f9faff;
+    border: 0;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+::placeholder {
+    padding-left: 3px;
+}
+
+/*----------------Footer-------------------*/
+footer figure {
+    padding-top: 3em;
+}
+
+footer figure img {
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #064685;
+    text-align: center;
+    color: #f9faff;
+}
+
+footer ul {
+    padding: 3em 0;
+}
+
+/*Para tablet*/
+@media screen and (min-width:481px){
+
+    /*---------------Características y personajes------------------*/
+    #personajes-princ, #personajes-recurr, #caract div, #intro > div, #capturas{
+        text-align: center;
+    }
+    #caract article, #personajes #personajes-recurr article {
+        width: 48%;
+        margin: 1.5em .2em;
+        display: inline-block;
+    }
+    #caract article:nth-child(even), #personajes #personajes-recurr article:nth-child(even) {
+        vertical-align: top;
+    }
+    #caract article:last-child{
+        display: block;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    /*----------------Formulario----------------*/
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*Para PC*/
+@media screen and (min-width:768px){
+
+    /*------------Barra de navegación y logo-----------------*/
+    
+    #hamburguesa {
+        display: none;
+    }
+    header {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    #menu {
+        flex: 1;
+    }
+    #barra {
+        position: static;
+        height: auto;
+        background: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #barra li {
+        display: block;
+        width: 100px;
+        margin: 0 .3em;
+        font-size: .9em;
+    }
+    #barra li a:hover {
+    background: rgb(95, 39, 146);
+    } 
+
+    h1 {
+        position: relative;
+        top: 20px;
+    }
+
+    main {
+        max-width: 1600px;
+        margin: 0 auto;
+        border: 2px solid #064685;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    /*----------------Personajes---------------*/
+    #personajes-princ article, #galeria #capturas figure {
+        width: 48%;
+        margin: 1.5em .2em;
+        display: inline-block;
+    }
+    #personajes-princ article:nth-child(even), #galeria #capturas figure:nth-child(even) {
+        vertical-align: top;
+    }
+    #personajes-princ article:last-child{
+        display: block;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    /*---------Formulario-----------*/
+    input[type="submit"]:hover {
+        background-color: rgb(95, 39, 146);
+    }
+    form {
+        width: 50%;
+    }
+
+    /*-----------------Galería-----------------*/
+    #galeria #capturas figure {
+        margin: .5em .4em;
+    }
+
+    /*---------------Footer-----------*/
+    footer figure, footer ul {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    footer figure {
+        padding: 2em 0;
+        margin-right: 1em;
+    }
+
+    footer ul li {
+        text-align: start;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+
+    /*----------------Introducción--------------*/
+    #personajes h2, #personajes h3 {
+        text-align: start;
+    }
+    #intro div div {
+        display: inline-block;
+        width: 50%;
+        margin: 1em;
+    }
+    #intro .rigth {
+        vertical-align: middle;
+        width: 40%;
+    }
+    #intro .left {
+        vertical-align: middle;
+    }
+    #intro div .left ul {
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+    #intro ul li {
+        color: #064685;
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+
+    /*----------------Características, Personajes y Galería--------------*/
+
+    #caract article, #personajes-princ article, 
+    #personajes #personajes-recurr article,
+    #galeria #capturas figure{
+        width: 30%;
+        margin: 1.5em .7em;
+    }
+
+    #caract article:last-child, #personajes-princ article:last-child{
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    #personajes #personajes-recurr article:nth-child(5) {
+        vertical-align: top;
+    }
+
+    #galeria #capturas figure {
+        margin-top: .4em;
+        margin-bottom: .4em;
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
