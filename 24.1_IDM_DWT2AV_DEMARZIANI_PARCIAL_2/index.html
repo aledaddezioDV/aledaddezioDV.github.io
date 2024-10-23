@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadouken</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navigation">
+        <nav class="navbar navbar-expand-lg px-2 py-4">
+            <div class="container-fluid">
+                <h1 class="m-0">
+                    <a class="navbar-brand m-0 d-flex align-items-center" href="#">Hadouken</a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Menu hamburguesa para mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menuHamburguesa">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#historia">Historia</a>
+                        <a class="nav-link" href="#vendemos">¿Qué vendemos?</a>
+                        <a class="nav-link" href="#articulos">Artículos</a>
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                        <a class="nav-link" href="#preguntasfrecuentes">Preguntas frecuentes</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Carrusel -->
+        <section id="inicio">
+            <div id="carruselInicio" class="carousel slide" data-bs-ride="carrusel portada deinicio">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <picture>
+                        <source srcset="assets/banners/movil-1.webp" media="(max-width:576px)">
+                        <source srcset="assets/banners/tablet-1.webp" media="(min-width:577px) and (max-width:991px)">
+                        <img src="assets/banners/desktop-1.webp" class="d-block w-100" alt="Banner nuevos modelos" title="Banner para nuevos modelos de indumentaria">
+                    </picture>
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                        <source srcset="assets/banners/banner2-movile.png" media="(max-width:576px)">
+                        <source srcset="assets/banners/banner2-table.png" media="(min-width:577px) and (max-width:991px)">
+                        <img src="assets/banners/banner2-pc.png" class="d-block w-100" alt="Banner nuevos diseños" title="Banner para nuevos diseños de productos de decoración">
+                    </picture>
+                  </div>
+                  <div class="carousel-item">
+                    <picture>
+                        <source srcset="assets/banners/banner3-movile.png" media="(max-width:576px)">
+                        <source srcset="assets/banners/banner3-table.png" media="(min-width:577px) and (max-width:991px)">
+                        <img src="assets/banners/banner3-pc.png" class="d-block w-100" alt="Banner decora tu mundo" title="Banner para nuevos productos de decoraciòn">
+                    </picture>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselInicio" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselInicio" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- Historia -->
+        <section id="historia">
+            <div class="container text-center text-lg-start py-5">
+                <div class="row d-flex align-items-center ps-lg-4">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="pb-3">Nuestra historia</h2>
+                        <p>Bienvenido a <strong>Hadouken</strong>, tu tienda virtual especializada en productos retro. Nos apasiona revivir la nostalgia y la elegancia del pasado a través de nuestra cuidada selección de <strong>ropa, alfombras, cuadros y más</strong>. Valoramos la autenticidad, la calidad y el diseño atemporal, asegurando que cada artículo que encuentres en nuestra tienda sea único y significativo. <strong>Explora nuestro catálogo</strong> y descubre cómo nuestros productos pueden añadir un toque vintage a tu vida cotidiana. ¡Gracias por elegirnos para tu viaje retro!
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center text-lg-end p-0">
+                        <picture>
+                            <source srcset="assets/imagenes/nuestraHistoria/nuestraHistoria-280x350.jpg" media="(max-width:576px)">
+                            <source srcset="assets/imagenes/nuestraHistoria/nuestraHistoria-540x350.jpg" media="(min-width:577px) and (max-width:991px)">
+                            <img src="assets/imagenes/nuestraHistoria/nuestraHistoria.jpg" alt="Banner nuestra historia" title="Imagen para banner de nuestra historia" class="img-fluid">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ¿Qué vendemos? -->
+        <section id="vendemos" class="py-5">
+            <div class="container">
+                <div class="row d-flex align-items-center text-center">
+                    <h2 class="pb-3">¿Qué vendemos?</h2>
+                    <p class="pb-3">
+                        En <strong>Hadouken</strong>, nos comprometemos a ofrecerte productos retro de la más alta calidad. Cada artículo es cuidadosamente seleccionado y verificado para garantizar su <strong>durabilidad y autenticidad</strong>. Eleginos para disfrutar de <strong>diseños únicos y un servicio al cliente</strong> excepcional que no encontrarás en ningún otro lugar. ¡Descubre la diferencia con nosotros!
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <article class="card border-0">
+                            <picture>
+                                <source media="(min-width: 577px)" srcset="assets/alfombra/desktop_tablet/escudo.webp">
+                                <img src="assets/alfombra/mobile/escudo.webp" class="card-img-top" alt="Categoria Alfombras" title="Categoría de productos alfombras" >
+                            </picture>
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Alfombras</h3>
+                              <p class="card-text text-center">Alfombras de estilo retro gaming ideales para decoración de habitaciones y areas de juego. Hecho a mano. Hechos a partir de algodón, lana, poliéster.</p>
+                            </div>
+                        </article>
+                        <article class="card border-0">
+                            <picture>
+                                <source media="(min-width: 577px)" srcset="assets/cuadro/desktop_tablet/64.webp">
+                                <img src="assets/cuadro/mobile/64.webp" class="card-img-top" alt="Categoria Cuadros" title="Categoría de productos cuadros" >
+                            </picture>
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Cuadros</h3>
+                              <p class="card-text text-center">Cuadros artesanales hechos a paritr de hardware gaming reciclado. Se expone desmontado y contiene las especificaciones de sus componentes expuestos.</p>
+                            </div>
+                        </article>
+                        <article class="card border-0">
+                            <picture>
+                                <source media="(min-width: 577px)" srcset="assets/escultura/desktop_tablet/huevo.webp">
+                                <img src="assets/escultura/mobile/botw.webp" class="card-img-top" alt="Categoria Decoración" title="Categoría de productos decoración" >
+                            </picture>
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Decoración</h3>
+                              <p class="card-text text-center">Figuras tipo diagrama hechos a partir de recina epoxi, madera y plástico, ideales para exponer en repisas y escritorios.</p>
+                            </div>
+                        </article>
+                        <article class="card border-0">
+                            <picture>
+                                <source media="(min-width: 577px)" srcset="assets/maceta/desktop_tablet/tetris.webp">
+                                <img src="assets/maceta/mobile/tetris.webp" class="card-img-top" alt="Categoría Macetas" title="Categoría de productos macetas" >
+                            </picture>
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Macetas</h3>
+                              <p class="card-text text-center">Macetas impresas en 3D para cactus y flores pequeñas. Materiales: PVC. </p>
+                            </div>
+                        </article>
+                        <article class="card border-0">
+                            <picture>
+                                <source media="(min-width: 577px)" srcset="assets/ropa/desktop_tablet/mario_bros.webp">
+                                <img src="assets/ropa/mobile/mario_bros.webp" class="card-img-top" alt="Categoría Indumentaria" title="Categoría de productos de indumentaria" >
+                            </picture>
+                            <div class="card-body">
+                              <h3 class="card-title text-center">Indumentaria</h3>
+                              <p class="card-text text-center">Remeras 100% algodón de temática retro gaming en talles y estilos variados</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Artículos -->
+        <section id="articulos">
+            <div class="container py-5">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <h2 class="pb-3">Artículos</h2>
+                    <p class="pb-3 text-center">
+                        En nuestra tienda, nos enorgullecemos de ofrecer una cuidadosa selección de productos retro, como tazas, macetas, alfombras, y más, que destacan por su <strong>calidad excepcional</strong> y la <strong>confianza</strong> que inspiran en nuestros clientes. Cada artículo ha sido elegido con esmero para brindar una <strong>experiencia auténtica y duradera</strong>, combinando el encanto del pasado con los estándares actuales de excelencia. ¡Descubre nuestra colección y sumérgete en el mundo retro con estilo y garantía de calidad!
+                    </p>
+                    <div class="row d-flex justify-content-center gap-4">
+                        <article class="card p-0">
+                            <span class="badge position-absolute py-2 px-3 descuento">15% Off</span>
+                            <picture>
+                                <source srcset="assets/cuadro/mobile/snes.webp" media="(max-width:576px)">
+                                <img src="assets/cuadro/desktop_tablet/snes.webp" class="card-img-top" alt="Cuadros hardware controles" title="Producto Cuadros hardware controles">
+                            </picture>
+                            <div class="card-body text-start">
+                              <span class="card-subtitle my-2 text-body-secondary">Cuadros hardware controles</span>
+                              <h3 class="card-title mt-2">$8000</h3>
+                              <div class="d-flex gap-2 py-2">
+                                <span class="badge rounded-pill stock">En stock</span>
+                                <span class="badge rounded-pill categoria">Cuadros</span>
+                              </div>
+                              <p class="card-text">¿Te apasiona el mundo del hardware retro? muéstralo a todos exponiendo el control de consola fav...</p>
+                              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalArticulo1">Ver producto</a>
+                            </div>
+                        </article>
+                        <article class="card p-0">
+                            <span class="badge position-absolute py-2 px-3 descuento">5% Off</span>
+                            <picture>
+                                <source srcset="assets/cuadro/mobile/gb.webp" media="(max-width:576px)">
+                                <img src="assets/cuadro/desktop_tablet/gb.webp" class="card-img-top" alt="Cuadros hardware consolas" title="Producto Cuadros hardware consolas">
+                            </picture>
+                            <div class="card-body text-start">
+                              <span class="card-subtitle my-2 text-body-secondary">Cuadros hardware consolas</span>
+                              <h3 class="card-title mt-2">$12000</h3>
+                              <div class="d-flex gap-2 py-2">
+                                <span class="badge rounded-pill stock">Pocas unidades</span>
+                                <span class="badge rounded-pill categoria">Cuadros</span>
+                              </div>
+                              <p class="card-text">Si lo que buscas es rendir homenaje a tu consola portatil favorita de nintendo, puedes hacerlo co...</p>
+                              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalArticulo2">Ver producto</a>
+                            </div>
+                        </article>
+                        <article class="card p-0">
+                            <span class="badge position-absolute py-2 px-3 descuento">20% Off</span>
+                            <picture>
+                                <source srcset="assets/alfombra/mobile/ps1.webp" media="(max-width:576px)">
+                                <img src="assets/alfombra/desktop_tablet/ps1.webp" class="card-img-top" alt="Alfombras geek gamer" title="Producto Alfombras geek gamer">
+                            </picture>
+                            <div class="card-body text-start">
+                              <span class="card-subtitle my-2 text-body-secondary">Alfombras geek gamer</span>
+                              <h3 class="card-title mt-2">$17000</h3>
+                              <div class="d-flex gap-2 py-2">
+                                <span class="badge rounded-pill stock">En stock</span>
+                                <span class="badge rounded-pill categoria">Alfombras</span>
+                              </div>
+                              <p class="card-text">Cómodas, confortables y cálidas alfombras para tu sala de juegos en motivos de nintendo y play stat...</p>
+                              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalArticulo3">Ver producto</a>
+                            </div>
+                        </article>
+                        <article class="card p-0">
+                            <span class="badge position-absolute py-2 px-3 descuento">15% Off</span>
+                            <picture>
+                                <source srcset="assets/escultura/mobile/huevo.webp" media="(max-width:576px)">
+                                <img src="assets/escultura/desktop_tablet/huevo.webp" class="card-img-top" alt="Dioramas The Legend of Zelda" title="Producto Dioramas The Legend of Zelda">
+                            </picture>
+                            <div class="card-body text-start">
+                              <span class="card-subtitle my-2 text-body-secondary">Dioramas The Legend of Zelda</span>
+                              <h3 class="card-title mt-2">$5000</h3>
+                              <div class="d-flex gap-2 py-2">
+                                <span class="badge rounded-pill stock">En stock</span>
+                                <span class="badge rounded-pill categoria">Decoración</span>
+                              </div>
+                              <p class="card-text">La nueva colección de dioramas decorativos de la temática The legend of zelda ya está disponible! cuent...</p>
+                              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalArticulo4">Ver producto</a>
+                            </div>
+                        </article>
+                        <article class="card p-0">
+                            <span class="badge position-absolute py-2 px-3 descuento">15% Off</span>
+                            <picture>
+                                <source srcset="assets/ropa/mobile/mario_bros.webp" media="(max-width:576px)">
+                                <img src="assets/ropa/desktop_tablet/mario_bros.webp" class="card-img-top" alt="Remeras retro games" title="Producto Remeras retro games">
+                            </picture>
+                            <div class="card-body text-start">
+                              <span class="card-subtitle my-2 text-body-secondary">Remeras retro games</span>
+                              <h3 class="card-title mt-2" >$20000</h3>
+                              <div class="d-flex gap-2 py-2">
+                                <span class="badge rounded-pill stock">En stock</span>
+                                <span class="badge rounded-pill categoria">Indumentaria</span>
+                              </div>
+                              <p class="card-text">Sacá a relucir tu nostalgia por esos juegos que marcaron tu infancia con estos nuevos model...</p>
+                              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalArticulo5">Ver producto</a>
+                            </div>
+                        </article>
+                        <article class="card p-0">
+                            <span class="badge position-absolute py-2 px-3 descuento">10% Off</span>
+                            <picture>
+                                <source srcset="assets/maceta/mobile/planta_p.webp" media="(max-width:576px)">
+                                <!--<source srcset="https://placehold.co/264x264" media="(min-width:577px) and (max-width:991px)"> -->
+                                <img src="assets/maceta/desktop_tablet/planta_p.webp" class="card-img-top" alt="Macetas Super Mario Bros" title="Producto Macetas Super Mario Bros">
+                            </picture>
+                            <div class="card-body text-start">
+                              <span class="card-subtitle my-2 text-body-secondary">Macetas Super Mario Bros</span>
+                              <h3 class="card-title mt-2">$2000</h3>
+                              <div class="d-flex gap-2 py-2">
+                                <span class="badge rounded-pill stock">Pocas Unidades</span>
+                                <span class="badge rounded-pill categoria">Macetas</span>
+                              </div>
+                              <p class="card-text">Si te gusta tener tu espacio verde cerca de tu lugar de gaming, nada mejor qué macetas con temátic...</p>
+                              <a href="#" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalArticulo6">Ver producto</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modalArticulo1" tabindex="-1" aria-labelledby="modalArticulo1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">Cuadros controles</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body container">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-6">
+                                        <div id="carruselArticuloProducto" class="carousel slide" data-bs-ride="carrusel para producto seleccionado">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/64.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/64.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/64.webp" class="d-block w-100" alt="Primer Cuadro producto" title="Primer Cuadro producto">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/gamecube.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/gamecube.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/gamecube.webp" class="d-block w-100" alt="Segundo Cuadro producto" title="Segundo Cuadro producto">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/nes.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/nes.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/nes.webp" class="d-block w-100" alt="Tercer Cuadro producto" title="Tercer Cuadro producto">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/snes.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/snes.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/snes.webp" class="d-block w-100" alt="Cuarto cuadro producto" title="Cuarto cuadro producto">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/ps1.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/ps1.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/ps1.webp" class="d-block w-100" alt="Quinto cuadro producto" title="Quinto cuadro producto">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/ps2.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/ps2.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/ps2.webp" class="d-block w-100" alt="Sexto cuadro producto" title="Sexto cuadro producto">
+                                                </picture>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselArticuloProducto" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carruselArticuloProducto" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3">
+                                        <h3>Descripción</h3>
+                                        <p class="my-2">¿Te apasiona el mundo del hardware retro? muéstralo a todos exponiendo el control de consola favorito a todo detalle! Estos cuadros están compuestos
+                                            por hardware verdadero de los controles de consolas retro, con información interesante acerca de sus componentes, partes y funcionalidades.
+                                        </p>
+                                        <h3>Características</h3>
+                                        <p>
+                                            Sus dimensiones son 25cm X 25m X 2cm. Todos vienen con marco negro y vidrio protector.
+                                        </p>
+                                        <h3>Variedades</h3>
+                                        <ul>
+                                            <li>Nintendo 64</li>
+                                            <li>GameCube</li>
+                                            <li>NES</li>
+                                            <li>SNES</li>
+                                            <li>PS1</li>
+                                            <li>PS2</li>
+                                        </ul>
+                                        <h4 class="mt-3 text-end precio">Precio: <strong>$8000</strong></h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modal 2-->
+                <div class="modal fade" id="modalArticulo2" tabindex="-1" aria-labelledby="modalArticulo2" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">Cuadros consolas</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body container">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-6">
+                                        <div id="carruselArticuloProducto2" class="carousel slide" data-bs-ride="carrusel para producto seleccionado">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/gb.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/gb.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/gb.webp" class="d-block w-100" alt="Cuadros consolas Primer producto" title="Cuadros consolas Primer producto">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/cuadro/mobile/gba.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/cuadro/desktop_tablet/modal/gba.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/cuadro/desktop_tablet/modal/gba.webp" class="d-block w-100" alt="Cuadros consolas Segundo producto" title="Cuadros consolas Segundo producto">
+                                                </picture>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselArticuloProducto2" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carruselArticuloProducto2" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3">
+                                        <h3>Descripción</h3>
+                                        <p class="my-2">Si lo que buscas es rendir homenaje a tu consola portatil favorita de nintendo, puedes hacerlo con la nueva edición de cuadros gamer edición GameBoy. 
+                                            ¿Formaste parte de esa generación que llevaba su gameboy a la escuela con el cartucho de Pokemon y ahora querés enmarcar esos recuerdos en
+                                            tu casa? Entonces este producto está hecho para vos!
+                                        </p>
+                                        <h3>Características</h3>
+                                        <p>
+                                            Sus dimensiones son 25cm X 25m X 2cm. Todos vienen con marco negro y vidrio protector.
+                                        </p>
+                                        <h3>Variedades</h3>
+                                        <ul>
+                                            <li>Game boy</li>
+                                            <li>Game boy advance</li>
+                                        </ul>
+                                        <h4 class="mt-3 text-end precio">Precio: <strong>$12000</strong></h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modal 3-->
+                <div class="modal fade" id="modalArticulo3" tabindex="-1" aria-labelledby="modalArticulo3" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">Alfombras Gamer</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body container">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-6">
+                                        <div id="carruselArticuloProducto3" class="carousel slide" data-bs-ride="carrusel para producto seleccionado">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <picture>
+                                                    <source srcset="assets/alfombra/mobile/cd.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/alfombra/desktop_tablet/modal/cd.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/alfombra/desktop_tablet/modal/cd.webp" class="d-block w-100" alt="Primer producto alfombra gamer" title="Primer producto alfombra gamer">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/alfombra/mobile/escudo.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/alfombra/desktop_tablet/modal/escudo.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/alfombra/desktop_tablet/modal/escudo.webp" class="d-block w-100" alt="Segundo producto alfombra gamer" title="Segundo producto alfombra gamer">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item active">
+                                                <picture>
+                                                    <source srcset="assets/alfombra/mobile/gb.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/alfombra/desktop_tablet/modal/gb.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/alfombra/desktop_tablet/modal/gb.webp" class="d-block w-100" alt="Tercer producto alfombra gamer" title="Tercer producto alfombra gamer">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/alfombra/mobile/ps1.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/alfombra/desktop_tablet/modal/ps1.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/alfombra/desktop_tablet/modal/ps1.webp" class="d-block w-100" alt="Cuarto producto alfombra gamer" title="Cuarto producto alfombra gamer">
+                                                </picture>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselArticuloProducto3" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carruselArticuloProducto3" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3">
+                                        <h3>Descripción</h3>
+                                        <p class="my-2">Cómodas, confortables y cálidas alfombras para tu sala de juegos en motivos de nintendo y play station! Mantén los pies calientes para que 
+                                            nada te distraiga de pasar esos buenos momentos disfrutando tus historias favoritas.
+                                        </p>
+                                        <h3>Características</h3>
+                                        <p>
+                                            Sus dimensiones son 2m X 1.5m X 0,5cm en el caso de las rectangulares, y 1.5m X 1.5m X 0.5cm las circulares
+                                        </p>
+                                        <h3>Variedades</h3>
+                                        <ul>
+                                            <li>The legend of Zelda</li>
+                                            <li>Disco PS2 (Silent Hill 2)</li>
+                                            <li>Control PS2</li>
+                                            <li>GameBoy y cartuchos</li>
+                                        </ul>
+                                        <h4 class="mt-3 text-end precio">Precio: <strong>$17000</strong></h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modal 4-->
+                <div class="modal fade" id="modalArticulo4" tabindex="-1" aria-labelledby="modalArticulo4" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">Dioramas The Legend of Zelda</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body container">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-6">
+                                        <div id="carruselArticuloProducto4" class="carousel slide" data-bs-ride="carrusel para producto seleccionado">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <picture>
+                                                    <source srcset="assets/escultura/mobile/maestra1.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/escultura/desktop_tablet/modal/maestra1.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/escultura/desktop_tablet/modal/maestra1.webp" class="d-block w-100" alt="Primera imagen Dioramas The Legend of Zelda" title="Primera imagen Dioramas The Legend of Zelda">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/escultura/mobile/maestra2.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/escultura/desktop_tablet/modal/maestra2.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/escultura/desktop_tablet/modal/maestra2.webp" class="d-block w-100" alt="Segunda imagen Dioramas The Legend of Zelda" title="Segunda imagen Dioramas The Legend of Zelda">
+                                                </picture>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselArticuloProducto4" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carruselArticuloProducto4" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3">
+                                        <h3>Descripción</h3>
+                                        <p class="my-2">La nueva colección de dioramas decorativos de la temática The legend of zelda ya está disponible! cuenta con tres variantes únicas
+                                            solo disponibles en nuestra tienda.
+                                        </p>
+                                        <h3>Características</h3>
+                                        <p>
+                                            Posee iluminación led con batería recargable, sus dimensiones son 18cm X 7cm X 7cm.
+                                        </p>
+                                        <h3>Variedades</h3>
+                                        <ul>
+                                            <li>Espada Maestra bosque</li>
+                                            <li>Espada Maestra dungeon</li>
+                                            <li>Estatuas de la Diosa</li>
+                                        </ul>
+                                        <h4 class="mt-3 text-end precio">Precio: <strong>$5000</strong></h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modal 5-->
+                <div class="modal fade" id="modalArticulo5" tabindex="-1" aria-labelledby="modalArticulo5" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">Remeras retro games</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body container">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-6">
+                                        <div id="carruselArticuloProducto5" class="carousel slide" data-bs-ride="carrusel para producto seleccionado">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <picture>
+                                                    <source srcset="assets/ropa/mobile/mario_bros.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/ropa/desktop_tablet/modal/mario_bros.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/ropa/desktop_tablet/modal/mario_bros.webp" class="d-block w-100" alt="Primer Producto de Remera retro games" title="Primer Producto de Remera retro games">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/ropa/mobile/game_over.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/ropa/desktop_tablet/modal/game_over.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/ropa/desktop_tablet/modal/game_over.webp" class="d-block w-100" alt="Segundo Producto de Remera retro games" title="Segundo Producto de Remera retro games">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/ropa/mobile/older.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/ropa/desktop_tablet/modal/older.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/ropa/desktop_tablet/modal/older.webp" class="d-block w-100" alt="Tercer Producto de Remera retro games" title="Tercer Producto de Remera retro games">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/ropa/mobile/p_man.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/ropa/desktop_tablet/modal/p_man.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/ropa/desktop_tablet/modal/p_man.webp" class="d-block w-100" alt="Cuarto Producto de Remera retro games" title="Cuarto Producto de Remera retro games">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/ropa/mobile/super_mario_bros.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/ropa/desktop_tablet/modal/super_mario_bros.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/ropa/desktop_tablet/modal/super_mario_bros.webp" class="d-block w-100" alt="Quinto Producto de Remera retro games" title="Quinto Producto de Remera retro games">
+                                                </picture>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselArticuloProducto5" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carruselArticuloProducto5" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3">
+                                        <h3>Descripción</h3>
+                                        <p class="my-2">Sacá a relucir tu nostalgia por esos juegos que marcaron tu infancia con estos nuevos modelos de remeras estampadas con la mejor 
+                                            calidad! Se suman los modelos de PacMan y Mario bros a la colección!
+                                        </p>
+                                        <h3>Características</h3>
+                                        <p>
+                                            100% algodon, talles disponibles desde el XS al XXL
+                                        </p>
+                                        <h3>Variedades</h3>
+                                        <ul>
+                                            <li>LvL UP</li>
+                                            <li>Game Over</li>
+                                            <li>PacMan</li>
+                                            <li>Super Mario Bros 85'</li>
+                                            <li>Super Mario</li>
+                                        </ul>
+                                        <h4 class="mt-3 text-end precio">Precio: <strong>$20000</strong></h4> 
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modal 6-->
+                <div class="modal fade" id="modalArticulo6" tabindex="-1" aria-labelledby="modalArticulo6" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">Macetas Super Mario Bros</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body container">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-6">
+                                        <div id="carruselArticuloProducto6" class="carousel slide" data-bs-ride="carrusel para producto seleccionado">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carruselIndicador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <picture>
+                                                    <source srcset="assets/maceta/mobile/mario.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/maceta/desktop_tablet/modal/mario.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/maceta/desktop_tablet/modal/mario.webp" class="d-block w-100" alt="Primer producto Macetas Super Mario Bros" title="Primer producto Macetas Super Mario Bros">
+                                                </picture>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <picture>
+                                                    <source srcset="assets/maceta/mobile/planta_p.webp" media="(max-width:576px)">
+                                                    <source srcset="assets/maceta/desktop_tablet/modal/planta_p.webp" media="(min-width:577px) and (max-width:991px)">
+                                                    <img src="assets/maceta/desktop_tablet/modal/planta_p.webp" class="d-block w-100" alt="Segundo producto Macetas Super Mario Bros" title="Segundo producto Macetas Super Mario Bros">
+                                                </picture>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselArticuloProducto6" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carruselArticuloProducto6" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-3">
+                                        <h3>Descripción</h3>
+                                        <p class="my-2">Si te gusta tener tu espacio verde cerca de tu lugar de gaming, nada mejor qué macetas con temática de Super Mario Bros para combinar 
+                                            con el ambiente! Cuidado con la planta piraña!
+                                        </p>
+                                        <h3>Características</h3>
+                                        <p>
+                                            Impresas en 3D con PLA resistente al agua.
+                                        </p>
+                                        <h3>Variedades</h3>
+                                        <ul>
+                                            <li>Planta Piraña</li>
+                                            <li>Caja sorpresa</li>
+                                            <li>Tubería</li>
+                                            <li>Ladrillo</li>
+                                        </ul>
+                                        <h4 class="mt-3 text-end precio">Precio: <strong>$2000</strong></h4> 
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonios -->
+        <section id="testimonios" class="py-5">
+            <h2 class="text-center pb-4">Testimonios</h2>
+            <div class="container">
+                <div class="row d-flex justify-content-center row-gap-3 row-lg-gap-0">
+                    <article class="card card-testimonios">
+                        <picture class="d-flex justify-content-center">
+                            <img src="assets/imagenes/Testimonios/1.png" class="img-fluid" alt="imagen persona" title="imagen de Micaela para testimonio">  
+                        </picture>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Micaela</h3>
+                            <p class="card-text fst-italic">"¡Un regalo para los gamers de corazón! Me encanta mi nueva alfombra retro. Es un verdadero tributo a mis juegos favoritos de la infancia. 
+                                La calidad es excelente y la alfombra es muy suave y cómoda."</p>
+                        </div>
+                    </article>
+                    <article class="card card-testimonios">
+                        <picture class="d-flex justify-content-center">
+                            <img src="assets/imagenes/Testimonios/2.png" class="" alt="imagen persona" title="imagen de Pablo para testimonio">  
+                        </picture>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Pablo</h3>
+                            <p class="card-text fst-italic">"La calidad es excelente y el cuadro es muy atractivo. ¡Es un regalo perfecto para cualquier gamer que ame la historia de los juegos y quiera 
+                                recordar los buenos tiempos."</p>
+                        </div>
+                    </article>
+                    <article class="card card-testimonios">
+                        <picture class="d-flex justify-content-center">
+                            <img src="assets/imagenes/Testimonios/3.png" class="" alt="imagen persona" title="imagen de Facundo para testimonio">  
+                        </picture>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Facundo</h3>
+                            <p class="card-text fst-italic">"Compré la remera de diseño de Super Mario Bros para mi hermano y le encantó, super suave y de buena calidad. El envío fue muy rápido!"</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Preguntas frecuentes -->
+        <section id="preguntasfrecuentes">
+            <div class="container py-5">
+                <h2 class="pb-2">Preguntas frecuentes</h2>
+                <p class="pb-1">
+                    ¿Tenés dudas o consultas? siempre podés contactarnos! pero antes <strong>te recomendamos revisar las preguntas frecuentes</strong> , tal vez tu duda esté resuelta y no tengas que esperar un solo segundo!.
+                </p>
+                <div class="row d-flex align-items-center">
+                    <div class="d-none d-lg-block col-lg-5 col-xxl-4">
+                        <picture>
+                            <img src="assets/imagenes/Question.jpg" alt="Imagen preguntas frecuentes" title="Imagen para de ? para preguntas frecuentes">
+                        </picture>
+                    </div>
+                    <div class="col-12 col-lg-7 col-xxl-8">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#preguntafrecuente1" aria-expanded="true" aria-controls="preguntafrecuente1">
+                                    ¿Realizan envíos a cualquier parte?
+                                    </button>
+                                </h3>
+                                <div id="preguntafrecuente1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Si! no importa de donde seas, podemos realizar el envío de tu compra.</strong> Los costos variarán según el peso, la distancia y si es un envío internacional o dentro de la Argentina.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preguntafrecuente2" aria-expanded="false" aria-controls="preguntafrecuente2">
+                                        Quiero enviar un producto como regalo, ¿es posible?
+                                    </button>
+                                </h3>
+                                <div id="preguntafrecuente2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Claro que si! envolveremos el producto y hasta puedes elegir adjuntar una tarjeta.</strong> siempre que quieras puedes marcar la opción de "Prerar para regalo" en el carrito de compras, rellenas los campos y nosotros nos encargamos del resto.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preguntafrecuente3" aria-expanded="false" aria-controls="preguntafrecuente3">
+                                    ¿Qué pasa si mi pedido llega roto o no es el correcto?
+                                    </button>
+                                </h3>
+                                <div id="preguntafrecuente3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Contamos con un servicio post-venta dispuesto a solucionar cualquier problema que se presente.</strong> Te pedimos que te contactes con nosotros y el equipo investigará el problema para que no tengas que preocuparte de nada.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preguntafrecuente4" aria-expanded="false" aria-controls="preguntafrecuente4">
+                                    ¿Cómo pagar tu compra?
+                                    </button>
+                                </h3>
+                                <div id="preguntafrecuente4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Podés pagar con cualquiera con los medios de pago (Efectivo, débito, crédito y/o transferencia) y <strong>tu compra va a estar 100% protegida</strong>. Si el producto no es lo que esperabas, te devolveremos el dinero.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section id="contacto">
+            <div class="container my-5">
+                <h2 class="text-center mb-5">Contacto</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="mb-3 col-12 col-lg-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3 col-12 col-lg-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>  
+                        <div class="mb-3 col-12 col-lg-6">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo">
+                        </div>
+                        <div class="mb-3 col-12 col-lg-6">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        <div class="mb-4 col-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>  
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" class="btn btn-primary w-50">
+                        </div>                
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="pt-5">
+        <section id="footer" class="py-5">
+            <h2 class="text-center pb-4">Nosotros</h2>
+            <div class="container">
+                <div class="row d-flex justify-content-center row-gap-3 row-lg-gap-0">
+                    <article class="card card-footer">
+                        <picture class="d-flex justify-content-center">
+                            <source media="(min-width: 577px)" srcset="assets/imagenes/footer/fotoAna.webp">
+                            <img src="assets/imagenes/footer/fotoAnaMobile.webp" class="img-fluid" alt="imagen del estudiante" title="Fotografía de la estudiante Ana Demarziani">  
+                        </picture>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Ana Demarziani</h3>
+                            <ul>
+                                <li><span class="f-blue-sblod">Fecha de nacimiento:</span>  06/12/1990</li>
+                                <li><span class="f-blue-sblod">E-Mail:</span> ana.demarziani@davinci.edu.ar</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-footer">
+                        <picture class="d-flex justify-content-center">
+                            <source media="(min-width: 577px)" srcset="assets/imagenes/footer/fotoGustavo.webp">
+                            <img src="assets/imagenes/footer/fotoGustavoMobile.webp" class="img-fluid" alt="imagen del estudiante" title="Fotografía de el estudiante Gustavo Gamero">  
+                        </picture>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Gustavo Gamero</h3>
+                            <ul>
+                                <li><span class="f-blue-sblod">Fecha de nacimiento:</span>  27/12/1994</li>
+                                <li><span class="f-blue-sblod">E-Mail:</span> gamero.gustavo@davinci.edu.ar</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card card-footer">
+                        <picture class="d-flex justify-content-center">
+                            <source media="(min-width: 577px)" srcset="assets/imagenes/footer/fotoDesi.webp">
+                            <img src="assets/imagenes/footer/fotoDesiMobile.webp" class="img-fluid" alt="imagen del estudiante" title="Fotografía de el estudiante Santino Desimone">    
+                        </picture>
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Santino Desimone</h3>
+                            <ul>
+                                <li><span class="f-blue-sblod">Fecha de nacimiento:</span> 10/05/2004</li>
+                                <li><span class="f-blue-sblod">E-Mail:</span> Santino.desimon@davinci.edu.ar</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
