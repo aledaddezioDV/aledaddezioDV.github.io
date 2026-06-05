@@ -1,0 +1,1068 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/estilos.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Commissioner:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--Icono -->
+  <link rel="icon" type="image/png" href="img/Icono-FITCITY.ico">
+  <title>FITCITY</title>
+</head>
+
+<body class="text-white">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark px-4 ">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Logo-FitCity.svg" alt="Logo de FITCITY" class="logo">
+        </a>
+        
+        <!-- Botón hamburguesa para móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar u ocultar menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Links de navegación -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <div class="navbar-nav gap-2 text-center ">
+            <a class="nav-link text-white nav-link-light" href="#nosotros">Sobre nosotros</a>
+            <a class="nav-link text-white nav-link-light" href="#ofrecemos">Qué ofrecemos</a>
+            <a class="nav-link text-white nav-link-light" href="#productos">Nuestros productos</a>
+            <a class="nav-link text-white nav-link-light" href="#app">Descargar App</a>
+            <a class="nav-link text-white nav-link-light" href="#contacto">Contacto</a>
+
+              <!-- Iconos Mobile (dentro del collapse) - -->
+              <div class="d-flex d-lg-none flex-column align-items-center gap-3 mt-2">
+                <a href="#" class="bg-transparent border-0 p-0" data-bs-toggle="modal" data-bs-target="#carritoVacioModal">
+                <img src="img/carrito.svg" alt="Carrito">
+                </a>
+                <div class="d-flex justify-content-center align-items-center mt-2">
+                  <button type="button" class="bg-transparent border-0 p-0" data-bs-toggle="modal" data-bs-target="#alumnoModal">
+                    <i class="bi bi-info-circle icon-circle social-pill"></i>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Iconos Desktop navbar - -->
+        
+        <a href="#" class="d-none d-lg-block ms-3 bg-transparent border-0 p-0" data-bs-toggle="modal" data-bs-target="#carritoVacioModal">
+          <img src="img/carrito.svg" alt="Carrito">
+        </a>
+        <button type="button" class="d-none d-lg-block ms-3 bg-transparent border-0 p-0" data-bs-toggle="modal" data-bs-target="#alumnoModal">
+          <i class="bi bi-info-circle icon-circle social-pill"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <!-- CARRUSEL DE FONDO -->
+      <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source srcset="img/imagen-1-small.jpg" media="(max-width: 480px)">
+              <source srcset="img/imagen-1-medium.jpg" media="(max-width: 768px)">
+              <img src="img/imagen-1.jpg" class="d-block w-100 " alt="Banner 1">
+            </picture>
+          </div>
+          
+          <div class="carousel-item">
+              <picture>
+                <source srcset="img/imagen-2-small.jpg" media="(max-width: 480px)">
+                <source srcset="img/imagen-2-medium.jpg" media="(max-width: 768px)">
+                <img src="img/imagen-2.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
+              </picture>
+          </div>
+          
+          <div class="carousel-item">
+            <picture>
+              <source srcset="img/imagen-3-small.jpg" media="(max-width: 480px)">
+              <source srcset="img/imagen-3-medium.jpg" media="(max-width: 768px)">
+              <img src="img/imagen-3.jpg" class="d-block w-100 img-fluid" alt="Banner 3">
+            </picture>
+          </div>
+          
+          <div class="carousel-item">
+            <picture>
+              <source srcset="img/imagen-4-small.jpg" media="(max-width: 480px)">
+              <source srcset="img/imagen-4-medium.jpg" media="(max-width: 768px)">
+              <img src="img/imagen-4.jpg" class="d-block w-100 img-fluid" alt="Banner 4">
+            </picture>
+          </div>
+
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="display-4 fw-bold text-white">
+            Tu <strong>mejor versión</strong> arranca <strong>en movimiento</strong>
+          </h1>
+  
+          <p class="mt-3 fs-5 text-white">
+            Ropas, calzado y accesorios deportivos de las mejores marcas
+          </p>
+  
+          <div class="mt-4 d-flex gap-3 flex-wrap justify-content-center">
+            <a href="#productos" class="btn btn-primary btn-lg  rounded-pill px-4">Ver productos</a>
+            <a href="#app" class="btn btn-outline-secondary btn-lg rounded-pill text-white px-4">Descargar App</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sponsor-section py-2 active">
+        <h2 class="text-center mb-4 visually-hidden">Marcas que confían en nosotros</h2>
+        <div id="sponsorCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+          <div class="carousel-inner d-flex align-items-center">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center gap-5 brand-track">
+                <img src="img/nike-logo.svg" alt="Nike" class="img-fluid">
+                <img src="img/adidas-logo.svg" alt="Adidas" class="img-fluid">
+                <img src="img/puma-logo.svg" alt="Puma" class="img-fluid">
+                <img src="img/jordan-logo.svg" alt="Jordan" class="img-fluid">
+                <img src="img/arena-logo.png" alt="Arena" class="img-fluid">
+                <img src="img/speedo-logo.png" alt="Speedo" class="img-fluid">
+                <img src="img/wilson-logo.svg" alt="Wilson" class="img-fluid">
+                <img src="img/everlast-logo.png" alt="Everlast" class="img-fluid">
+                
+                <!-- duplicados para efecto infinito -->
+                <img src="img/nike-logo.svg" alt="Nike" class="img-fluid">
+                <img src="img/adidas-logo.svg" alt="Adidas" class="img-fluid">
+                <img src="img/puma-logo.svg" alt="Puma" class="img-fluid">
+                <img src="img/jordan-logo.svg" alt="Jordan" class="img-fluid">
+                <img src="img/arena-logo.png" alt="Arena" class="img-fluid">
+                <img src="img/speedo-logo.png" alt="Speedo" class="img-fluid">
+                <img src="img/wilson-logo.svg" alt="Wilson" class="img-fluid">
+                <img src="img/everlast-logo.png" alt="Everlast" class="img-fluid">
+
+                <!-- duplicados para efecto infinito -->
+                <img src="img/nike-logo.svg" alt="Nike" class="img-fluid">
+                <img src="img/adidas-logo.svg" alt="Adidas" class="img-fluid">
+                <img src="img/puma-logo.svg" alt="Puma" class="img-fluid">
+                <img src="img/jordan-logo.svg" alt="Jordan" class="img-fluid">
+                <img src="img/arena-logo.png" alt="Arena" class="img-fluid">
+                <img src="img/speedo-logo.png" alt="Speedo" class="img-fluid">
+                <img src="img/wilson-logo.svg" alt="Wilson" class="img-fluid">
+                <img src="img/everlast-logo.png" alt="Everlast" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-nosotros-section" id="nosotros">
+      <div class="container">
+        <!-- Línea verde y título en la misma línea -->
+        <div class="d-flex align-items-center gap-4 mb-4">
+          <div class="linea-verde"></div>
+          <h2 class="mb-0">SOBRE NOSOTROS</h2>
+        </div>
+
+        <!-- Grid de contenido -->
+        <div class="content-grid">
+          <!-- Columna izquierda -->
+          <div class="left-column">
+            <img src="img/basketbolista.png" alt="Basketbolista" class="basketball-image">
+          </div>
+          
+          <!-- Columna derecha -->
+          <div class="right-column">
+            <div>
+              <p class="lh-base">
+                FITCITY nació con una idea simple: <strong>llevar el deporte a cada rincón de la ciudad.</strong> 
+                Somos una compañía, hecha por amantes del movimiento, pensada para quienes viven el entrenamiento como parte de su <em>estilo de vida</em>. 
+                Desde los primeros accesorios hasta la última rutina del día, queremos acompañarte en cada paso de tu camino fitness.
+                Fundada en Argentina por <em>Nicolás González</em>, FITCITY <strong>combina la energía del entorno urbano con la pasión por el deporte.</strong>
+                Creemos que entrenar no es solo una actividad, sino <em>una forma de expresarse, de liberar energía y de superarse a uno mismo.</em>
+              </p>
+            </div>
+            <img src="img/tenista.png" alt="Tenista" class="tennis-image">
+          </div>
+          <!-- Estrellas decorativas -->
+          <img src="img/estrella.svg" alt="Estrella verde" class="estrella-verde">
+          <img src="img/estrella-gris.svg" alt="Estrella gris" class="estrella-gris">
+        </div>
+      </div>
+
+        <div class="container mt-5">
+          <h2 class="text-center">Misión y Visión</h2>
+          <p class="lh-base text-center">
+            Nuestra misión es <strong>promover un estilo de vida activo y accesible</strong>, ofreciendo productos deportivos de calidad que inspiren a <em>moverte, entrenar y mantenerte motivado</em> todos los días. Tenemos como visión ser una <strong>marca líder en accesorios deportivos</strong>, reconocida por inspirar a las personas a moverse, entrenar y vivir activamente, sin importar el lugar ni el momento. Queremos construir una comunidad donde el deporte, la energía y el estilo se unan para transformar la forma en que la ciudad vive el fitness.
+            Apostamos por la <strong>innovación y la accesibilidad</strong>, acercando soluciones deportivas a cada barrio y a cada persona, sin importar su nivel o experiencia. Porque <em>moverse transforma</em>, y en FITCITY queremos que ese movimiento sea para todos, todos los días.
+          </p>
+        </div>
+
+        <div class="container mt-5">
+          <!-- Título -->
+          <h2 class="text-center fw-bold mb-5">VALORES</h2>
+
+          <!-- Grid de valores -->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-0">
+            <div class="col position-relative">
+                <div class="text-center p-4 h-100 d-flex flex-column align-items-center">
+                    <!-- Icono -->
+                    <div class="rounded-pill d-inline-flex align-items-center justify-content-center mb-3 valores-cirulo" >
+                      <img src="img/rayo.svg" alt="icono de energía">
+                    </div>
+                    
+                    <!-- Título -->
+                    <h3 class="h5 fw-bold mb-3">Energía</h3>
+                    
+                    <!-- Descripción -->
+                    <p class="small mb-0 text-white-50">
+                      Impulsamos el<br>movimiento constante,<br>físico y mental.
+                    </p>
+                </div>
+                
+                <!-- Línea divisoria vertical (oculta en móvil) -->
+                <div class="position-absolute top-0 end-0 h-100 border-end border-secondary d-none d-md-block"></div>
+            </div>
+
+            <!-- Autenticidad -->
+            <div class="col position-relative">
+                <div class="text-center p-4 h-100 d-flex flex-column align-items-center">
+                    <!-- Icono -->
+                    <div class="rounded-pill d-inline-flex align-items-center justify-content-center mb-3 valores-cirulo">
+                      <img src="img/musculo.svg" alt="icono de autenticidad">
+                    </div>
+                    
+                    <!-- Título -->
+                    <h3 class="h5 fw-bold mb-3">Autenticidad</h3>
+                    
+                    <!-- Descripción -->
+                    <p class="small mb-0 text-white-50">
+                        Creemos en el esfuerzo<br>real, sin filtros ni poses.
+                    </p>
+                </div>
+                
+                <!-- Línea divisoria vertical (oculta en móvil y tablet pequeña) -->
+                <div class="position-absolute top-0 end-0 h-100 border-end border-secondary d-none d-lg-block"></div>
+            </div>
+
+            <!-- Superación -->
+            <div class="col position-relative">
+                <div class="text-center p-4 h-100 d-flex flex-column align-items-center">
+                    <!-- Icono -->
+                    <div class="rounded-pill d-inline-flex align-items-center justify-content-center mb-3 valores-cirulo">
+                        <img src="img/medalla.svg" alt="icono de superación">
+                    </div>
+                    
+                    <!-- Título -->
+                    <h3 class="h5 fw-bold mb-3">Superación</h3>
+                    
+                    <!-- Descripción -->
+                    <p class="small mb-0 text-white-50">
+                        Cada día es una<br>oportunidad para ser tu<br>mejor versión.
+                    </p>
+                </div>
+                
+                <!-- Línea divisoria vertical (oculta en móvil) -->
+                <div class="position-absolute top-0 end-0 h-100 border-end border-secondary d-none d-md-block"></div>
+            </div>
+
+            <!-- Comunidad -->
+            <div class="col">
+                <div class="text-center p-4 h-100 d-flex flex-column align-items-center">
+                    <!-- Icono -->
+                    <div class="rounded-pill d-inline-flex align-items-center justify-content-center mb-3 valores-cirulo">
+                        <img src="img/comunidad.svg" alt="icono de comunidad">
+                    </div>
+                    
+                    <!-- Título -->
+                    <h3 class="h5 fw-bold mb-3">Comunidad</h3>
+                    
+                    <!-- Descripción -->
+                    <p class="small mb-0 text-white-50">
+                        Acompañamos a quienes<br>comparten la pasión por<br>entrenar.
+                    </p>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="bg-secundario py-5" id="ofrecemos">
+      <div class="container">
+        <!-- Línea verde y título alineados al contenedor principal -->
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="linea-verde"></div>
+          <h2 class="mb-0 text-white">QUÉ OFRECEMOS</h2>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-2 col-md-1"></div>
+          <!-- Acordeón -->
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item bg-primario">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-primario text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Equipamiento deportivo
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-primario text-white">
+                  Encontrá una amplia variedad de ropa, calzado y accesorios diseñados para acompañarte en cada entrenamiento. Calidad, comodidad y estilo en un solo lugar.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-primario">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bg-primario text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Accesorios para cada disciplina
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-primario text-white">
+                  Desde guantes y botellas hasta mochilas y bandas elásticas. Contamos con todo tipo de accesorios para que practiques tu deporte favorito con el mejor rendimiento.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-primario">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bg-primario text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Comunidad FITCITY
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-primario text-white">
+                  Sumate a una comunidad que vive el deporte con pasión. Compartí tu experiencia, descubrí nuevas marcas y accedé a beneficios exclusivos.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-primario">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed bg-primario text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Beneficios exclusivos
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-primario text-white">
+                  Accedé a descuentos, sorteos y eventos especiales pensados para la comunidad FITCITY. ¡No te pierdas las novedades y oportunidades únicas!
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-primario">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed bg-primario text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Soporte personalizado
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-primario text-white">
+                  Contá con nuestro equipo para resolver tus dudas, recibir asesoramiento y mejorar tu experiencia de compra en FITCITY.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="productos-section py-5 container" id="productos">
+      <div class="container">
+        <!-- Título -->
+        <div class="d-flex align-items-center gap-3 mb-5">
+          <div class="linea-verde"></div>
+          <h2 class="mb-0 text-white">NUESTROS PRODUCTOS</h2>
+        </div>
+
+        <!-- Carrusel 1: Calzado y Accesorios -->
+        <h3 class="text-white mb-4">Calzado y Accesorios</h3>
+        <div id="productosCarousel1" class="carousel slide mb-5" data-bs-ride="carousel">
+          <!-- Items del carrusel -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <picture>
+                      <source srcset="img/zapatillas.jpg" media="(max-width: 480px)">
+                      <source srcset="img/zapatillas-medium.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+                      <img src="img/zapatillas.jpg" alt="Zapatillas deportivas" class="card-img-top">
+                    </picture>
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Zapatillas Running Hombre</h4>
+                      <p class="card-text producto-descripcion">Nueva silueta atrevida y un empeine elegante, estas zapatillas ofrecen comodidad y rendimiento.</p>
+                      <p class="producto-precio">$89.999</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <picture>
+                      <source srcset="img/raqueta-tenis.jpg" media="(max-width: 480px)">
+                      <source srcset="img/raqueta-tenis-medium.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+                      <img src="img/raqueta-tenis.jpg" alt="Raqueta de tenis" class="card-img-top">
+                    </picture>
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Raqueta Pro</h4>
+                      <p class="card-text producto-descripcion">La textura de la superficie, inspirada en la piel de tiburón, suaviza el flujo de aire sobre la raqueta</p>
+                      <p class="producto-precio">$332.543</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/set-mancuernas.jpg" alt="Mancuernas 20kg" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Set Mancuernas 20kg</h4>
+                      <p class="card-text producto-descripcion">Con centro de acero sólido y revestidas en goma de alto impacto.</p>
+                      <p class="producto-precio">$54.999</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/producto-1-min.jpg" alt="Remera Dry-Fit Nike" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Remera Dry-Fit Nike</h4>
+                      <p class="card-text producto-descripcion">Tecnología anti-transpiración, Fabricada con tecnología de secado rápido y control de humedad.</p>
+                      <p class="producto-precio">$16.999</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/botella-termica.jpg" alt="Botella Térmica Everlast" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Botella Térmica Everlast</h4>
+                      <p class="card-text producto-descripcion">Mantiene temperatura 24hs. No tóxico, antibacteriano, Inodoro, duradero, fácil de lavar</p>
+                      <p class="producto-precio">$28.500</p>
+                      <button type="button" class="btn btn-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <picture>
+                      <source srcset="img/guantes-boxeo.jpg" media="(max-width: 480px)">
+                      <source srcset="img/guantes-boxeo-medium.jpg" media="(min-width: 768px) and (max-width: 1024px)">
+                      <img src="img/guantes-boxeo.jpg" alt="Guantes de boxeo" class="card-img-top">
+                    </picture>
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Guantes de Boxeo Adidas</h4>
+                      <p class="card-text producto-descripcion">Diseñados para proporcionar una combinación perfecta de confort, durabilidad y protección</p>
+                      <p class="producto-precio">$32.000</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/mochila.webp" alt="Mochila urbana Wilson" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Mochila urbana Wilson</h4>
+                      <p class="card-text producto-descripcion">Ideal para estudiantes, deportistas y quienes buscan una opción práctica para el gimnasio o el uso diario.</p>
+                      <p class="producto-precio">$28.500</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/antiparras.webp" alt="Antiparras arena" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Antiparras arena</h4>
+                      <p class="card-text producto-descripcion">Lo último en tecnología desarrollada para competencia y alto rendimiento.</p>
+                      <p class="producto-precio">$142.000</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/gorra-natacion.jpg" alt="Gorra de natación Speedo" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Gorra de natación Speedo</h4>
+                      <p class="card-text producto-descripcion">Gorra para natación Speedo elaborada en silicona con diseño reversible.</p>
+                      <p class="producto-precio">$19.999</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <!-- Carrusel 2: Ropa Deportiva -->
+        <h3 class="text-white mb-4 mt-5">Ropa Deportiva</h3>
+        <div id="productosCarousel2" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/conjunto.jpg" alt="Conjunto deportivo" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Conjunto Training Adidas</h4>
+                      <p class="card-text producto-descripcion">Campera + Pantalón deportivo. Ambas prendas se han confeccionado en un tejido técnico con un tacto muy suave.</p>
+                      <p class="producto-precio">$104.999</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/calza-fit.jpg" alt="Calza deportiva" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Calza Fitness</h4>
+                      <p class="card-text producto-descripcion">Alta compresión. La calza que transformará sus rutinas en aventuras llenas de estilo y confort.</p>
+                      <p class="producto-precio">$22.500</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/campera-outdoor.jpg" alt="Campera deportiva" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Campera Outdoor</h4>
+                      <p class="card-text producto-descripcion">Campera 100% impermeable y respirable ultraliviana para toda actividad outdoor y urbana</p>
+                      <p class="producto-precio">$215.000</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/top-deportivo.webp" alt="Top deportivo Puma" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Top Deportivo Puma</h4>
+                      <p class="card-text producto-descripcion">Acelerá tu programa de entrenamiento con un soporte que no te abandona.</p>
+                      <p class="producto-precio">$59.999</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/jogger.avif" alt="Pantalón jogger Nike" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Jogger Premium Nike</h4>
+                      <p class="card-text producto-descripcion">Pantalones hechos con algodon y elastano con muchas características para que sean cálidos para el clima frío.</p>
+                      <p class="producto-precio">$42.350</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/buzoavif.avif" alt="Buzo deportivo" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Buzo Hoodie</h4>
+                      <p class="card-text producto-descripcion">Buena calidad y ajuste fiel al talle, siendo ideal para media estación debido a su ligereza.</p>
+                      <p class="producto-precio">$61.999</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <!-- Carrusel 3: Equipamiento Gym -->
+        <h3 class="text-white mb-4 mt-5">Equipamiento Gym</h3>
+        <div id="productosCarousel3" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/barra-olimpica.png" alt="Barra con discos" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Set Barra Olímpica</h4>
+                      <p class="card-text producto-descripcion">Incluye 100kg en discos, preparados para un entrenamiento intensivo y apto para deportistas de élite</p>
+                      <p class="producto-precio">$884.000</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/banco-regulable.jpeg" alt="Banco multiposición" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Banco Regulable</h4>
+                      <p class="card-text producto-descripcion">8 posiciones ajustables para adaptarlos a distintos ejercicios musculares.</p>
+                      <p class="producto-precio">$994.020</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/Pesa-rusa.jpg" alt="Pesa rusa" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Pesa rusa 16kg</h4>
+                      <p class="card-text producto-descripcion">Con una sola pesa rusa puedes entrenar todo el cuerpo. Hecha con hierro fundido premium.</p>
+                      <p class="producto-precio">$98.592</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/caminadora.png" alt="Caminadora elíptica" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Caminadora elíptica</h4>
+                      <p class="card-text producto-descripcion">Sistema de resistencia magnética que permite ajustar la intensidad de manera progresiva. Hecha para todos los niveles</p>
+                      <p class="producto-precio">$475.000</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/soga.jpeg" alt="Soga de saltar" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Soga Speed Rope</h4>
+                      <p class="card-text producto-descripcion">Hecha con cable de acero recubierto en PVC garantiza un giro rápido y fluido, reduciendo la fricción y el desgaste.</p>
+                      <p class="producto-precio">$7.800</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="card producto-card">
+                    <img src="img/rueda-abdominal.webp" alt="Rueda abdominal" class="card-img-top">
+                    <div class="card-body">
+                      <h4 class="card-title producto-titulo">Rueda abdominal</h4>
+                      <p class="card-text producto-descripcion">Fortalece el core, brazos y hombros con un movimiento controlado y estable.</p>
+                      <p class="producto-precio">$13.200</p>
+                      <button type="button" class="btn btn-primary w-100 rounded-pill" data-bs-toggle="modal" data-bs-target="#carritoModal">Añadir al carrito</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Carrito -->
+      <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-secundario text-white">
+            <div class="modal-header border-0">
+              <h2 class="modal-title h5" id="carritoModalLabel">¡Producto agregado!</h2>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center py-4">
+              <div class="mb-3">
+                <img src="img/check-modal.svg" class="modal-check" alt="Icono de check">
+              </div>
+              <p class="mb-0 fs-5">El producto se agregó al carrito</p>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+              <button type="button" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal">Continuar comprando</button>
+              <button type="button" class="btn btn-outline-secondary rounded-pill px-4">Ver carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Alumno -->
+      <div class="modal fade" id="alumnoModal" tabindex="-1" aria-labelledby="alumnoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-secundario text-white">
+            <div class="modal-header border-0">
+              <h2 class="modal-title h5" id="alumnoModalLabel">Información del Alumno</h2>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body alumno-modal-body">
+              <div class="alumno-foto-container">
+                <img src="img/foto-alumno.png" alt="Foto del alumno" class="alumno-foto">
+              </div>
+              <div class="alumno-info-container">
+                <div class="alumno-info-item">
+                  <strong>Nombre:</strong> Nicolás González
+                </div>
+                <div class="alumno-info-item">
+                  <strong>Edad:</strong> 18 años
+                </div>
+                <div class="alumno-info-item" >
+                  <strong>Email:</strong>
+                  <a href="mailto:nicolas.gonzalez01@davinci.edu.ar">nicolas.gonzalez01@davinci.edu.ar</a>
+                </div>
+                <div class="alumno-redes-titulo">
+                  <strong>Redes Sociales:</strong>
+                </div>
+                <div class="alumno-redes-container">
+                  <a href="https://www.instagram.com/" class="social-pill icon-circle" aria-label="Abrir Instagram">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.tiktok.com/" class="social-pill icon-circle" aria-label="Abrir TikTok">
+                    <i class="bi bi-tiktok"></i>
+                  </a>
+                  <a href="https://www.facebook.com/" class="social-pill icon-circle" aria-label="Abrir Facebook">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Carrito Vacío -->
+      <div class="modal fade" id="carritoVacioModal" tabindex="-1" aria-labelledby="carritoVacioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-secundario text-white">
+            <div class="modal-header border-0">
+              <h2 class="modal-title h5" id="carritoVacioModalLabel">Tu carrito está vacío</h2>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center py-4">
+              <div class="mb-3">
+                <img src="img/triste.png" class="modal-check" alt="Carrito vacío">
+              </div>
+              <p class="mb-0 fs-5">Parece que aún no has agregado productos a tu carrito.</p>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+              <a href="#productos" class="btn btn-primary rounded-pill px-4">Explorar productos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section class="py-5 bg-secundario" id="app">
+      <div class="container">
+        <!-- Título -->
+        <div class="d-flex align-items-center gap-3 mb-5">
+          <div class="linea-verde"></div>
+          <h2 class="mb-0">DESCARGA LA APP</h2>
+        </div>
+        <div class="row align-items-center">
+          <!-- Imagen de la app -->
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+            <img src="img/app-mockup.png" alt="Mockup de la aplicación móvil" class="img-fluid">
+          </div>
+  
+          <!-- Descripción y botones de descarga -->
+          <div class="col-md-6">
+            <p class="mb-4 lh-base">
+              Entrená, explorá y equipate estés donde estés. Con la app de FITCITY vas a poder <strong>descubrir nuevos productos, acceder a ofertas exclusivas y armar tu propio espacio de entrenamiento desde el celular.</strong> Todo lo que necesitás para mantenerte en movimiento, ahora en un solo lugar. Descargá FITCITY y equipá tu energía desde la palma de tu mano.
+            </p>
+            <ul class="list-group list-group-flush mt-3 mb-4">
+              <li class="list-group-item bg-primario text-white">
+                📊 Seguimiento de tus pedidos y compras en tiempo real.
+              </li>
+              <li class="list-group-item bg-primario text-white">
+                💳 Múltiples métodos de pago: tarjeta, billeteras virtuales y más.
+              </li>
+              <li class="list-group-item bg-primario text-white">
+                🔔 Activá notificaciones personalizadas para no perderte ofertas.
+              </li>
+              <li class="list-group-item bg-primario text-white">
+                📍 Descubrí tiendas FITCITY cercanas con nuestro localizador integrado.
+              </li>
+              <li class="list-group-item bg-primario text-white">
+                ⭐ Guardá tus productos favoritos y creá tu lista de deseos.
+              </li>
+              <li class="list-group-item bg-primario text-white">
+                👥 Unite a la comunidad FITCITY y compartí tu progreso.
+              </li>
+              <li class="list-group-item bg-primario text-white">
+                ⚡ Descargá actualizaciones con nuevos lanzamientos y desafíos.
+              </li>
+            </ul>
+  
+            <div class="d-flex flex-column flex-lg-row gap-3">
+              <a href="https://play.google.com/store/apps" class="btn btn-primary btn-m rounded-pill px-4 w-100 w-lg-auto" target="_blank">Descargar para Android</a>
+              <a href="https://www.apple.com/app-store/" class="btn btn-outline-secondary btn-m rounded-pill text-white px-4 w-100 w-lg-auto" target="_blank">Descargar para IOS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primario" id="contacto">
+      <div class="container py-5">
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <div class="linea-verde"></div>
+          <h2 class="mb-0">CONTACTANOS</h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Formulario -->
+          <div class="col-lg-7">
+            <form class="contacto-form" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder=" " required>
+                    <label for="nombre">Nombre*</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder=" " required>
+                    <label for="apellido">Apellido*</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email*</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder=" ">
+                    <label for="telefono">Teléfono</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div>
+                    <select class="form-select" id="motivo" name="motivo" aria-label="Seleccione motivo" required>
+                      <option value="" disabled selected>Seleccione motivo*</option>
+                      <option value="1">Consulta sobre productos</option>
+                      <option value="2">Problemas con la entrega o envío</option>
+                      <option value="3">Opiniones o sugerencias</option>
+                      <option value="4">Asesoramiento en compras</option>
+                      <option value="5">Colaboración o alianza comercial</option>
+                      <option value="6">Consultas sobre la app FITCITY</option>
+                      <option value="7">Otro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-floating">
+                  <textarea class="form-control" id="floatingTextarea2" placeholder=" " required></textarea>
+                  <label for="floatingTextarea2">Comentarios*</label>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check d-flex align-items-start gap-2 mb-2">
+                    <input class="form-check-input mt-1" type="checkbox" id="promo" name="promo">
+                    <label class="form-check-label" for="promo">
+                      Acepto recibir novedades y promociones de FITCITY.
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-start gap-2">
+                    <input class="form-check-input mt-1" type="checkbox" id="tyc" name="tyc" required>
+                    <label class="form-check-label" for="tyc">
+                      Acepto los <a href="#" class="link-terminos">terminos y condiciones</a>.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary rounded-pill w-100 px-4 py-2">Enviar</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+          <!-- Panel de contacto -->
+          <div class="col-lg-5">
+            <div class="contacto-panel panel-dark h-100 rounded-4 p-4">
+              <h3 class="h4 mb-3">Dirección</h3>
+              <p class="mb-4 text-white-50">Av. Santa Fe 2458, Palermo, CABA,<br> Buenos Aires, Argentina.</p>
+
+              <h3 class="h4 mb-3">Teléfono</h3>
+              <p class="mb-4 text-white-50">+54 11 4567-9821</p>
+
+              <h3 class="h4 mb-3">Horarios de atención</h3>
+              <p class="mb-4 text-white-50">Lunes a viernes: 9:00 a 20:00 hs<br>Sábados: 10:00 a 18:00 hs</p>
+
+              <h3 class="h4 mb-3">Redes sociales</h3>
+              <div class="d-flex gap-3">
+                <a href="https://www.instagram.com/" class="social-pill icon-circle" aria-label="Abrir Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/" class="social-pill icon-circle" aria-label="Abrir TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/" class="social-pill icon-circle" aria-label="Abrir Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/" class="social-pill icon-circle" aria-label="Abrir YouTube"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.370244715281!2d-58.404509123526225!3d-34.594798072957445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca90c1b39e6f%3A0xa2789b4d984029f1!2sAv.%20Sta.%20Fe%202458%2C%20C1123AAT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1762476424277!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="sponsor-section py-2 active">
+        <h2 class="text-center mb-4 visually-hidden">Marcas que confían en nosotros</h2>
+        <div id="sponsorCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+          <div class="carousel-inner d-flex align-items-center">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center gap-5 brand-track">
+                <img src="img/nike-logo.svg" alt="Nike" class="img-fluid">
+                <img src="img/adidas-logo.svg" alt="Adidas" class="img-fluid">
+                <img src="img/puma-logo.svg" alt="Puma" class="img-fluid">
+                <img src="img/jordan-logo.svg" alt="Jordan" class="img-fluid">
+                <img src="img/arena-logo.png" alt="Arena" class="img-fluid">
+                <img src="img/speedo-logo.png" alt="Speedo" class="img-fluid">
+                <img src="img/wilson-logo.svg" alt="Wilson" class="img-fluid">
+                <img src="img/everlast-logo.png" alt="Everlast" class="img-fluid">
+                
+                <!-- duplicados para efecto infinito -->
+                <img src="img/nike-logo.svg" alt="Nike" class="img-fluid">
+                <img src="img/adidas-logo.svg" alt="Adidas" class="img-fluid">
+                <img src="img/puma-logo.svg" alt="Puma" class="img-fluid">
+                <img src="img/jordan-logo.svg" alt="Jordan" class="img-fluid">
+                <img src="img/arena-logo.png" alt="Arena" class="img-fluid">
+                <img src="img/speedo-logo.png" alt="Speedo" class="img-fluid">
+                <img src="img/wilson-logo.svg" alt="Wilson" class="img-fluid">
+                <img src="img/everlast-logo.png" alt="Everlast" class="img-fluid">
+
+                <!-- duplicados para efecto infinito -->
+                <img src="img/nike-logo.svg" alt="Nike" class="img-fluid">
+                <img src="img/adidas-logo.svg" alt="Adidas" class="img-fluid">
+                <img src="img/puma-logo.svg" alt="Puma" class="img-fluid">
+                <img src="img/jordan-logo.svg" alt="Jordan" class="img-fluid">
+                <img src="img/arena-logo.png" alt="Arena" class="img-fluid">
+                <img src="img/speedo-logo.png" alt="Speedo" class="img-fluid">
+                <img src="img/wilson-logo.svg" alt="Wilson" class="img-fluid">
+                <img src="img/everlast-logo.png" alt="Everlast" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-section py-5 bg-secundario">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Columna 1: Logo y Copyright -->
+        <div class="col-lg-3 col-md-6 navbar-brand">
+          <a href="index.html">
+            <img src="img/Logo-FitCity.svg" alt="Logo FITCITY" class="mb-3">
+          </a>
+          <p class="text-white-50 small mb-0">© FITCITY 2025 · Todos los derechos reservados</p>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="h5 mb-3 text-white">Navegación</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#nosotros" class=" nav-link-light text-white">Sobre nosotros</a></li>
+            <li class="mb-2"><a href="#ofrecemos" class=" nav-link-light text-white">Que ofrecemos</a></li>
+            <li class="mb-2"><a href="#productos" class=" nav-link-light text-white">Nuestros productos</a></li>
+            <li class="mb-2"><a href="#app" class="nav-link-light text-white">Descargar App</a></li>
+            <li class="mb-2"><a href="#contacto" class=" nav-link-light text-white">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Redes Sociales -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="h5 mb-3 text-white">Redes sociales</h3>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/" class="social-pill icon-circle" aria-label="Abrir Instagram" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/" class="social-pill icon-circle" aria-label="Abrir TikTok" target="_blank">
+              <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/" class="social-pill icon-circle" aria-label="Abrir Facebook" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/" class="social-pill icon-circle" aria-label="Abrir YouTube" target="_blank">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 4: Acerca del alumno -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="h5 mb-3 text-white">Acerca del alumno</h3>
+          <button type="button" class="social-pill icon-circle border-0 p-0" data-bs-toggle="modal" data-bs-target="#alumnoModal" aria-label="Información del alumno">
+            <i class="bi bi-info-circle"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

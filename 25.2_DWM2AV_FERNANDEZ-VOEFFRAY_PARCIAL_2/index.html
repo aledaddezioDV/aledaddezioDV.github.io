@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementa Ritual Shop</title>
+    <link rel="icon" type="image/png" href="img/iconos/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header id="inicio">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand logo">
+                    <h1 class="visually-hidden">Elementa Ritual Shop</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                    aria-controls="menuNavegacion" aria-expanded="false" aria-label="Botón menú de navegación">
+                    <span class="navbar-toggler-icon"><span class="visually-hidden">Botón menú de
+                            navegación</span></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav align-items-center ms-lg-auto pb-0">
+                        <li class="nav-item"><a class="nav-link" href="#introduccion">Sobre Elementa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#elementos">Elementos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#test">Descubrí tu elemento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item icono-nosotras text-center"><a href="#" data-bs-toggle="modal"
+                                data-bs-target="#modalNosotras"><span class="visually-hidden">Desarrolladoras</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section aria-label="Banners principales">
+            <div id="bannersInicio" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#bannersInicio" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Diapositiva 1"></button>
+                    <button type="button" data-bs-target="#bannersInicio" data-bs-slide-to="1"
+                        aria-label="Diapositiva 2"></button>
+                    <button type="button" data-bs-target="#bannersInicio" data-bs-slide-to="2"
+                        aria-label="Diapositiva 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/banners/bannerpcgrande1.jpg">
+                            <source media="(min-width: 992px)" srcset="img/banners/bannerpc1.jpg">
+                            <source media="(min-width: 577px)" srcset="img/banners/bannertablet1.jpg">
+                            <img src="img/banners/bannermobile1.jpg" class="d-block w-100"
+                                alt="Banner con fotos de productos Elementa">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/banners/bannerpcgrande2.jpg">
+                            <source media="(min-width: 992px)" srcset="img/banners/bannerpc2.jpg">
+                            <source media="(min-width: 577px)" srcset="img/banners/bannertablet2.jpg">
+                            <img src="img/banners/bannermobile2.jpg" class="d-block w-100"
+                                alt="Banner con productos Elementa">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/banners/bannerpcgrande3.jpg">
+                            <source media="(min-width: 992px)" srcset="img/banners/bannerpc3.jpg">
+                            <source media="(min-width: 577px)" srcset="img/banners/bannertablet3.jpg">
+                            <img src="img/banners/bannermobile3.jpg" class="d-block w-100"
+                                alt="Banner con foto de sahumerios Elementa">
+                        </picture>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannersInicio"
+                    data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bannersInicio"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+
+        <section id="introduccion" class="container-fluid py-4">
+            <div class="container">
+
+                <h2 class="fs-1 mb-0 mt-3 text-center text-md-start">Elementa</h2>
+                <p id="subtituloIntro" class="mt-0 text-center text-md-start">Conectá con lo esencial</p>
+
+                <div class="row mt-4">
+                    <div class="col-md-6 col-lg-4 order-1">
+                        <p><strong>Elementa nace de una intención simple y profunda: recuperar la conexión con lo
+                                esencial.</strong>
+                                Creemos que el bienestar comienza en los pequeños gestos de cada día, en la forma en que
+                                respiramos, encendemos una vela, abrimos una ventana o cuidamos el espacio que habitamos.</p>
+                        <p><strong>Somos una marca holística que honra la naturaleza y el poder transformador de los
+                                rituales cotidianos.</strong> Apostamos a una vida más consciente, sensorial y presente; una vida
+                                en la que el hogar se convierta en refugio y cada acción cotidiana pueda sostener una intención.</p>
+                    </div>
+
+                    <figure class="col-md-6 col-lg-4 order-2 order-lg-3 ">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="img/productos/sobreElementaTablet.jpg">
+                            <img src="img/productos/sobreElementaMobile.jpg" class="img-fluid rounded-4 text-center"
+                                alt="Local elementa">
+                        </picture>
+                    </figure>
+
+                    <div class="col-md-12 col-lg-4 order-3 order-lg-2 ">
+                        <p>
+                            <strong>Nuestro objetivo es acercarte elementos para tu bienestar, accesibles, bellos y
+                                conscientes, que te inspiren a crear momentos de calma, presencia y equilibrio.</strong> <em>No es magia
+                                ni brujería: es una invitación a conectar con tu verdadera esencia, escuchar tu energía y habitar tus
+                                emociones con honestidad y presencia.</em> Trabajamos con procesos artesanales y materiales nobles,
+                                honrando los ciclos de la naturaleza y promoviendo una forma de habitar más armónica y significativa.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="elementos" class="container-fluid py-4">
+            <div class="container">
+
+                <div class="row align-items-stretch">
+                    <div class="col-12 col-md-6 order-1 order-md-2 text-md-end lh-lg-2">
+                        <h2 class="my-4">Los cinco elementos</h2>
+                        <p><strong>Según tradiciones orientales milenarias, todo en el universo está compuesto por cinco
+                                energías
+                                primordiales: Agua, Fuego, Tierra, Aire y Éter.</strong> Cada una habita en la
+                                naturaleza, en los ciclos del mundo y también en nuestra vida cotidiana: en lo que sentimos, en cómo
+                                pensamos y en la forma en que creamos y habitamos nuestros espacios.</p>
+                        <p><em>Inspirados en esta filosofía, en Elementa Ritual Shop diseñamos una colección de
+                                productos que representan a cada uno de estos elementos, para acompañarte en distintos momentos y
+                                necesidades: calmar, activar, purificar, enraizar o conectar.</em></p>
+                    </div>
+
+                    <figure class="col-12 col-md-6 col-lg-12 mt-4 order-2 order-md-1 text-center">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/elementos/descubriTuElementoPC.jpg">
+                            <source media="(min-width:768px)" srcset="img/elementos/descubriTuElementoTablet.jpg">
+                            <img src="img/elementos/descubriTuElementoMobile.jpg" class="img-fluid rounded-4"
+                                alt="Imagen con dibujos de los cinco elementos">
+                        </picture>
+                    </figure>
+
+                    <div class="col-12 col-md-12 col-lg-6 order-3 text-md-center text-lg-start mx-md-auto">
+                        <h3 class="my-4">Características generales</h3>
+                        <ul class="ps-0 ms-0">
+                            <li class="my-3 pb-3 pb-lg-1"><strong>Aromas de origen natural,</strong> creados con esencias botánicas seleccionadas.</li>
+                            <li class="my-3 pb-3 pb-lg-1"><strong>Elaboración artesanal</strong>, en pequeñas partidas y con intención en cada proceso.</li>
+                            <li class="my-3 pb-3 pb-lg-1"><strong>Sin químicos agresivos ni fragancias artificiales.</strong></li>
+                            <li class="my-3 pb-3 pb-lg-1"><strong>Diseño consciente, pensado para armonizar tus espacios con calidez y propósito.</strong></li>
+                            <li class="my-3 pb-3 pb-lg-1"><strong>Inspirados en los cinco elementos</strong>, para acompañar distintos estados emocionales y necesidades cotidianas.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="productos" class="container-fluid py-5 container-lg">
+            <h2 class="col-sm-12 col-lg-12 text-md-center px-3 mb-3">Productos</h2>
+            <div
+                class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mx-0 px-2 align-items-stretch justify-content-center">
+                <div class="col">
+                    <article class="card rounded-4 h-100">
+                        <picture>
+                            <source media="(min-width: 577px)" srcset="img/productos/enraizarTablet.jpg">
+                            <img src="img/productos/enraizarMobile.jpg" class="card-img-top rounded-top-4"
+                                alt="Fotografía de piedras naturales">
+                        </picture>
+                        <div class="card-body pb-0">
+                            <h3 class="card-title text-center">Enraizar <span class="pb-2">· Set piedras naturales
+                                    ·</span></h3>
+                            <p class="card-text">Exclusivamente seleccionadas por sus propiedades de seguridad, calma
+                                mental
+                                y estabilidad. Funcionan como ancla energética para volver al presente.</p>
+                            <p class="card-text mb-0"><span class="negrita">Elemento:</span> Tierra</p>
+                            <p><span class="negrita">Intención:</span> Bajar a tierra, enfocar, ordenar y sostener.</p>
+                        </div>
+                        <div class="card-footer row align-items-center border-0 py-0 bg-transparent mx-1 mb-2">
+                            <p class="card-text col fs-4 my-3 text-sm-center text-lg-start">$15.300</p>
+                            <a href="#" class="btn btn-primary rounded-pill col border-0 card-link"
+                                data-bs-toggle="modal" data-bs-target="#modalCarrito">Agregar</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card rounded-4 h-100">
+                        <picture>
+                            <source media="(min-width: 577px)" srcset="img/productos/fluirTablet.jpg">
+                            <img src="img/productos/fluirMobile.jpg" class="card-img-top rounded-top-4"
+                                alt="Fotografía de bruma armonizante">
+                        </picture>
+                        <div class="card-body pb-0">
+                            <h3 class="card-title text-center">Fluir <span class="pb-2">· Bruma armonizante ·</span>
+                            </h3>
+                            <p class="card-text">Ideal para rociar sobre
+                                el cuerpo. Suave y contenedora, invita a relajar tensiones y permitir que las
+                                emociones circulen sin resistencia.</p>
+                            <p class="card-text mb-0"><span class="negrita">Elemento:</span> Agua</p>
+                            <p><span class="negrita">Intención:</span> Calmar la mente, suavizar el alma y soltar lo que
+                                pesa.</p>
+                        </div>
+                        <div class="card-footer row align-items-center border-0 py-0 bg-transparent mx-1 mb-2">
+                            <p class="card-text col fs-4 my-3 text-sm-center text-lg-start">$12.000</p>
+                            <a href="#" class="btn btn-primary rounded-pill col border-0 card-link"
+                                data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                                Agregar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card rounded-4 h-100">
+                        <picture>
+                            <source media="(min-width: 577px)" srcset="img/productos/encenderTablet.jpg">
+                            <img src="img/productos/encenderMobile.jpg" class="card-img-top rounded-top-4"
+                                alt="Fotografía de vela aromática artesanal">
+                        </picture>
+                        <div class="card-body pb-0">
+                            <h3 class="card-title text-center">Encender <span class="pb-2">· Vela aromática ·</span>
+                            </h3>
+                            <p class="card-text">De cera vegetal con notas de canela y
+                                jazmín, diseñada para despertar la fuerza creativa. Su llama
+                                simboliza la acción y la decisión interna de avanzar.</p>
+                            <p class="card-text mb-0"><span class="negrita">Elemento:</span> Fuego</p>
+                            <p><span class="negrita">Intención:</span> Activar la energía vital, impulsar
+                                proyectos y encender el propósito.</p>
+                        </div>
+                        <div class="card-footer row align-items-center border-0 py-0 bg-transparent mx-1 mb-2">
+                            <p class="card-text col fs-4 my-3 text-sm-center text-lg-start">$10.000</p>
+                            <a href="#" class="btn btn-primary rounded-pill col border-0 card-link"
+                                data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                                Agregar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card rounded-4 h-100">
+                        <picture>
+                            <source media="(min-width: 577px)" srcset="img/productos/respirarTablet.jpg">
+                            <img src="img/productos/respirarMobile.jpg" class="card-img-top rounded-top-4"
+                                alt="Fotografía de sahumerios artesanales">
+                        </picture>
+                        <div class="card-body pb-0">
+                            <h3 class="card-title text-center">Respirar <span class="pb-2">· Sahumerios purificantes
+                                    ·</span>
+                            </h3>
+                            <p class="card-text">Set de sahumerios artesanales elaborados para limpiar el
+                                ambiente y mover la energía estancada. Representan el pensamiento claro y la inspiración
+                                para crear nuevas ideas.</p>
+                            <p class="card-text mb-0"><span class="negrita">Elemento:</span> Aire</p>
+                            <p><span class="negrita">Intención:</span> Purificar, renovar y traer aire fresco al
+                                presente.
+                            </p>
+                        </div>
+                        <div class="card-footer row align-items-center border-0 py-0 bg-transparent mx-1 mb-2">
+                            <p class="card-text col fs-4 my-3 text-sm-center text-lg-start">$14.000</p>
+                            <a href="#" class="btn btn-primary rounded-pill col border-0 card-link"
+                                data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                                Agregar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card rounded-4 h-100 align-md-center">
+                        <picture>
+                            <source media="(min-width: 577px)" srcset="img/productos/elevarTablet.jpg">
+                            <img src="img/productos/elevarMobile.jpg" class="card-img-top rounded-top-4"
+                                alt="Fotografía de elixir aromático">
+                        </picture>
+                        <div class="card-body pb-0">
+                            <h3 class="card-title text-center">Elevar <span class="pb-2">· Elixir de conexión ·</span>
+                            </h3>
+                            <p class="card-text">Elixir aromático con aceites esenciales florales y cuarzo
+                                triturado, creado para elevar la vibración y fortalecer la intuición. Representa lo
+                                sutil,
+                                lo espiritual y la conexión con la propia esencia</p>
+                            <p class="card-text mb-0"><span class="negrita">Elemento:</span> Éter</p>
+                            <p><span class="negrita">Intención:</span> Expandir, integrar y elevar el estado energético.
+                            </p>
+                        </div>
+                        <div class="card-footer row align-items-center border-0 py-0 bg-transparent mx-1 mb-2">
+                            <p class="card-text col fs-4 my-3 text-sm-center text-lg-start">$17.000</p>
+                            <a href="#" class="btn btn-primary rounded-pill col border-0 card-link"
+                                data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                                Agregar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="modalCarrito" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-3">
+
+                    <div class="modal-header border-0 justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p><span class="backElemento">Elemento</span> <span id="textoAbajo">¡agregado al carrito!</span>
+                        </p>
+                    </div>
+
+                    <div class="modal-footer border-0 justify-content-center">
+                        <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section id="test" class="container-fluid py-5">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-lg-6 mt-lg-5">
+                        <h2 class="mb-4 text-lg-end">Descubrí tu elemento</h2>
+                        <p class="text-lg-end"><em>Cada persona vibra con una energía distinta según su momento vital,
+                                sus emociones y su forma de
+                                habitar el mundo.</em> Conocer el elemento que te representa puede ayudarte a enfocar tu
+                            intención y elegir aquello que acompañe tu bienestar cotidiano.</p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <p class="pt-3 text-center" id="test-subtitulo">¿Qué necesitás hoy?</p>
+
+                        <div class="accordion" id="acordeonElementa">
+
+                            <article class="accordion-item mb-2 border-0">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-pill" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#acordeon-tierra"
+                                        aria-expanded="false" aria-controls="acordeon-tierra">
+                                        Estabilidad y enfoque
+                                    </button>
+                                </h3>
+                                <div id="acordeon-tierra" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p><strong>Tu elemento es: Tierra.</strong></p>
+                                        <p>Tu energía busca estabilidad, orden y foco. Necesitás enraizar, planificar y
+                                            sostener.
+                                            Cuando la tierra
+                                            se afirma, la mente se calma y el cuerpo encuentra su centro.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="accordion-item mb-2 border-0">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-pill" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#acordeon-agua" aria-expanded="false"
+                                        aria-controls="acordeon-agua">
+                                        Calma y contención emocional
+                                    </button>
+                                </h3>
+                                <div id="acordeon-agua" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p><strong>Tu elemento es: Agua.</strong></p>
+                                        <p>Tu alma necesita calma, suavidad y contención emocional. Cuando el agua
+                                            fluye, el corazón
+                                            se aquieta y vuelve la paz.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="accordion-item mb-2 border-0">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-pill" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#acordeon-fuego" aria-expanded="false"
+                                        aria-controls="acordeon-fuego">
+                                        Motivación y acción
+                                    </button>
+                                </h3>
+                                <div id="acordeon-fuego" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p><strong>Tu elemento es: Fuego.</strong></p>
+                                        <p>Tu interior pide decisión, impulso y acción concreta. Cuando el fuego se
+                                            enciende, la
+                                            voluntad toma fuerza y el camino se ilumina.</p>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="accordion-item mb-2 border-0">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-pill" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#acordeon-aire" aria-expanded="false"
+                                        aria-controls="acordeon-aire">
+                                        Claridad y nuevas ideas
+                                    </button>
+                                </h3>
+                                <div id="acordeon-aire" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p><strong>Tu elemento es: Aire.</strong></p>
+                                        <p>Tu energía busca claridad, inspiración y movimiento. Estás en un momento de
+                                            apertura
+                                            mental y creatividad.Cuando el pensamiento fluye, todo se ordena y se vuelve
+                                            posible.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                            <article class="accordion-item mb-2 border-0">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-pill" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#acordeon-eter" aria-expanded="false"
+                                        aria-controls="acordeon-eter">
+                                        Conexión e inspiración espiritual
+                                    </button>
+                                </h3>
+                                <div id="acordeon-eter" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <p><strong>Tu elemento es: Éter.</strong></p>
+                                        <p>Estás vibrando apertura espiritual, intuición y propósito elevado. Cuando el
+                                            éter se
+                                            activa, todo cobra sentido y la conexión interna se profundiza.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="contacto" class="container-fluid py-5">
+            <div class="container">
+
+                <h2 class="mb-4">Contacto</h2>
+                <p><em>Queremos acompañarte en tu camino hacia el bienestar consciente.</em></p>
+                <p>Te invitamos a conocer nuestra tienda en
+                    <a href="#mapa">
+                        Av. Colón 464, Mendoza</a>.
+                    Si tenés alguna duda, podés escribirnos a través del siguiente formulario.
+                </p>
+
+                <div class="d-flex flex-column flex-lg-row gap-4 align-items-stretch mt-5">
+
+
+                    <form action="#" method="get" class="p-4 rounded-4">
+                    
+                        <div class="row g-3">
+                    
+                            <div class="col-md-6 col-lg-12">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control rounded-pill" id="nombre" name="nombre"
+                                        placeholder="Julieta" required>
+                                </div>           
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control rounded-pill" id="email" name="email"
+                                        placeholder="elementa@gmail.com" required>
+                                </div>           
+                            
+                                <div class="mb-3">
+                                    <label for="celular" class="form-label">Celular</label>
+                                    <input type="tel" class="form-control rounded-pill" id="celular" name="celular"
+                                        placeholder="+549 1158421285">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-12">
+                                <label for="mensaje" class="form-label">Comentario</label>
+                                <textarea class="form-control rounded-4 flex-grow-1" id="mensaje" rows="8" name="mensaje"
+                                        placeholder="Escribí tu mensaje aquí y te responderemos lo antes posible"></textarea>
+                            </div>
+
+
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary rounded-pill px-4 mt-3">
+                                    Enviar
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.159128143254!2d-68.8495006254365!3d-32.89396076922752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e090fe32d8241%3A0xada48b27a135f0ad!2sAv.%20Col%C3%B3n%20464%2C%20M5500CVG%20Mendoza%2C%20Argentina!5e0!3m2!1ses-419!2sfi!4v1763504268825!5m2!1ses-419!2sfi"
+                        allowfullscreen="" loading="lazy" id="mapa">
+                    </iframe>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="modal fade" id="modalNosotras" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2>Desarrolladoras</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="contenedor-nosotras">
+                    <div class="diseñadoras">
+                        <article id="cami">
+                            <h3>Camila Belén Voeffray</h3>
+                            <figure>
+                                <picture>
+                                    <img src="img/desarrolladoras/cami.jpg" alt="Foto de Camila Belén Voeffray">
+                                </picture>
+                            </figure>
+
+                            <p><span class="saludo">¡Hola, soy Cami!</span> Fotógrafa, desarrolladora web en proceso y
+                                autora de las fotografías de
+                                este
+                                sitio.
+                                Tengo 30 años y podés contactarme por mail: <a
+                                    href="mailto:camila.voeffray@davinci.edu.ar"
+                                    target="_blank">camila.voeffray@davinci.edu.ar</a></p>
+                            <ul class="redes">
+                                <li><a href="https://www.instagram.com/" class="instagram" target="_blank">
+                                        <span class="visually-hidden">Instagram</span>
+                                    </a></li>
+                                <li><a href="https://www.behance.net/" class="behance" target="_blank">
+                                        <span class="visually-hidden">Behance</span>
+                                    </a></li>
+                                <li><a href="https://www.linkedin.com/" class="linkedin" target="_blank">
+                                        <span class="visually-hidden">LinkedIn</span>
+                                    </a></li>
+                            </ul>
+                        </article>
+
+                        <article id="paz">
+                            <h3>María Paz Fernández Vitale</h3>
+                            <figure>
+                                <picture>
+                                    <img src="img/desarrolladoras/paz.jpg" alt="Foto de María Paz Fernández Vitale">
+                                </picture>
+                            </figure>
+                            <p><span class="saludo">¡Hola, soy Paz!</span> Psicóloga y desarrolladora web en proceso.
+                                Tengo 33 años y podés
+                                contactarme por
+                                mail: <a href="mailto:maria.fernandezv@davinci.edu.ar" target="_blank">
+                                    maria.fernandezv@davinci.edu.ar</a>
+                            </p>
+                            <ul class="redes">
+                                <li><a href="https://www.instagram.com/" class="instagram" target="_blank">
+                                        <span class="visually-hidden">Instagram</span>
+                                    </a></li>
+                                <li><a href="https://www.behance.net/" class="behance" target="_blank">
+                                        <span class="visually-hidden">Behance</span>
+                                    </a></li>
+                                <li><a href="https://www.linkedin.com/" class="linkedin" target="_blank">
+                                        <span class="visually-hidden">LinkedIn</span>
+                                    </a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footerElementa" class="container-fluid py-4">
+        <div class="container">
+
+            <div class="row text-center text-md-start pt-md-2">
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 order-1 order-md-2 order-lg-3">
+                        <ul class="footer-redes">
+
+                            <li><a href="https://www.facebook.com" target="_blank">
+                                        <span class="visually-hidden">Facebook</span>
+                                    </a></li>
+
+                            <li><a href="https://www.instagram.com/" target="_blank">
+                                        <span class="visually-hidden">Instagram</span>
+                                    </a></li>
+
+                            <li><a href="https://www.tiktok.com" target="_blank">
+                                        <span class="visually-hidden">Tiktok</span>
+                                    </a></li>
+                                    
+                        </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 order-2 order-md-1">
+                    <nav class="footer-menu">
+                        <ul class="footer-nav list-unstyled row row-cols-1 row-cols-md-2 g-2">
+                            <li class="col"><a class="footer-nav-link" href="#introduccion">Sobre Elementa</a></li>
+                            <li class="col"><a class="footer-nav-link" href="#elementos">Elementos</a></li>
+                            <li class="col"><a class="footer-nav-link" href="#productos">Productos</a></li>
+                            <li class="col"><a class="footer-nav-link" href="#test">Test</a></li>
+                            <li class="col"><a class="footer-nav-link" href="#contacto">Contacto</a></li>
+                            <li class="nav-item icono-nosotras-nav col"><a class="nav-link" href="#"
+                                    data-bs-toggle="modal" data-bs-target="#modalNosotras"><span
+                                        class="visually-hidden">Desarrolladoras</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div
+                    class="col-12 col-md-6 offset-md-3 offset-lg-0 col-lg-4 order-3 order-md-3  order-lg-2 d-flex justify-content-center">
+
+                    <a href="#inicio" class="footer-logo" aria-label="Volver a inicio">
+                        <span class="visually-hidden">Volver al inicio</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="copyright mt-3 text-center">
+                © 2025 Elementa Ritual Shop · Todos los derechos reservados.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

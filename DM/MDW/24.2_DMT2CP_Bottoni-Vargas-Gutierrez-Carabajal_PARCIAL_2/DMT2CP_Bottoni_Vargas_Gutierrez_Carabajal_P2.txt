@@ -1,0 +1,10 @@
+Parcial 2, Maquetado y Desarrollo Web, DMT2CP
+
+Alumnos/as:
+
+Bottoni, Clara Inés
+Vargas, Jorge
+Gutiérrez, Natalia
+Carabajal, Magalí
+
+Link al servidor: https://teal-melomakarona-910c4a.netlify.app/

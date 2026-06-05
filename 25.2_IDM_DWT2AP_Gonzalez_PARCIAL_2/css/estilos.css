@@ -1,0 +1,721 @@
+:root {
+    --color-primario: #90F62F;
+    --color-secundario: #333;
+    --color-fondo: #1E1E1E;
+    --color-texto: #ffff;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: var(--color-secundario);
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+}
+
+.color-h1 {
+    color: #90F62F;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+strong {
+    color: var(--color-primario);
+}
+
+
+
+/* ==================== CLASES GLOBALES REUTILIZABLES ==================== */
+
+/* Iconos circulares con fondo verde (social pills, footer icons) */
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primario);
+    color: #111;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+}
+
+.icon-circle:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(144, 246, 47, 0.4);
+    color: #000;
+}
+
+/* Paneles con fondo oscuro y borde */
+.panel-dark {
+    background-color: var(--color-secundario);
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Links de navegación estilo footer */
+.nav-link-light {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link-light:hover {
+    color: var(--color-primario) !important;
+}
+
+/* ==================== FIN CLASES GLOBALES ==================== */
+
+
+
+.bg-primario {
+    background-color: var(--color-fondo);
+}
+
+.bg-secundario {
+    background-color: var(--color-secundario);
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    color: #000;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #000000 !important;
+    color: var(--color-texto) !important;
+}
+
+.btn-outline-secondary {
+    color: var(--color-texto);
+    border: 2px solid var(--color-primario);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--color-primario) !important;
+    color: var(--color-fondo) !important;
+    border: 2px solid var(--color-primario);
+    border-color: var(--color-primario) !important;
+}
+/* Altura del hero */
+.hero-section {
+    height: 100vh;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.582);
+    z-index: 1;
+}
+
+
+.hero-carousel img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.sponsor-section {
+    background-color: var(--color-primario); 
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.brand-track {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    white-space: nowrap;       
+    animation: scrollBrands 20s linear infinite;
+}
+
+.brand-track img {
+    height: 30px;
+    width: auto;
+    flex-shrink: 0;           
+    filter: brightness(0) saturate(100%) invert(0%); 
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+.brand-track img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.sobre-nosotros-section {
+    position: relative;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+
+.linea-verde {
+    width: 11.875rem;
+    height: 0.375rem;
+    background: #90F62F;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+    position: relative;
+}
+
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.basketball-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Columna derecha - Texto e imagen tenista */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tennis-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    align-self: flex-end;
+}
+
+.circulos-decoracion {
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    width: 120px;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+.estrella-verde {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 80px;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.estrella-gris {
+    position: absolute;
+    left: 55%;
+    top: 60%;
+    width: 100px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+
+@keyframes scrollBrands {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.valores-cirulo {
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-primario);
+}
+
+/* ==================== PRODUCTOS CARRUSEL ==================== */
+.productos-section {
+    background-color: var(--color-fondo);
+    position: relative;
+}
+
+.productos-section .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.producto-card,
+.card.producto-card {
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: none;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.producto-card:hover,
+.card.producto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(144, 246, 47, 0.3);
+}
+
+.producto-img-wrapper,
+.card.producto-card .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #2a2a2a;
+    transition: transform 0.3s ease;
+}
+
+.producto-card:hover .producto-img-wrapper img,
+.card.producto-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.producto-info,
+.card.producto-card .card-body {
+    padding: 1.5rem;
+    background-color: transparent;
+}
+
+.producto-titulo,
+.card.producto-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-texto);
+    margin-bottom: 0.5rem;
+}
+
+.producto-descripcion,
+.card.producto-card .card-text {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-bottom: 1rem;
+}
+
+.producto-precio {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+
+.productos-section .carousel-control-prev,
+.productos-section .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(144, 246, 47, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.productos-section .carousel-control-prev {
+    left: 10px;
+}
+
+.productos-section .carousel-control-next {
+    right: 10px;
+}
+
+.productos-section .carousel-control-prev:hover,
+.productos-section .carousel-control-next:hover {
+    background-color: var(--color-primario);
+}
+
+.productos-section .carousel-control-prev-icon,
+.productos-section .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+
+
+.accordion-button::after {
+    color: #90F62F;
+    filter: drop-shadow(0 0 2px #90F62F);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #90F62F !important;
+}
+
+.accordion-item:first-of-type {
+    border-top: 1px solid #90F62F !important;
+}
+
+/* Background del acordeón cuando está abierto */
+.accordion-button:not(.collapsed) {
+    background-color: #90f62f9c !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.modal-check {
+    width: 70px;
+    height: auto;
+}
+
+
+/* ================= FORMULARIO CONTACTO ================= */
+.contacto-form .form-control,
+.contacto-form .form-select {
+    background-color: #2b2b2b;
+    border: 1px solid #3a3a3a;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 20px;
+}
+
+.contacto-form .form-control::placeholder {
+    color: #a8a8a8;
+}
+
+.contacto-form textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contacto-form .form-control:focus,
+.contacto-form .form-select:focus {
+    background-color: #2f2f2f;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 2px rgba(144, 246, 47, 0.25);
+    color: #fff;
+}
+
+.contacto-form .form-select {
+    appearance: none;
+    background-image: url('../img/flecha-abajo.svg');
+    background-repeat: no-repeat;
+    background-position: right 1.2rem center;
+    background-size: 24px 24px;
+    padding-right: 2.5rem;
+}
+
+.form-check-input {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: #2b2b2b;
+    border: 1px solid #3a3a3a;
+    margin-top: 0.2rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 2px rgba(144, 246, 47, 0.4);
+    outline: none;
+}
+
+.link-terminos {
+    color: var(--color-primario);
+    text-decoration: underline;
+}
+
+.link-terminos:hover {
+    color: #fff;
+}
+
+.contacto-panel h3 {
+    font-weight: 700;
+}
+
+.social-pill {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.contacto-form .form-floating > label {
+    color: #a8a8a8;
+    padding: 0.75rem 1rem;
+}
+
+/* Eliminar fondo blanco del label en floating (clase Bootstrap)*/
+.contacto-form .form-floating > label::after {
+    background-color: transparent !important;
+}
+
+.contacto-form .form-floating > .form-control:focus ~ label::after,
+.contacto-form .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.contacto-form .form-floating > .form-select ~ label::after {
+    background-color: transparent !important;
+}
+
+/* Asegurar que el label mismo no tenga fondo */
+.contacto-form .form-floating > label,
+.contacto-form .form-floating > .form-control:focus ~ label,
+.contacto-form .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.contacto-form .form-floating > .form-select ~ label {
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+
+/* ==================== MODAL ALUMNO ==================== */
+.alumno-modal-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.alumno-foto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alumno-foto {
+    border-radius: 12px;
+    border: 3px solid var(--color-primario);
+    box-shadow: 0 10px 20px rgba(137, 255, 27, 0.541);
+}
+
+.alumno-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.alumno-info-item {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.alumno-info-item strong {
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+.alumno-redes-titulo {
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.alumno-redes-titulo strong {
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+.alumno-redes-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* List group con bordes verdes */
+.list-group-item {
+    border-color: #90F62F !important;
+}
+
+
+
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Desktop (min-width: 992px) */
+@media screen and (min-width: 992px) {
+    .navbar-brand img {
+        height: 60px;
+        width: auto;
+    }
+
+
+    .sponsor-section {
+        padding: 2.5rem 0;
+    }
+    
+    .brand-track {
+        gap: 5rem;
+        animation: scrollBrands 30s linear infinite;
+    }
+    
+    .brand-track img {
+        height: 50px;
+    }
+}
+
+/* Tablet (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablet y mobile (max-width: 991px) */
+@media screen and (max-width: 991px) {
+    
+    .estrella-verde,
+    .estrella-gris {
+        display: none;
+    }
+    
+    .basketball-image,
+    .tennis-image {
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .navbar-brand img {
+        max-height: 60px;
+        height: 60px;
+        width: auto;
+    }
+
+}
+
+/* Tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+
+    .navbar-brand img {
+        max-height: 55px;
+        height: 55px;
+        width: auto;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    .brand-track {
+        gap: 2rem;
+        animation: scrollBrands 25s linear infinite;
+    }
+
+    .circulos-decoracion {
+        display: none;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    
+
+    .producto-img-wrapper,
+    .card.producto-card .card-img-top {
+        height: 200px;
+    }
+
+    .productos-section .carousel-control-prev,
+    .productos-section .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .productos-section .carousel-control-prev-icon,
+    .productos-section .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contacto-panel {
+        margin-top: 2rem;
+    }
+}
+
+/* Mobile (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Reducir tamaño del logo solo en mobile */
+    .navbar-brand img {
+        max-height: 50px;
+        height: 50px;
+        width: auto;
+    }
+
+    .linea-verde {
+        display: none;
+    }
+
+    .brand-track {
+        gap: 1.5rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .circulos-decoracion,
+    .estrella-verde,
+    .estrella-gris {
+        display: none;
+    }
+    
+    .productos-section .carousel-control-prev,
+    .productos-section .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .productos-section .carousel-control-prev {
+        left: 5px;
+    }
+
+    .productos-section .carousel-control-next {
+        right: 5px;
+    }
+}
+
