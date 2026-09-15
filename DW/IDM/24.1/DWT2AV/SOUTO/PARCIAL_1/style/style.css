@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --colorSecundario: rgb(168, 166, 166);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+#contenedor {
+    width: 100%;
+    min-width: 320px;
+}
+
+main {
+    min-width: 320px;
+    max-width: 1680px;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    margin-bottom: 3em;
+    padding: 2em;
+}
+
+
+header {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-image: url(../img/otras/background_cel.jpg);
+    background-size: cover;
+}
+
+h1 {
+    display: none;
+}
+
+.menu {
+    position: relative;
+}
+
+.logo {
+    width: 215px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.ulLinks {
+    background-color: grey;
+    overflow: hidden;
+    height: 0;
+}
+
+.open img {
+  width: 25px;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+#menuNav:target .ulLinks {
+    height: 100vh;
+    transition: all 0.7s ease-in-out;
+}
+
+.ulLinks li {
+    padding: 1em;
+}
+
+.ulLinks li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h2 {
+    margin: 1em auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: rgb(61, 94, 202);
+    scroll-margin-top: 130px;
+}
+
+.sClips {
+    text-align: center;
+}
+
+.sClips p {
+    text-align: justify;
+}
+
+.iFrames {
+    width:80vw;
+    height: calc(80vw * 315/560);
+    max-width: 560px;
+    max-height: 315px;
+    margin: 3em auto 6em;
+}
+
+.iFrames figcaption {
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.emision {
+    text-align: center;
+}
+
+.emisionText {
+    background-color: rgba(128, 128, 128, 0.11);
+    outline: 1em solid rgba(128, 128, 128, 0.11);
+    width: 100%;
+    text-align: justify;
+}
+
+
+.contImg img {
+    width: 100%;
+    max-width: 250px;
+    border: 3px solid black; 
+}
+
+a {
+    font: inherit;
+    color: gray;
+    text-decoration: inherit;
+}
+
+.extraInfo {
+    font-weight: 900;
+    margin-top: 0.7em;
+}
+
+
+h3 {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+.sPersonajes {
+    background-image: url(../img/otras/fondoCh_cel.jpg); 
+}
+
+.card {
+    width: 100%;
+    max-width: 250px;
+    background-color: lightgray;
+    margin: auto;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 3em;
+}
+
+.card details {
+    padding: 1em 0.7em;
+    color: black;
+}
+
+
+.pImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.card details summary {
+    list-style: none;
+    font-size: 1rem;
+}
+
+details h3 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.destacados> div {
+    width: 80%;
+    max-width: 350px;
+    min-height: 350px;
+    margin: auto;
+    background-color: var(--colorSecundario);
+    margin-bottom: 2em;
+    box-shadow: 1px 1px 8px rgb(0, 0, 0);
+    
+}
+
+.destacados div figure picture img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.destacados div div {
+    padding: 1em;
+}
+
+.destacados div div h3 {
+    font-size: 0.9em;
+}
+
+.destacados div div details {
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.sForm {
+    background-color: rgb(235, 230, 230);
+    width: 90%;
+    margin: auto;
+    border-radius: 2px;
+    padding: 0.5em;
+    color: black;
+    box-shadow: 1px 1px 2px grey;
+    text-align: center;
+}
+
+.formH2 {
+    margin-bottom: 1em;
+}
+
+.form ul li {
+    padding: 0.5em;
+}
+
+.form ul li label input, textarea, .comentar {
+    padding: 0.5em;
+    border: none;
+    font: inherit;
+    width: 100%;
+}
+
+
+footer {
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/otras/background_cel.jpg);
+    background-size: cover;
+    padding-top: 3em;
+}
+
+footer figure picture img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10% 25% 5%;
+    border: 1px dotted grey; 
+    margin-bottom: 2em;
+}
+
+.infoMia {
+    padding: 0.5em;
+    font-size: 0.8em;
+    font-weight: 700;
+    width: 170px;
+    margin: 1em auto;
+    border-radius: 5% 30% 0%;
+    background-color: rgba(245, 245, 245, 0.527);
+}
+
+.redes {
+    list-style: none;
+}
+
+
+footer ul {
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 1.5em;
+}
+
+footer ul li a img {
+    width: 35px;
+}
+
+footer ul li a img:hover {
+    transform: scale(1.5);
+    transition: all 0.2s ease-in;
+}
+
+
+@media screen and (min-width:481px) {
+    header {
+        background-image: url(../img/otras/background_tablet.jpg);
+        background-size: cover;
+    }
+
+    body {
+        font-size: 1.2em;
+    } 
+    
+    .clipsText {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
+   
+
+    .emisionText {
+        width: 75%;        
+        margin: auto;
+        text-align: justify;
+    }
+
+    .sPersonajes {
+        text-align: center;
+        background-image: url(../img/otras/fondoCh_cel.jpg); 
+    }
+    
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em;
+    }
+    
+    .card details {
+        text-align: justify;
+    }
+
+    .destacados {
+        text-align: center;
+    }
+
+    .destacados> div{
+        display: inline-block;
+        vertical-align: top;
+        margin: 2em;
+    }
+
+    .contInfo {
+        position: relative;
+    }
+    .infoMia {
+        position: absolute;
+        top: 60%;
+        left:50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    
+    .emisionFig, .emisionText {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .emisionText {
+        width: 60%;        
+        text-align: justify;
+        padding-left: 1em;
+    }
+    .formH2, .form {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .formH2 {
+        width: 20%;
+        text-align: left;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .btnComentar {
+        width: 50%;
+    }
+
+    .iFrames {
+        width:40vw;
+        height: calc(40vw * 315/560);
+        max-width: 560px;
+        max-height: 315px;
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 1em 5em;  
+    }
+}
+
+@media screen and (min-width: 1007px) {
+    header {
+        background-image: url(../img/otras/background1.jpg);
+        background-size: cover;
+    }
+    .logo {
+        margin: 0;
+        padding-left: 1em;
+    }
+    
+    .menu {
+        max-width: 1680px;
+        margin: auto;
+    }
+
+    nav {
+        padding-top: 15px;
+    }
+    
+    .controlMenu {
+        display: none;
+    }
+    
+
+    .ulLinks { 
+        text-align: right;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .ulLinks li {
+        display: inline-block;
+        padding: 0.5em;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .ulLinks li a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .ulLinks li a::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0%;
+        background-color: rgb(164, 181, 212);
+        transition: all 0.5s ease-in-out;
+        
+    }
+
+    .ulLinks li:hover a::after {
+        width: 100%;
+    }
+
+
+    .intro {
+        text-align: center;
+        max-width: 1100px;
+        margin: auto;
+       }
+
+    .infoText {
+        text-align: justify;
+    }
+       
+      
+    .sClips {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .clipsText, .contIframes {
+        display: inline-block;
+    }
+
+    .clipsText {
+        width: 30%;
+        vertical-align: top;
+        margin-right: 2em;
+        margin-top: 5em;
+    }
+    
+    .iFrames {
+        width:40vw;
+        height: calc(40vw * 315/560);
+        max-width: 560px;
+        max-height: 315px;
+        margin: 0 auto;
+        display: block;
+        margin: 1em 1em 4em;
+        
+    }
+
+    .emision {
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .emisionText {
+       padding: 0;
+    }
+    .sPersonajes {
+        background-image: url(../img/otras/fondoCh_pc.jpg); 
+    }
+
+    .card {
+        display: inline-block;
+        margin: 3em;
+        
+    }
+
+    .destacados>div {
+        background-color: rgb(168, 166, 166);
+        width: 90%;
+        max-width: 300px;
+        margin: 2em;
+        color: black;
+    }
+    
+    .destacados>div>div {
+        padding: 1em;
+    }
+    
+    .destacados>div>div>details {
+        cursor: pointer;
+    }
+
+    .sForm {
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 5em;
+    }
+
+    .name, .tel {
+        display: inline-block;
+        width: 49.5%;
+        min-width: 250px;
+    }   
+
+    .contInfo {
+        display: inline-block;
+        width: 60%;
+        vertical-align: middle;
+    }
+    .redes {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    footer ul li {
+        display: block;
+    
+    }
+}

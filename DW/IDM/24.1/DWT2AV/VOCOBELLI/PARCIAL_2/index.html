@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <meta name="keywords"
+        content="auriculares, audio, sonido, MMG, alta fidelidad, inalámbricos, gaming, música, MMG AURICULARES">
+    <meta name="author" content="Fiorotto Mateo, Neto Matias, Vocobelli Genaro">
+    <meta name="title" content="MMG | Los mejores auriculares del mercado">
+    <meta name="description"
+        content="Conoce a la mejor marca de auriculares de todo el mercado argentino. 20% de descuento en algunos productos.">
+    <link rel="icon" type="image/jpg" href="elementos-graficos/otras/logo.png" sizes="32x32">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fkk2ivq.css">
+    <title>MMG: Los mejores auriculares del mercado</title>
+</head>
+
+<body>
+    <!--boton para volver al inicio-->
+    <button type="button" class="btn btn-lg" id="boton-volver">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <header class="w-100 sticky-top">
+        <h1>MMG: Los mejores auriculares del mercado</h1>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a id="logo-mmg" class="navbar-brand" href="#">MMG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="#empresa">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#que-ofrecemos">Que ofrecemos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#opiniones">Opiniones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#asesoramiento">Asesoramiento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart-fill"><span>Carrito de
+                                        compras</span></i></a></li>
+                        <li class="nav-item"><a id="modal-alumnos" class="nav-link" href="#modal"><i
+                                    class="bi bi-info-circle-fill"><span>Alumnos</span></i></a></li>
+                    </ul>
+
+                    <div id="modal" class="modal-alumnos">
+                        <div class="contenido-modal">
+                            <a href="#cerrar" class="cerrar">X</a>
+                            <h2 class="text-center">Alumnos</h2>
+                            <div class="fila">
+                                <div class="columna">
+                                    <h3>Mateo Fiorotto</h3>
+                                    <img class="mb-3" alt="Foto Mateo" src="elementos-graficos/alumnos/mate.jpg">
+                                    <p>27/04/2004</p>
+                                    <p>mateo.fiorotto@davinci.edu.ar</p>
+                                </div>
+                                <div class="columna">
+                                    <h3>Matias Neto</h3>
+                                    <img class="mb-3" alt="Foto Matias" src="elementos-graficos/alumnos/mati.jpg">
+                                    <p>13/09/2000</p>
+                                    <p>matias.neto@davinci.edu.ar</p>
+                                </div>
+                                <div class="columna">
+                                    <h3>Genaro Vocobelli</h3>
+                                    <img class="mb-3" alt="Foto Genaro" src="elementos-graficos/alumnos/gena.jpg">
+                                    <p>27/05/2005</p>
+                                    <p>genaro.vocobelli@davinci.edu.ar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+        <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <picture class="carousel-item active w-100">
+                    <!-- Breakpoint 576px  -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner1-Breakpoint-576.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:576px)">
+                    <!-- Breakpoint 768px  -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner1-Breakpoint-768.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:768px)">
+                    <!-- Breakpoint 992px -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner1-Breakpoint-992.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:992px)">
+                    <!-- Breakpoint 1200px -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner1-Breakpoint-1200.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:1200px)">
+                    <!-- Breakpoint 1400px -->
+                    <img src="elementos-graficos/banners/Banner_1.jpg" class="d-block w-100 img-fluid c-img"
+                        alt="Imagen de un auricular">
+                </picture>
+                <picture class="carousel-item c-item w-100">
+                    <!-- Breakpoint 576px  -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner2-Breakpoint-576.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:576px)">
+                    <!-- Breakpoint 768px  -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner2-Breakpoint-768.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:768px)">
+                    <!-- Breakpoint 992px -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner2-Breakpoint-992.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:992px)">
+                    <!-- Breakpoint 1200px -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner2-Breakpoint-1200.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:1200px)">
+                    <!-- Breakpoint 1400px -->
+                    <img src="elementos-graficos/banners/Banner_2.jpg" class="d-block w-100 img-fluid c-img"
+                        alt="Imagen de una mujer con un auricular">
+                </picture>
+                <picture class="carousel-item c-item w-100">
+                    <!-- Breakpoint 576px  -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner3-Breakpoint-576.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:576px)">
+                    <!-- Breakpoint 768px  -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner3-Breakpoint-768.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:768px)">
+                    <!-- Breakpoint 992px -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner3-Breakpoint-992.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:992px)">
+                    <!-- Breakpoint 1200px -->
+                    <source srcset="elementos-graficos/banners/banners_optimizados/Banner3-Breakpoint-1200.jpg"
+                        class="d-block w-100 img-fluid c-img" media="(max-width:1200px)">
+                    <!-- Breakpoint 1400px -->
+                    <img src="elementos-graficos/banners/Banner_3.jpg" class=" d-block w-100 img-fluid c-img"
+                        alt="Imagen de un auricular con flores">
+                </picture>
+            </div>
+        </div>
+
+        <!-- Sección de Introducción a la empresa -->
+        <section class="container" id="empresa">
+            <h2 class="mb-3 mt-5">Nosotros</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <p>Somos <strong>MMG</strong>, una empresa fundada en 2024 por <strong>Mateo Fiorotto, Matias Neto y
+                            Genaro
+                            Vocobelli</strong>.</p>
+                    <p><em>Nuestra misión es proporcionar a nuestros clientes productos innovadores que mejoren su
+                            experiencia
+                            auditiva</em>, combinando tecnología de punta con un diseño elegante y ergonómico. Creemos
+                        firmemente en <strong>la
+                            importancia de la calidad y la satisfacción del cliente</strong>, y trabajamos
+                        incansablemente para
+                        superar las
+                        expectativas en cada uno de nuestros productos.</p>
+                    <p>Desde nuestros humildes comienzos, hemos crecido rápidamente gracias a nuestra dedicación al
+                        servicio al
+                        cliente y nuestro compromiso con la excelencia. <em>Cada auricular que ofrecemos ha sido
+                            meticulosamente
+                            probado para asegurar que cumpla con los más altos estándares de calidad y rendimiento</em>.
+                    </p>
+                    <p>En <strong>MMG</strong>, no solo vendemos auriculares, sino que también <strong>ofrecemos
+                            asesoramiento
+                            personalizado</strong> para ayudar a cada cliente a
+                        encontrar el producto perfecto que se adapte a sus necesidades y preferencias.</p>
+                    <p>¡Conocenos y descubrí por qué somos la empresa líder en el mercado de auriculares!</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img class="w-100" alt="imagen nosotros - estudio" src="elementos-graficos/otras/Nosotros.jpg">
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Sección de Introducción al producto -->
+        <section class="container" id="que-ofrecemos">
+            <h2 class="mb-3 mt-5">Qué ofrecemos</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="izq-ofrecemos col-lg-6 col-md-12">
+                    <img class="w-100" alt="imagen ofrecemos - persona" src="elementos-graficos/otras/Ofrecemos.jpg">
+                </div>
+                <div class="der-ofrecemos col-lg-6 col-md-12">
+                    <p>En <strong>MMG nos dedicamos a la comercialización de productos tecnológicos de alta calidad, con
+                            un
+                            enfoque particular en auriculares de última generación</strong>. Nuestro compromiso es
+                        <em>brindar a
+                            nuestros clientes las mejores soluciones auditivas disponibles en el mercado</em>,
+                        combinando
+                        <strong>innovación, rendimiento y durabilidad</strong>.
+                    </p>
+                    <p>Nuestra selección de auriculares incluye <strong>modelos diseñados para satisfacer las diversas
+                            necesidades de nuestros clientes</strong>. Desde <em>auriculares inalámbricos con
+                            cancelación activa
+                            de ruido, ideales para los viajeros frecuentes, hasta auriculares de alta fidelidad</em>,
+                        perfectos
+                        para profesionales de la música y los entusiastas del sonido. En MMG, entendemos que cada
+                        usuario tiene
+                        requerimientos específicos, por lo que ofrecemos una amplia gama de opciones que se adaptan a
+                        diferentes
+                        estilos de vida y usos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Productos -->
+        <section class="container" id="productos">
+            <h2 class="mb-3 mt-5 text-center">Productos</h2>
+            <p class="text-center">Aquí podras ver algunos de nuestros productos.</p>
+            <div class="row">
+                <!--Pastilla contenido 1-->
+                <div class="col-lg-4 col-md-6 col-sm-12 producto">
+                    <h3>MMG Stereo</h3>
+                    <img src="elementos-graficos/auriculares/stereo.webp" alt="Foto del Auricular MMG Stereo">
+                    <p>Clásicos de <strong>sonido estereo en dos canales</strong> (izquierdo y derecho). Ideales para
+                        <em>escuchar música y uso mayormente cotidiano</em>.
+                    </p>
+                    <p class="price"><span class="negrita">Precio:</span> $29.999</p>
+                    <p class="colores-disponibles"><span class="negrita">Colores disponibles:</span> </p>
+                    <i class="bi bi-circle-fill rojo"><span>Color Rojo</span></i>
+                    <i class="bi bi-circle-fill azul"><span>Color Azul</span></i>
+                    <i class="bi bi-circle-fill negro"><span>Color Negro</span></i>
+                    <i class="bi bi-circle"><span>Color Blanco</span></i>
+                    <i class="bi bi-circle-fill gris"><span>Color Gris</span></i>
+                    <div class="div-botones">
+                        <button data-bs-toggle="modal" data-bs-target="#modalAgregarCarrito">Agregar al carrito<i
+                                class="bi bi-cart-fill"><span>Carrito de compras</span></i></button>
+                        <button data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles<i
+                                class="bi bi-arrow-up-right">
+                                <span>Información</span></i></button>
+                    </div>
+                </div>
+                <!-- Pastilla de contenido 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 producto">
+                    <h3>MMG SS 7.1</h3>
+                    <img src="elementos-graficos/auriculares/7-1.webp" alt="Foto del Auricular MMG SS 7.1">
+                    <p>Tiene <strong>sonido envolvente 7.1</strong> para una experiencia inmersiva. <em>Ideales para
+                            juegos y
+                            películas</em>, ofreciendo un audio detallado y preciso.</p>
+                    <p class="price"><span class="negrita">Precio:</span> $59.999</p>
+                    <p class="colores-disponibles"><span class="negrita">Colores disponibles:</span> </p>
+                    <i class="bi bi-circle-fill rojo"><span>Color Rojo</span></i>
+                    <i class="bi bi-circle-fill negro"><span>Color Negro</span></i>
+                    <i class="bi bi-circle"><span>Color Blanco</span></i>
+                    <i class="bi bi-circle-fill gris"><span>Color Gris</span></i>
+                    <div class="div-botones">
+                        <button data-bs-toggle="modal" data-bs-target="#modalAgregarCarrito">Agregar al carrito<i
+                                class="bi bi-cart-fill"><span>Carrito de
+                                    compras</span></i></button>
+                        <button data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles<i
+                                class="bi bi-arrow-up-right">
+                                <span>Información</span></i></button>
+                    </div>
+                </div>
+                <!-- Pastilla de contenido 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 producto">
+                    <h3>MMG Gaming</h3>
+                    <img src="elementos-graficos/auriculares/gamer.webp" alt="Foto del Auricular MMG Gaming">
+                    <p>Diseñados específicamente <strong>para gamers</strong>, con <em>sonido envolvente y micrófono
+                            incorporado</em>
+                        para una comunicación clara durante las partidas</p>
+                    <p class="price"><span class="negrita">Precio:</span> $129.999</p>
+                    <p class="colores-disponibles"><span class="negrita">Colores disponibles:</span> </p>
+                    <i class="bi bi-circle-fill azul"><span>Color Azul</span></i>
+                    <i class="bi bi-circle-fill negro"><span>Color Negro</span></i>
+                    <i class="bi bi-circle"><span>Color Blanco</span></i>
+                    <div class="div-botones">
+                        <button data-bs-toggle="modal" data-bs-target="#modalAgregarCarrito">Agregar al carrito<i
+                                class="bi bi-cart-fill"><span>Carrito de
+                                    compras</span></i></button>
+                        <button data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles<i
+                                class="bi bi-arrow-up-right">
+                                <span>Información</span></i></button>
+                    </div>
+                </div>
+                <!--Pastilla contenido 4-->
+                <div class="col-lg-4 col-md-6 col-sm-12 producto">
+                    <h3>MMG Wireless</h3>
+                    <img src="elementos-graficos/auriculares/wireless.webp" alt="Foto del Auricular MMG Wireless">
+                    <p>Son <strong>inalámbricos y ligeros</strong>. Están pensados para un <em>estilo de vida activo,
+                            sostenible y
+                            libre</em>. ¡Llévatelo donde quieras!</p>
+                    <p class="price"><span class="negrita">Precio:</span> <span class="descuento">$44.999</span>$39.999
+                    </p>
+                    <p class="colores-disponibles"><span class="negrita">Colores disponibles:</span> </p>
+                    <i class="bi bi-circle-fill negro"><span>Color Negro</span></i>
+                    <i class="bi bi-circle"><span>Color Blanco</span></i>
+                    <i class="bi bi-circle-fill gris"><span>Color Gris</span></i>
+                    <div class="div-botones">
+                        <button data-bs-toggle="modal" data-bs-target="#modalAgregarCarrito">Agregar al carrito<i
+                                class="bi bi-cart-fill"><span>Carrito de
+                                    compras</span></i></button>
+                        <button data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles<i
+                                class="bi bi-arrow-up-right">
+                                <span>Información</span></i></button>
+                    </div>
+                </div>
+                <!--Pastilla contenido 5-->
+                <div class="col-lg-4 col-md-6 col-sm-12 producto">
+                    <h3>MMG In-Ear</h3>
+                    <img src="elementos-graficos/auriculares/in-ear.webp" alt="Foto del Auricular MMG In-Ear">
+                    <p><strong>Compactos y ligeros</strong>, perfectos para <em>un uso diario y durante actividades
+                            físicas</em>, proporcionando
+                        comodidad y portabilidad.</p>
+                    <p class="price"><span class="negrita">Precio:</span> $14.999</p>
+                    <p class="colores-disponibles"><span class="negrita">Colores disponibles:</span> </p>
+                    <i class="bi bi-circle-fill negro"><span>Color Negro</span></i>
+                    <i class="bi bi-circle"><span>Color Blanco</span></i>
+                    <div class="div-botones">
+                        <button data-bs-toggle="modal" data-bs-target="#modalAgregarCarrito">Agregar al carrito<i
+                                class="bi bi-cart-fill"><span>Carrito de
+                                    compras</span></i></button>
+                        <button data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles<i
+                                class="bi bi-arrow-up-right">
+                                <span>Información</span></i></button>
+                    </div>
+                </div>
+                <!--Pastilla contenido 6-->
+                <div class="col-lg-4 col-md-6 col-sm-12 producto">
+                    <h3>MMG Studio</h3>
+                    <img src="elementos-graficos/auriculares/studio.webp" alt="Foto del Auricular MMG Studio">
+                    <p>Estan diseñados con <strong>alta fidelidad</strong> para <em>grabar y mezclar en estudios de
+                            música</em>. Tiene varias
+                        mejoras en su estructura y drivers.</p>
+                    <p class="price"><span class="negrita">Precio:</span> <span
+                            class="descuento">$319.999</span>$255.999
+                    </p>
+                    <p class="colores-disponibles"><span class="negrita">Colores disponibles:</span> </p>
+                    <i class="bi bi-circle-fill negro"><span>Color Negro</span></i>
+                    <div class="div-botones">
+                        <button data-bs-toggle="modal" data-bs-target="#modalAgregarCarrito">Agregar al carrito<i
+                                class="bi bi-cart-fill"><span>Carrito de
+                                    compras</span></i></button>
+                        <button data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles<i
+                                class="bi bi-arrow-up-right">
+                                <span>Información</span></i></button>
+                    </div>
+                </div>
+            </div>
+            <a id="mas-productos" href="#">Consulta más productos<i id="flecha-mas-productos"
+                    class="bi bi-arrow-right"><span>Más productos</span></i></a>
+        </section>
+        <section class="container" id="opiniones">
+            <h2 class="text-center mb-5 mt-5">Opiniones</h2>
+            <div class="row justify-content-center row-gap-5">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center h-100">
+                        <picture>
+                            <img src="elementos-graficos/opiniones/perfil1.jpg" class="card-img-top"
+                                alt="Foto de Carlos Hernández">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="card-title">Carlos Hernández</h3>
+                            <h4 class="card-subtitle mb-2 text-body-secondary">Desarrollador Web</h4>
+                            <p class="card-text"><strong>La calidad de sonido de estos auriculares es insuperable</strong>. <em>Cada detalle
+                                de la música se percibe con una claridad increíble</em>. Son cómodos y elegantes, perfectos
+                                para largas sesiones de escucha.</p>
+                        </div>
+                        <ul class="reseña">
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star"><span>Estrella Vacia</span></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center h-100">
+                        <picture>
+                            <img src="elementos-graficos/opiniones/perfil2.jpg" class="card-img-top"
+                                alt="Foto de Ana Gomez">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="card-title">Ana Gómez</h3>
+                            <h4 class="card-subtitle mb-2 text-body-secondary">Productora Audiovisual</h4>
+                            <p class="card-text">He probado muchos auriculares, pero estos son <strong>definitivamente los
+                                mejores</strong>. La <em>cancelación de ruido es asombrosa y la batería dura todo el día</em>. Totalmente
+                                recomendados.</p>
+                        </div>
+                        <ul class="reseña">
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center h-100">
+                        <picture>
+                            <img src="elementos-graficos/opiniones/perfil3.jpg" class="card-img-top"
+                                alt="Foto de Luis Martinez">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="card-title">Luis Martínez</h3>
+                                <h4 class="card-subtitle mb-2 text-body-secondary">Productor de Cine</h4>
+                                <p class="card-text">Estos auriculares <strong>han transformado mi experiencia de audio</strong>. <em>La
+                                    calidad de construcción es excelente y el diseño es muy atractivo y sofisticado</em>. Valen cada
+                                    centavo.</p>
+                        </div>
+                        <ul class="reseña">
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-fill"><span>Estrella</span></i></li>
+                            <li><i class="bi bi-star-half"><span>Mitad de estrella</span></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="container" id="asesoramiento">
+            <h2 class="text-center mb-3 mt-5">Asesoramiento</h2>
+            <p class="text-center mb-4">Si no te decidis por que producto elegir, ¡consultanos!</p>
+
+            <form autocomplete="off" id="formulario" action="#" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-lg-5 m-auto">
+                        <label for="nombre-form" class="form-label">Nombre</label>
+                        <input type="text" id="nombre-form" class="form-control mb-3" placeholder="Escriba su nombre" required >
+                    </div>
+
+                    <div class="col-lg-5 m-auto">
+                        <label for="mail-form" class="form-label">Mail</label>
+                        <input type="email" id="mail-form" class="form-control mb-3" placeholder="ejemplo@hotmail.com" required >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 m-auto">
+                        <label for="tel-form" class="form-label">Telefono</label>
+                        <input type="tel" id="tel-form" class="form-control mb-3" placeholder="Escriba su telefono" required >
+                    </div>
+
+                    <div class="col-lg-5 m-auto">
+                        <label for="profesion-form" class="form-label">¿A qué te dedicas?</label>
+                        <select id="profesion-form" class="form-select mb-3">
+                            <option value="Seleccionar-opcion" disabled selected>Selecciona una opción</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Profesional">Profesional</option>
+                            <option value="Aficionado">Aficionado</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-11 mb-3 m-auto">
+                        <label for="comentario" class="form-label">Consulta</label>
+                        <textarea id="comentario" name="comentario" rows="4" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <input class="boton-enviar-form mb-4 mt-2 m-5" type="submit" value="Enviar">
+            </form>
+        </section>
+        <!--MODAL para agregar al carrito-->
+        <div class="modal fade" id="modalAgregarCarrito" aria-labelledby="modal-titulo">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3 id="modal-titulo">Gracias</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Tu producto fue agregado correctamente al carrito</p>
+                    </div>
+
+                    <div class="m-5 mt-0 mb-3 alert alert-warning">
+                        <p class="mb-0"><i class="alerta bi bi-exclamation-triangle-fill"><span>Alerta</span></i>No
+                            hacemos envíos fuera de Argentina por el momento.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Ir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-100 p-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="p-4 col-lg-4 col-md-12">
+                    <h3 class="logo">MMG: Los mejores auriculares del mercado</h3>
+                    <p>Gracias por confiar en nosotros!</p>
+                    <p>Copyright 2024 MMG</p>
+                </div>
+                <div class="mb-1 p-4 col-lg-4 col-md-12 justify-content-center align-items-center">
+                    <h3>Explora</h3>
+                    <ul class="links-footer">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#que-ofrecemos">Que ofrecemos</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#opiniones">Opiniones</a></li>
+                        <li><a href="#asesoramiento">Asesoramiento</a></li>
+                    </ul>
+                </div>
+                <div class="mb-1 p-4 col-lg-4 col-md-12 justify-content-center align-items-center">
+                    <h3>Redes</h3>
+                    <ul class="redes d-flex flex-row">
+                        <li><a target="_blank" href="https://instagram.com"><i
+                                    class="bi bi-instagram"><span>Instagram</span></i></a></li>
+                        <li><a target="_blank" href="https://facebook.com"><i
+                                    class="bi bi-facebook"><span>Facebook</span></i></a></li>
+                        <li><a target="_blank" href="https://tiktok.com"><i
+                                    class="bi bi-tiktok"><span>TikTok</span></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://x.com"><i class="bi bi-twitter-x"><span>X</span></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="javascript/scripts.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+Integrantes:
+Julieta Garcia
+Mariana Gomez
+Lautaro Lliera
+Reynaldo Pereira
+
+Materia: Maquetado y Desarrollo Web
+Turno: Tarde
+Comisión: DMT2CP
+Año: 2024
+
+Url: https://cute-melomakarona-bd1749.netlify.app/

@@ -1,0 +1,247 @@
+:root {
+    --bs-cyan: #00c3e3;
+    --bs-white: #ffffff;
+    --bs-gray: #f5f5f5;
+    --bs-gray-dark: #a5a2a2;
+    --bs-primary-light: #ff4554;
+    --bs-primary: #dd2020;
+    --bs-primary-dark: #bc181a;
+    --bs-secondary: #0065b3;
+    --bs-secondary-dark: #004c87;
+    --bs-light: #f8f9fa;
+    --bs-dark: 	#0d0c0c;
+    --boxshadow:0 6px 30px 0 rgb(0 0 0 / 10%);
+}
+*{
+    font-family: "Raleway", sans-serif;
+}
+h2{
+    font-weight: 700;
+}
+h1 a{
+    color: var(--bs-white);
+    font-weight: 700;
+}
+/* Clases Bootstrap */
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-primary-dark);
+    --bs-btn-hover-border-color: var(--bs-primary-dark);
+    font-weight: 500;
+
+}
+/* Navegacion */
+header .navbar{
+    background-color: var(--bs-primary-dark);
+}
+header .navbar .nav-link, header .navbar .navbar-brand {
+    color: var(--bs-white);
+}
+header .navbar .navbar-brand {
+    font-weight: 700;
+}
+header .navbar .navbar-brand:hover {
+    color: var(--bs-gray);
+}
+.navbar-toggler, .navbar-toggler:focus {
+    box-shadow: none;
+    border:none;
+}
+.navbar-toggler-icon {
+    background-image:url(../assets/iconos/menu.svg) ;
+}
+/* Historia */
+#historia h2{
+    color: var(--bs-secondary);
+}
+#historia picture img{
+    border-radius: 0.25rem;
+}
+/* Que vendemos */
+#vendemos{
+    background-color: var(--bs-primary-dark);
+    color: var(--bs-white);
+}
+#vendemos .card-title{
+    color: var(--bs-primary-dark);
+    font-weight: 600;
+}
+/* Articulos */
+#articulos{
+    background-color: var(--bs-gray);
+}
+#articulos h2{
+    color: var(--bs-secondary);
+}
+.descuento{
+    top:1rem;
+    right: 1rem;
+    background-color: var(--bs-secondary);
+}
+#articulos .card{
+    box-shadow: var(--boxshadow);
+    border: none;
+}
+#articulos .card-subtitle{
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+#articulos h3{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+#articulos .stock{
+    background-color: var(--bs-secondary);
+}
+#articulos .categoria{
+    background-color: var(--bs-gray);
+    color: var(--bs-dark);
+}
+/* Testimonios */
+#testimonios{
+    background-color: var(--bs-secondary);
+}
+#testimonios h2{
+    color: var(--bs-white);
+}
+.card-testimonios{
+    border: none;
+    background-color: transparent;
+}
+.card-testimonios h3{
+    color: var(--bs-secondary);
+    font-weight: 600;
+}
+.card-testimonios picture{
+    z-index: 100;
+}
+.card-testimonios picture img{
+    border-radius: 50%;
+}
+.card-testimonios .card-body{
+    border: 1px solid var(--bs-gray);
+    margin-top: -3rem;
+    background-color: var(--bs-gray);
+    color: var(--bs-dark);
+    padding: 4rem 1rem 2rem;
+    border-radius: 0.5rem;
+}
+/* Preguntas frecuentes */
+#preguntasfrecuentes{
+    background-color: var(--bs-gray);
+}
+#preguntasfrecuentes h2{
+    color: var(--bs-secondary);
+}
+#preguntasfrecuentes .accordion-button:not(.collapsed) {
+    color: var(--bs-white);
+    background-color: var(--bs-secondary);
+    font-weight: 600;
+}
+#preguntasfrecuentes .accordion-button:not(.collapsed)::after {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon-transform: rotate(90deg);
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+/* Contacto */
+#contacto{
+    background-color: var(--bs-white);
+}
+
+#contacto .form-label{
+    color: var(--bs-secondary-dark);
+    font-weight: 500;
+}
+/* Footer */
+#footer{
+    background-color: var(--bs-primary-dark);
+}
+#footer h2{
+    color: var(--bs-white);
+}
+#footer ul{
+    list-style: none;
+    padding: 0%;
+}
+.f-blue-sblod{
+    font-weight: 600;
+    color: var(--bs-secondary-dark);
+}
+.card-footer{
+    border: none;
+    background-color: transparent;
+}
+.card-footer h3{
+    color: var(--bs-secondary);
+    font-weight: 600;
+}
+.card-footer picture{
+    z-index: 100;
+}
+.card-footer picture img{
+    border-radius: 40%;
+}
+.card-footer .card-body{
+    border: 1px solid var(--bs-gray);
+    margin-top: -3rem;
+    background-color: var(--bs-gray);
+    padding: 4rem 1rem 2rem;
+    border-radius: 0.5rem;
+}
+@media screen and (max-width: 991px){
+    header .navbar .nav-link:hover {
+        font-weight: 600;
+    }
+}
+@media (min-width:576px) and (max-width: 991px){
+    /* Que vendemos */
+    #vendemos .card, #articulos .card{
+        width: 20rem;
+    }
+    /* Testimonios */
+    .card-testimonios{
+        width: 50%;
+    }
+    /* Testimonios */
+    .card-footer{
+        width: 70%;
+    }
+    
+}
+@media screen and (min-width: 992px){
+    /* Menu */
+    .nav-link{
+        position: relative;
+    }
+    .nav-link::after {
+        position: absolute;
+        content: "";
+        width: 1.25rem;
+        height: 0.2rem;
+        top: 100%;
+        left: 40%;
+        background: #fff;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    .nav-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    /* Cards */
+    #vendemos .card, #articulos .card{
+        width: 20rem;
+    }
+    /* Testimonios */
+    .card-testimonios{
+        width: 33%;
+    }
+    /* Testimonios */
+    .card-footer{
+        width: 32%;
+    }
+}

@@ -1,0 +1,12 @@
+
+Escuela de Arte Multimedial Da Vinci
+CARRERA: Diseño y Programación Web
+MATERIA: Interacción con Dispositivos Móviles
+TRABAJO PRÁCTICO: Examen Parcial 1
+PROFESOR: D’Addezio Alejandro
+ALUMNO: Joaquín Guerreiro Apolonia
+CUATRIMESTRE: 2do Cuatrimestre
+COMISIÓN: DWM2AV
+TURNO: Mañana
+FECHA DE ENTREGA: 03/10/2023
+URL DEL SITIO: https://the-last-of-us-serie.000webhostapp.com/

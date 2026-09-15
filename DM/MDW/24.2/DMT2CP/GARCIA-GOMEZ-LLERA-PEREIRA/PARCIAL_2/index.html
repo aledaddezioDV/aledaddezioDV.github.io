@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2 - MDW - DMT2CP - 2024</title>
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+              <a class="logo" href="#">KraKenis</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h2 class="offcanvas-title" id="offcanvasNavbarLabel">KraKenis</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reseñas">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <picture>
+                    <source media="(min-width:991px)" srcset="./img/banner-desktop.jpg">
+                    <source media="(min-width:700px)" srcset="./img/banner-tablet.jpg">
+                    <img src="./img/banner-telefono.jpg" class="d-block w-100" alt="banner-1">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(min-width:991px)" srcset="./img/banner-desktop-2.jpg">
+                    <source media="(min-width:700px)" srcset="./img/banner-tablet-2.jpg">
+                    <img src="./img/banner-telefono-2.jpg" class="d-block w-100" alt="banner-2">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(min-width:991px)" srcset="./img/banner-desktop-3.jpg">
+                    <source media="(min-width:700px)" srcset="./img/banner-tablet-3.jpg">
+                    <img src="./img/banner-telefono-3.jpg" class="d-block w-100" alt="banner-3">
+                </picture>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="d-flex flex-column gap-4 mb-4">
+
+        <!-- Nota Principal -->
+
+        <section class="box-principal" id="inicio">
+
+        <h1>Krakenis Designs</h1>
+
+        <div class="info">
+
+            <div class="card-principal d-flex flex-column align-items-center gap-2 flex-lg-row">
+                <div class="card-principal-body">
+                    <p>KraKenis es más que una simple agencia de diseño multimedial. Somos un espacio donde las ideas cobran vida. Desde el primer contacto, nos sumergimos en tu mundo para entender tu visión y tus objetivos. Nuestro compromiso es transformar cada concepto, por pequeño que sea, en una pieza visual única y memorable que represente la esencia de tu marca. Nos especializamos en crear experiencias que capturan la atención y conectan emocionalmente con tu audiencia.</p>
+                </div>
+                <figure class="card-principal-img">
+                    <picture>
+                        <source media="(min-width:991px)" srcset="./img/nota-1-430.jpg">
+                        <img src="./img/nota-1.jpg" alt="nota-principal-1">
+                    </picture>
+                </figure>
+            </div>
+            <div class="card-principal d-flex flex-column align-items-center gap-2 flex-lg-row-reverse">
+                <div class="card-principal-body">
+                    <p>En nuestra agencia, el diseño gráfico es solo el comienzo. Exploramos una variedad de disciplinas, incluyendo desarrollo web, animación y marketing digital, para ofrecerte soluciones integrales. Cada área se complementa para formar una estrategia sólida que no solo se ve bien, sino que también funciona. Sabemos que en el mundo digital actual, la presentación es crucial, y estamos aquí para asegurarnos de que tu marca brille en cada plataforma.</p>
+                </div>
+                <figure class="card-principal-img">
+                    <picture>
+                        <source media="(min-width:991px)" srcset="./img/nota-2-430.jpg">
+                        <img src="./img/nota-2.jpg" alt="nota-principal-2">
+                    </picture>
+                </figure>
+            </div>
+            <div class="card-principal d-flex flex-column align-items-center gap-2 flex-lg-row">
+                <div class="card-principal-body">
+                    <p>Nuestro equipo de cuatro profesionales apasionados trabaja de manera colaborativa, lo que nos permite integrar diferentes perspectivas y habilidades en cada proyecto. Este enfoque nos ayuda a captar la esencia de tus ideas y a materializarlas de una forma que supere tus expectativas. Creemos en la importancia de la comunicación constante y efectiva, asegurándonos de que estés involucrado en cada etapa del proceso creativo.</p>
+                </div>
+                <figure class="card-principal-img">
+                    <picture>
+                        <source media="(min-width:991px)" srcset="./img/nota-3-430.jpg">
+                        <img src="./img/nota-3.jpg" alt="nota-principal-3">
+                    </picture>
+                </figure>
+            </div>
+            <div class="card-principal d-flex flex-column align-items-center gap-2 flex-lg-row-reverse">
+                <div class="card-principal-body">
+                    <p>En KraKenis, entendemos que el impacto visual va más allá de la estética. Nos enfocamos en desarrollar estrategias que resuenen con tu público objetivo, utilizando un enfoque personalizado que se adapta a las necesidades específicas de tu marca. Nuestro objetivo es no solo atraer la atención, sino también crear una conexión significativa que fomente la lealtad y el reconocimiento a largo plazo.</p>
+                </div>
+                <figure class="card-principal-img">
+                    <picture>
+                        <source media="(min-width:991px)" srcset="./img/nota-4-430.jpg">
+                        <img src="./img/nota-4.jpg" alt="nota-principal-4">
+                    </picture>
+                </figure>
+            </div>
+            <div class="card-principal d-flex flex-column align-items-center gap-2 flex-lg-row">
+                <div class="card-principal-body">
+                    <p>La innovación y la creatividad son los motores de nuestra agencia. Nos apasiona explorar nuevas tendencias y tecnologías para ofrecerte soluciones frescas y relevantes. En un mercado competitivo, sabemos que es esencial diferenciarse, y estamos dedicados a ayudarte a contar la historia de tu marca de una manera auténtica y atractiva. Cada diseño que creamos está pensado para dejar una huella duradera en la mente de tus clientes.</p>
+                </div>
+                <figure class="card-principal-img">
+                    <picture>
+                        <source media="(min-width:991px)" srcset="./img/nota-5-430.jpg">
+                        <img src="./img/nota-5.jpg" alt="nota-principal-5">
+                    </picture>
+                </figure>
+            </div>
+            <div class="card-principal d-flex flex-column align-items-center gap-2 flex-lg-row-reverse">
+                <div class="card-principal-body">
+                    <p>Finalmente, en KraKenis, tu éxito es nuestra misión. Nos entusiasma la oportunidad de acompañarte en cada paso de este viaje. Te invitamos a descubrir cómo nuestras soluciones digitales pueden transformar tu marca y llevarla al siguiente nivel. Juntos, podemos crear algo extraordinario que no solo se destaque, sino que también inspire a otros. ¡Estamos listos para hacer realidad tus sueños visuales!</p>
+                </div>
+                <figure class="card-principal-img">
+                    <picture>
+                        <source media="(min-width:991px)" srcset="./img/nota-6-430.jpg">
+                        <img src="./img/nota-6.jpg" alt="nota-principal-6">
+                    </picture>
+                </figure>
+
+            </div>
+
+        </div>
+
+        </section>
+
+        <!-- Sobre Nosotros -->
+
+        <section class="d-flex flex-column align-items-center gap-3" id="sobre-nosotros">
+        
+        <h1>Sobre Nosotros</h1>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 justify-content-center g-4">
+
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/diseño-grafico-700.jpg">
+                        <img src="./img/diseño-grafico.jpg" class="card-img-top" alt="diseño-graico">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Diseño Gráfico</h2>
+                        <p class="card-text">KraKenis se fundó con la visión de revolucionar el diseño y la comunicación visual. Desde su inicio, la empresa ha buscado combinar creatividad e innovación para ofrecer soluciones únicas a sus clientes. Con un enfoque centrado en el usuario, nos dedicamos a entender las necesidades específicas de cada marca para proporcionar un servicio personalizado que realmente marque la diferencia.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/web-700.jpg">
+                        <img src="./img/web.jpg" class="card-img-top" alt="desarrollo-web">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Desarrolo Web</h2>
+                        <p class="card-text">El equipo de KraKenis está formado por profesionales con diversas especialidades, que van desde el diseño gráfico hasta la programación avanzada. Esta diversidad nos permite abordar proyectos desde múltiples ángulos, garantizando que cada solución sea integral y efectiva. Valoramos la colaboración entre departamentos, lo que nos permite ofrecer un enfoque cohesivo en todos nuestros proyectos.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/diseño-multimedial-700.jpg">
+                        <img src="./img/diseño-multimedial.jpg" class="card-img-top" alt="diseño-multimedial">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Diseño Multimedial</h2>
+                        <p class="card-text">Uno de los principales servicios que ofrecemos es la creación de identidades visuales. Sabemos que una marca fuerte necesita una imagen que la represente de manera auténtica y memorable. A través de un proceso exhaustivo de investigación y análisis, desarrollamos logotipos, paletas de colores y tipografías que capturan la esencia de cada empresa, ayudando a construir una presencia sólida en el mercado.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/marketing-700.jpg">
+                        <img src="./img/marketing.jpg" class="card-img-top" alt="marketing-digital">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Marketing Digital</h2>
+                        <p class="card-text">Además de la identidad visual, en KraKenis nos enfocamos en el desarrollo de plataformas digitales. Creamos sitios web que son no solo atractivos, sino también funcionales y adaptables a dispositivos móviles. Nuestro objetivo es ofrecer una experiencia de usuario fluida que invite a los visitantes a interactuar y explorar, asegurando así una alta tasa de retención y conversión.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/digital-700.jpg">
+                        <img src="./img/digital.jpg" class="card-img-top" alt="diseño-digital">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Diseño Digital</h2>
+                        <p class="card-text">En KraKenis, trabajamos de la mano contigo para garantizar que cada proyecto refleje tu visión y cumpla con las expectativas de tu audiencia. Creemos que el diseño digital interactivo debe ser una mezcla de creatividad y usabilidad, y estamos comprometidos a proporcionar resultados que no solo sean estéticamente agradables, sino que también generen un impacto tangible en tu negocio.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/marca-700.jpg">
+                        <img src="./img/marca.jpg" class="card-img-top" alt="identidad-marca">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Identidad Marca</h2>
+                        <p class="card-text">Nos especializamos en diseñar logotipos, paletas de colores y tipografías que reflejan la personalidad única de cada marca. Cada proyecto es una colaboración cercana, donde escuchamos tus ideas y aspiraciones para crear una identidad que realmente resuene. En KraKenis, creemos que una identidad de marca sólida no solo mejora la visibilidad, sino que también genera confianza y lealtad en los consumidores.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/diseño-estrategico-700.jpg">
+                        <img src="./img/diseño-estrategico.jpg" class="card-img-top" alt="diseño-estrategico">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Diseño Estratégico</h2>
+                        <p class="card-text">En KraKenis, creemos que el diseño va más allá de lo visual: es clave para conectar, cautivar y convertir. Creamos soluciones estratégicas que impulsan tu marca, maximizan la comunicación y optimizan la interacción. Cada proyecto busca generar impacto, transformar tu marca y obtener resultados medibles.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card detalles">
+                    <picture>
+                        <source media="(min-width:1100px)" srcset="./img/diseño-imnovador-700.jpg">
+                        <img src="./img/diseño-imnovador.jpg" class="card-img-top" alt="diseño-imnovador">
+                    </picture>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-evenly p-2">
+                        <h2 class="card-title">Diseño Innovador</h2>
+                        <p class="card-text">En KraKenis, nos apasiona desafiar los límites del diseño. La innovación es clave para destacar en un mundo digital saturado. Creemos en crear experiencias visuales únicas que capturen la atención y mantengan a tu audiencia comprometida. Combinamos tendencias tecnológicas con creatividad para transformar tu comunicación visual.</p>
+                        <a href="#" class="boton">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </section>
+
+        <!-- Video -->
+
+        <div class="video" id="video">
+            <figure class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/DKkNw0yuY1M?si=Vb6fhdTIqwjQLLtQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        </div>
+
+        <!-- Reseñas -->
+
+        <section class="d-flex flex-column align-items-center gap-3" id="reseñas">
+
+        <h1>Reseñas</h1>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xxl-3 g-4">
+
+            <div class="col mb-3">
+                <div class="card reseña">
+                    <div class="row g-0">
+                        <div class="col-lg-4">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="./img/PJ1-220.jpg">
+                                <img src="./img/PJ1.jpg" class="img-fluid" alt="reseña-1">
+                            </picture>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Carla Martinez</h2>
+                                <p class="card-text">KraKenis transformó nuestra visión en una realidad impresionante. Su equipo entendió nuestras necesidades y creó un diseño que superó nuestras expectativas. La atención al detalle y la creatividad fueron excepcionales. Sin duda, una experiencia maravillosa que recomiendo ampliamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card reseña">
+                    <div class="row g-0">
+                        <div class="col-lg-4">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="./img/PJ2-220.jpg">
+                                <img src="./img/PJ2.jpg" class="img-fluid" alt="reseña-2">
+                            </picture>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Juan Gschwind</h2>
+                                <p class="card-text">Trabajar con KraKenis fue increíble. Su enfoque creativo y profesional nos permitió crear un diseño único que reflejó nuestra marca. El equipo integró nuestras ideas de manera excelente, logrando una propuesta visual impactante. ¡Volveremos para futuros proyectos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card reseña">
+                    <div class="row g-0">
+                        <div class="col-lg-4">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="./img/PJ3-220.jpg">
+                                <img src="./img/PJ3.jpg" class="img-fluid" alt="reseña-3">
+                            </picture>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Martin Nieva</h2>
+                                <p class="card-text">KraKenis es la agencia ideal para cualquier proyecto de diseño. Su talento y dedicación se reflejan en cada trabajo que realizan. Desde el primer contacto, su equipo mostró gran profesionalismo y compromiso. Estamos encantados con el resultado final. ¡Altamente recomendados!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card reseña">
+                    <div class="row g-0">
+                        <div class="col-lg-4">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="./img/PJ4-220.jpg">
+                                <img src="./img/PJ4.jpg" class="img-fluid" alt="reseña-4">
+                            </picture>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Esteban Mingrone</h2>
+                                <p class="card-text">Nuestra experiencia con KraKenis fue excepcional. El equipo no solo es creativo, sino que también es muy atento a las necesidades del cliente. Cada etapa del proceso fue fluida y colaborativa. Nos sorprendieron con un diseño que realmente resalta nuestra identidad. ¡Gracias, KraKenis!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card reseña">
+                    <div class="row g-0">
+                        <div class="col-lg-4">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="./img/PJ5-220.jpg">
+                                <img src="./img/PJ5.jpg" class="img-fluid" alt="reseña-5">
+                            </picture>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Camila Paez</h2>
+                                <p class="card-text">Recomiendo encarecidamente KraKenis para cualquier proyecto de diseño gráfico. Su habilidad para entender nuestras ideas y convertirlas en una representación visual única es impresionante. La comunicación fue excelente y el resultado final nos dejó sin palabras. ¡Sin duda volveremos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card reseña">
+                    <div class="row g-0">
+                        <div class="col-lg-4">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="./img/PJ6-220.jpg">
+                                <img src="./img/PJ6.jpg" class="img-fluid p-3" alt="reseña-6">
+                            </picture>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Emiliano Tereszco</h2>
+                                <p class="card-text">KraKenis superó nuestras expectativas con su creatividad y atención al detalle. El equipo entendió perfectamente nuestra visión, logrando un diseño impresionante que reflejó nuestra esencia. Sin duda, volveremos a trabajar con ellos en el futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </section>
+
+        <!-- Equipo -->
+
+        <section class="box-equipo" id="equipo">
+
+        <h1>Equipo</h1>
+
+        <div class="equipo">
+
+            <div class="alumno">
+                <h2>Mariana Gomez</h2>
+                <picture>
+                    <source media="(min-width:601px)" srcset="./img/Marian-350.jpg">
+                    <img src="./img/Marian.jpg" alt="ig">
+                </picture>
+            </div>
+            <div class="alumno">
+                <h2>Julieta Garcia</h2>
+                <picture>
+                    <source media="(min-width:601px)" srcset="./img/juli-350.jpg">
+                    <img src="./img/juli.jpg" alt="Julieta">
+                </picture>
+            </div>
+            <div class="alumno">
+                <h2>Lautaro Llera</h2>
+                <picture>
+                    <source media="(min-width:601px)" srcset="./img/lauty-350.jpg">
+                    <img src="./img/lauty.jpg" alt="ig">
+                </picture>
+            </div>
+            <div class="alumno">
+                <h2>Reynaldo Pereira</h2>
+                <picture>
+                    <source media="(min-width:601px)" srcset="./img/rey-350.jpg">
+                    <img src="./img/rey.jpg" alt="ig">
+                </picture>
+            </div>
+            
+        </div>
+        </section>
+
+        <!-- Contacto -->
+
+        <section class="container-xl d-flex flex-column align-items-center flex-xxl-row align-items-xxl-baseline p-5 gap-5" id="contacto">
+
+        <h1>Contacto</h1>
+
+        <form class="d-flex flex-column align-items-center" action="get">
+    
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                <label for="nombre">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                <label for="apellido">Apellido</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" name="comentario" id="comentario" placeholder="Comentario"></textarea>
+                <label for="comentario">Comentario</label>
+            </div>
+            <div>
+                <input type="submit" class="boton" value="Enviar">
+            </div>
+    
+        </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="datos">
+            <p>Julieta Garcia<br> Mariana Gomez <br> Lautaro Llera <br> Reynaldo Pereira</p>
+
+            <p>Maquetado y Desarrollo web <br> Turno Tarde <br> DMT2CP <br> 2024</p>
+
+        </div>
+
+        <div class="redes">
+            <a href="https://www.instagram.com/escueladavinci/?hl=es" target="_blank">
+                <picture>
+                    <source media="(min-width:901px)" srcset="./img/logotipo-de-instagram-90.png">
+                    <img src="./img/logotipo-de-instagram-60.png" alt="ig">
+                </picture>
+            </a>
+            <a href="https://www.youtube.com/@escueladavinci" target="_blank">
+                <picture>
+                    <source media="(min-width:901px)" srcset="./img/youtube-90.png">
+                    <img src="./img/youtube-60.png" alt="yt">
+                </picture>
+            </a>
+            <a href="https://twitter.com/Escuela_DaVinci?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                <picture>
+                    <source media="(min-width:901px)" srcset="./img/twitter-90.png">
+                    <img src="./img/twitter-60.png" alt="tw">
+                </picture>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
