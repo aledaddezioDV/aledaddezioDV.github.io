@@ -1,0 +1,1117 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f0e8;
+    color: #1a1a1a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#introduccion,
+#historia,
+#personajes,
+#episodios,
+#videos,
+#contacto,
+#footer {
+    scroll-margin-top: 80px;
+}
+
+#menu {
+    background-color: rgba(84, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 0;
+}
+
+.nav-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.nav-logo h1 {
+    line-height: 0;
+}
+
+.nav-logo img {
+    width: 80px;
+}
+
+.nav-btn {
+    background-color: #f5e642;
+    color: #1a1a1a !important;
+    border-radius: 40px;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem !important;
+}
+
+.nav-btn:hover {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+}
+
+#inicio {
+    background-color: #7a1c1c;
+    background-image: url('../imagenes/banner.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(122, 28, 28, 0.80);
+}
+
+.header-contenido {
+    position: relative;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.header-contenido h2 {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 10vw;
+    line-height: 0.9;
+}
+
+#introduccion {
+    padding: 4rem 0;
+    background-color: #f5f0e8;
+}
+
+.seccion-titulo {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #7a1c1c;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.intro-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.intro-texto {
+    flex: 3;
+}
+
+.intro-texto p {
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+}
+
+.intro-texto p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-figura {
+    flex: 2;
+    margin: 0;
+}
+
+.intro-figura img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.ficha-tecnica {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7a1c1c;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.ficha-titulo {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ficha-datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ficha-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ficha-item dt {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.ficha-item dd {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.ficha-item:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 2rem;
+}
+
+#historia {
+    padding: 4rem 0;
+    background-color: #e8e4dc;
+    overflow: hidden;
+}
+
+.historia-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.historia-figura {
+    margin: 0;
+    flex: 1.5;
+    margin-left: -60px;
+}
+
+.historia-figura img {
+    width: 100%;
+}
+
+.historia-timeline {
+    flex: 1;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    padding: 1.5rem 0;
+}
+
+.timeline-item:not(:first-child)::before {
+    content: '';
+    display: block;
+    width: calc(100% + 3rem + 400px - 60px);
+    margin-left: calc(-3rem - 400px + 60px);
+    border-top: 2px solid #7a1c1c;
+    margin-bottom: 1rem;
+}
+
+.timeline-item h4 {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    line-height: 1.8;
+}
+
+#personajes {
+    padding: 4rem 0;
+    background-color: #7a1c1c;
+}
+
+#personajes .seccion-titulo {
+    color: #ffffff;
+}
+
+.personajes-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.personaje-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* en desktop el header es invisible, sus hijos se comportan normalmente */
+.personaje-header {
+    display: contents;
+}
+
+/* en desktop el nombre dentro del header está oculto porque ya aparece en .personaje-info */
+.personaje-nombre {
+    display: none;
+}
+
+.personaje-figura {
+    margin: 0;
+    height: 400px;
+    overflow: hidden;
+}
+
+.personaje-figura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.personaje-info {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.personaje-info-titulo {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.personaje-actor {
+    font-size: 0.8rem;
+    color: #7a1c1c;
+    margin: 0;
+}
+
+.personaje-info p:not(.personaje-actor) {
+    font-size: 0.85rem;
+    color: #444444;
+    line-height: 1.7;
+    margin: 0;
+}
+
+#episodios {
+    padding: 4rem 0;
+    background-color: #f5f0e8;
+}
+
+.episodios-titulo {
+    color: #7a1c1c;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.episodios-contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.episodio-card {
+    background-color: #7a1c1c;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 280px;
+    padding: 12px;
+}
+
+.episodio-figura {
+    margin: 0;
+    flex: 0 0 40%;
+}
+
+.episodio-figura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 188px 0 0 188px;
+}
+
+.episodio-info {
+    flex: 1;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.episodio-info h4 {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.episodio-tag {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+.episodio-info p:not(.episodio-tag) {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.episodio-invertido .episodio-figura img {
+    border-radius: 0 188px 188px 0;
+}
+
+.episodio-invertido .episodio-info {
+    padding: 2rem 2rem 2rem 3rem;
+}
+
+#videos {
+    padding: 4rem 0;
+    background-color: #7a1c1c;
+}
+
+.videos-titulo {
+    color: #ffffff;
+}
+
+.videos-intro {
+    width: 60%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+
+.videos-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.video-card {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.video-info {
+    padding: 1.25rem;
+}
+
+.video-info h4 {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #1a1a1a;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.video-info p {
+    font-size: 0.85rem;
+    color: #444444;
+    line-height: 1.7;
+    margin: 0;
+}
+
+#contacto {
+    padding: 4rem 0;
+    background-color: #e8e4dc;
+}
+
+.contacto-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.contacto-texto {
+    flex: 1;
+}
+
+.contacto-titulo {
+    color: #7a1c1c;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contacto-texto p {
+    color: #444444;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.formulario {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-grupo label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #444444;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    background-color: #7a1c1c;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    min-height: 48px;
+}
+
+.form-grupo textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    outline: 2px solid #f5e642;
+}
+
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-submit {
+    background-color: #f5e642;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 20px;
+    padding: 0.85rem 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    min-height: 48px;
+    align-self: flex-end;
+}
+
+.btn-submit:hover {
+    background-color: #ffffff;
+}
+
+#footer {
+    background-color: #1a1a1a;
+    padding: 3rem 0 1.5rem 0;
+}
+
+.footer-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-foto {
+    flex: 0 0 250px;
+}
+
+.footer-foto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.footer-columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-titulo {
+    font-family: 'Climate Crisis', sans-serif;
+    color: #f5e642;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.footer-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-datos p {
+    font-size: 0.85rem;
+    color: #999999;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer-datos strong {
+    color: #ffffff;
+}
+
+.footer-escuela {
+    font-style: italic;
+    color: #777777 !important;
+}
+
+.footer-datos a {
+    color: #f5e642;
+    font-size: 0.85rem;
+}
+
+.footer-datos a:hover {
+    color: #ffffff;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+
+.footer-redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-redes a:hover {
+    background-color: #7a1c1c;
+}
+
+.footer-redes img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-lista a {
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+.footer-lista a:hover {
+    color: #ffffff;
+}
+
+.footer-copy {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555555;
+    border-top: 1px solid #333333;
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+
+    #menu {
+        padding: 0.25rem 0;
+        background-color: #6c0000;
+    }
+
+    .nav-contenedor {
+        padding: 0.75rem 5%;
+    }
+
+    .nav-logo img {
+        width: 50px;
+    }
+
+    #hamburguesa {
+        display: flex;
+    }
+
+    #hamburguesa li {
+        list-style: none;
+        width: 2.5em;
+        height: 2.5em;
+        overflow: hidden;
+    }
+
+    #hamburguesa li:last-child {
+        display: none;
+    }
+
+    #hamburguesa li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-align: center;
+        line-height: 2.5em;
+        min-height: auto;
+    }
+
+    #barra {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0f0f0f;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu:target #barra {
+        height: calc(100vh - 4em);
+    }
+
+    #menu:target #hamburguesa li:first-child {
+        display: none;
+    }
+
+    #menu:target #hamburguesa li:last-child {
+        display: block;
+    }
+
+    #barra li {
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+
+    #barra li a {
+        display: block;
+        color: #ffffff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #333333;
+        min-height: 48px;
+        line-height: 3;
+    }
+
+    #barra li a:hover {
+        color: #f5e642;
+    }
+
+    .nav-btn {
+        color: #f5e642 !important;
+        background-color: transparent !important;
+        border-radius: 0 !important;
+        padding: 1rem !important;
+    }
+
+    #inicio {
+        min-height: 60vh;
+    }
+
+    .seccion-titulo {
+        font-size: 8vw !important;
+    }
+
+    #introduccion {
+        padding-top: 5rem;
+    }
+
+    .intro-contenedor {
+        flex-direction: column;
+    }
+
+    .intro-figura {
+        width: 100%;
+    }
+
+    .ficha-item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 0 !important;
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        padding-bottom: 1rem;
+    }
+
+    .ficha-item:last-child {
+        border-bottom: none;
+    }
+
+    .ficha-datos {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #historia {
+        overflow: hidden;
+    }
+
+    .historia-figura {
+        display: none;
+    }
+
+    .historia-contenedor {
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .historia-timeline {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .timeline-item:not(:first-child)::before {
+        width: 100%;
+        margin-left: 0;
+        border-top: 1px solid #7a1c1c;
+    }
+
+    .personajes-contenedor {
+        flex-direction: column;
+    }
+
+    .personaje-card {
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+
+    .personaje-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .personaje-figura {
+        display: block;
+        height: 80px;
+        width: 80px;
+        flex: 0 0 80px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .personaje-figura img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .personaje-nombre {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    .personaje-nombre h4 {
+        font-size: 1rem;
+        color: #1a1a1a;
+    }
+
+    .personaje-info-titulo {
+        display: none;
+    }
+
+    .personaje-info {
+        height: auto;
+        overflow: visible;
+        padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    }
+
+    .episodio-card {
+        flex-direction: column;
+        height: auto;
+        border-radius: 24px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .episodio-figura {
+        flex: none;
+        width: 100%;
+        height: 200px;
+    }
+
+    .episodio-figura img {
+        border-radius: 24px 24px 0 0;
+        height: 200px;
+    }
+
+    .episodio-invertido {
+        flex-direction: column;
+    }
+
+    .episodio-invertido .episodio-figura {
+        order: -1;
+    }
+
+    .episodio-invertido .episodio-figura img {
+        border-radius: 24px 24px 0 0;
+    }
+
+    .episodio-info {
+        padding: 1.5rem;
+    }
+
+    .episodio-invertido .episodio-info {
+        padding: 1.5rem;
+    }
+
+    .videos-contenedor {
+        flex-direction: column;
+    }
+
+    .videos-intro {
+        width: 90%;
+    }
+
+    .contacto-contenedor {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contacto-titulo {
+        text-align: center;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .btn-submit {
+        width: 100%;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-foto img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-redes {
+        justify-content: center;
+    }
+
+    .footer-copy {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #hamburguesa {
+        display: none;
+    }
+
+    #barra {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+        position: static;
+        height: auto;
+        background-color: transparent;
+    }
+
+    #barra li a {
+        display: block;
+        color: #ffffff;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 0.5rem 0.75rem;
+        min-height: 48px;
+        line-height: 3;
+    }
+
+    #barra li a:hover {
+        color: #f5e642;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .historia-figura {
+        display: none;
+    }
+
+    .historia-contenedor {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .historia-timeline {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .timeline-item:not(:first-child)::before {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .personaje-card {
+        flex: 0 0 45%;
+    }
+
+    .contacto-contenedor {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contacto-titulo {
+        text-align: center;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .btn-submit {
+        width: 100%;
+        align-self: stretch;
+        text-align: center;
+    }
+}

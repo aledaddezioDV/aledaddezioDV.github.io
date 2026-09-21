@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="shortcut icon" href="favicon/breaking-bad-favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Breaking Bad: El ascenso de Heisenberg</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+                <a href="#inicio" class="nav-logo">
+                    <img src="img/breaking-bad.svg" alt="Breaking Bad Logo" class="nav-logo-svg" width="50">
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#ficha-tecnica">Ficha Técnica</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#personajes">Personajes</a></li>
+                    <li><a href="#episodios">Episodios</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <figure class="hero-bg">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/banner-hero-breaking-bad-600px.png" width="600"
+                        height="900">
+                    <source media="(max-width: 1024px)" srcset="img/banner-hero-breaking-bad-1024px.png" width="1024"
+                        height="576">
+                    <img src="img/banner-hero-breaking-bad-1680px.jpg" alt="Walter White y Jesse Pinkman"
+                        class="media-img" width="1920" height="1080" loading="eager" fetchpriority="high">
+                </picture>
+            </figure>
+            <div class="hero-content">
+                <p class="hero-tagline">AMC · 2008–2013</p>
+                <h1 class="hero-title">Breaking<br><span class="hero-accent">Bad</span></h1>
+                <p class="hero-subtitle">El ascenso de Heisenberg</p>
+                <p class="hero-desc">La transformación de un hombre común en uno de los criminales más temidos</p>
+                <a href="#introduccion" class="btn-hero">Explorar la serie</a>
+            </div>
+            <div class="hero-formula">CH<sub>3</sub>NH · C<sub>10</sub>H<sub>15</sub>N</div>
+        </section>
+
+        <section class="seccion introduccion-section" id="introduccion">
+            <div class="container">
+                <div class="seccion-header">
+                    <span class="seccion-numero">01</span>
+                    <h2 class="seccion-titulo">Introducción</h2>
+                </div>
+                <div class="intro-grid">
+                    <div class="intro-texto">
+                        <p><strong>Breaking Bad</strong> es una aclamada serie de televisión estadounidense creada y
+                            producida por <em>Vince Gilligan</em>, que se estrenó el 20 de enero de 2008 a través de la
+                            cadena AMC. Desde su primer episodio, la historia propone una premisa tan simple como
+                            inquietante: <strong>¿qué haría una persona común si se viera empujada al límite?</strong>
+                        </p>
+                        <p>A partir de esa pregunta, la serie construye un relato intenso y progresivo sobre la
+                            transformación de su protagonista, <strong>Walter White</strong>, un profesor de química
+                            cuya vida cambia radicalmente tras recibir un diagnóstico de <em>cáncer terminal</em>.</p>
+                        <p>A lo largo de sus temporadas, la serie explora con profundidad la evolución moral de su
+                            protagonista, mostrando cómo decisiones aparentemente justificables pueden derivar en
+                            consecuencias cada vez más oscuras. Concebida por Gilligan con la idea de convertir a un
+                            <em>"hombre común en un antihéroe"</em>, la narrativa se apoya en una construcción
+                            psicológica compleja, donde el poder, la ambición y la supervivencia redefinen
+                            constantemente los límites entre el bien y el mal.
+                        </p>
+                        <p>El resultado es una historia atrapante que no sólo redefinió el género dramático televisivo,
+                            sino que también dejó una huella duradera en la <strong>cultura popular</strong> por su
+                            intensidad narrativa y desarrollo de personajes.</p>
+                    </div>
+                    <div class="intro-imagen">
+                        <figure class="picture-media intro-img">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/walter-intro-mobile.png" width="320"
+                                    height="400">
+                                <source media="(max-width: 1024px)" srcset="img/walter-intro-tablet.png" width="600"
+                                    height="750">
+                                <img src="img/walter-intro-desktop.png" alt="Walter White" class="media-img" width="540"
+                                    height="680" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="intro-quote">
+                            <blockquote>
+                                "Yo soy el peligro. Yo soy el que toca la puerta."
+                                <cite>— Walter White / Heisenberg</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion ficha-section" id="ficha-tecnica">
+            <div class="container">
+                <div class="seccion-header seccion-header--light">
+                    <span class="seccion-numero">02</span>
+                    <h2 class="seccion-titulo">Ficha Técnica</h2>
+                </div>
+                <div class="ficha-grid">
+                    <div class="ficha-item"><span class="ficha-label">Creador</span><strong class="ficha-valor">Vince
+                            Gilligan</strong></div>
+                    <div class="ficha-item"><span class="ficha-label">Género</span><strong class="ficha-valor">Drama,
+                            Crimen</strong></div>
+                    <div class="ficha-item"><span class="ficha-label">Episodios</span><strong
+                            class="ficha-valor">62</strong></div>
+                    <div class="ficha-item"><span class="ficha-label">Temporadas</span><strong
+                            class="ficha-valor">5</strong></div>
+                    <div class="ficha-item"><span class="ficha-label">Emisión</span><strong
+                            class="ficha-valor">2008–2013</strong></div>
+                    <div class="ficha-item"><span class="ficha-label">Cadena</span><strong
+                            class="ficha-valor">AMC</strong></div>
+                </div>
+                <div class="ficha-imagen-wrapper">
+                    <figure class="picture-media ficha-img">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/ficha-tecnica-600px.png" width="600"
+                                height="260">
+                            <source media="(max-width: 1024px)" srcset="img/ficha-tecnica-1024px.jpg" width="1024"
+                                height="260">
+                            <img src="img/ficha-tecnica-1680px.jpg" alt="Representación de laboratorio de metanfetamina"
+                                class="media-img" width="1200" height="260" loading="lazy">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion historia-section" id="historia">
+            <div class="container">
+                <div class="seccion-header">
+                    <span class="seccion-numero">03</span>
+                    <h2 class="seccion-titulo">Historia de Transmisión</h2>
+                </div>
+                <div class="historia-grid">
+                    <div class="historia-imagen">
+                        <figure class="picture-media historia-img">
+                            <picture>
+                                <source media="(max-width: 1024px)" srcset="img/amc-2008-1024px.jpg" width="768"
+                                    height="460">
+                                <img src="img/amc-2008.webp" alt="Cartel promocional de Breaking Bad" class="media-img"
+                                    width="320" height="460" loading="lazy">
+                            </picture>
+                        </figure>
+                    </div>
+
+                    <div class="historia-timeline">
+
+                        <article class="timeline-item timeline-item--collapsible">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>2008 — El estreno discreto</h3>
+                                <div class="timeline-trigger" role="button" tabindex="0" aria-expanded="false">
+                                    <span class="trigger-icon" aria-hidden="true">▼</span>
+                                </div>
+                                <p>Su estreno en 2008 por la cadena AMC <strong>no fue inicialmente un fenómeno
+                                        masivo</strong>, e incluso su primera temporada se vio afectada por la huelga de
+                                    guionistas de Hollywood, lo que redujo la cantidad de episodios producidos. A pesar
+                                    de esto, la serie comenzó a construir lentamente una base de seguidores gracias al
+                                    <em>"boca a boca"</em>.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item timeline-item--collapsible">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Al borde de la cancelación — La crisis de la tercera temporada</h3>
+                                <div class="timeline-trigger" role="button" tabindex="0" aria-expanded="false">
+                                    <span class="trigger-icon" aria-hidden="true">▼</span>
+                                </div>
+                                <p>Uno de los momentos más críticos llegó alrededor de la tercera temporada, cuando
+                                    <strong>AMC consideró cancelar la serie</strong>. Ante esta incertidumbre, la
+                                    productora Sony Pictures Television evaluó venderla a otras cadenas. Finalmente, AMC
+                                    decidió renovarla, marcando un punto de inflexión.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item timeline-item--collapsible">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>El efecto Netflix — El streaming como motor de popularidad</h3>
+                                <div class="timeline-trigger" role="button" tabindex="0" aria-expanded="false">
+                                    <span class="trigger-icon" aria-hidden="true">▼</span>
+                                </div>
+                                <p>El verdadero impulso llegó con la incorporación de la serie al catálogo de
+                                    <strong>Netflix</strong>. Este acuerdo permitió que nuevos espectadores descubrieran
+                                    la historia desde el inicio, lo que provocó un <em>crecimiento exponencial</em> en
+                                    su audiencia. El estreno de la quinta temporada duplicó la cantidad de espectadores.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item timeline-item--collapsible">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>2013 — El final: más de 10 millones de espectadores</h3>
+                                <div class="timeline-trigger" role="button" tabindex="0" aria-expanded="false">
+                                    <span class="trigger-icon" aria-hidden="true">▼</span>
+                                </div>
+                                <p>El episodio final, emitido en 2013, consolidó a Breaking Bad como uno de los mayores
+                                    <strong>fenómenos culturales</strong> de la televisión moderna, redefiniendo cómo
+                                    las audiencias descubren y consumen contenido.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item timeline-item--collapsible">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Una evolución que cambió la industria</h3>
+                                <div class="timeline-trigger" role="button" tabindex="0" aria-expanded="false">
+                                    <span class="trigger-icon" aria-hidden="true">▼</span>
+                                </div>
+                                <p>En retrospectiva, la trayectoria de la serie refleja una evolución clave en la
+                                    industria: pasó de depender exclusivamente de la televisión tradicional a
+                                    convertirse en un <em>éxito global impulsado por el streaming</em>.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion personajes-section" id="personajes">
+            <div class="container">
+                <div class="seccion-header seccion-header--light">
+                    <span class="seccion-numero">04</span>
+                    <h2 class="seccion-titulo">Personajes</h2>
+                </div>
+                <div class="personajes-grid">
+
+                    <article class="personaje-card">
+                        <figure class="personaje-foto picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/walter-white-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/walter-white-1024px.jpg">
+                                <img src="img/walter-white-1680px.jpg"
+                                    alt="Bryan Cranston como Walter White / Heisenberg" class="media-img personaje-img"
+                                    width="400" height="220" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="personaje-info">
+                            <h3 class="personaje-nombre">Walter White</h3>
+                            <p class="personaje-actor">Interpretado por <em>Bryan Cranston</em></p>
+                            <p class="personaje-desc">Profesor de química que se vuelve narcotraficante, protagonista
+                                central y <strong>anti-héroe trágico</strong>. Su arco narrativo sigue su descenso
+                                moral: comienza cocinando metanfetamina para pagar su cáncer y termina como el
+                                despiadado <em>"Heisenberg"</em>, alejándose de su familia.</p>
+                        </div>
+                    </article>
+
+                    <article class="personaje-card">
+                        <figure class="personaje-foto picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/jesse-pinkman-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/jesse-pinkman-1024px.jpg">
+                                <img src="img/jesse-pinkman-1680px.jpg" alt="Aaron Paul como Jesse Pinkman"
+                                    class="media-img personaje-img" width="400" height="220" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="personaje-info">
+                            <h3 class="personaje-nombre">Jesse Pinkman</h3>
+                            <p class="personaje-actor">Interpretado por <em>Aaron Paul</em></p>
+                            <p class="personaje-desc">Joven socio de Walt y coprotagonista cuyo arco va de
+                                <strong>criminal despreocupado a víctima culpable</strong>. Su inocencia y conflicto
+                                moral sirven de contrapunto al de Walter.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="personaje-card">
+                        <figure class="personaje-foto picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/skyler-white-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/skyler-white-1024px.jpg">
+                                <img src="img/skyler-white-1680px.jpg" alt="Anna Gunn como Skyler White"
+                                    class="media-img personaje-img" width="400" height="220" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="personaje-info">
+                            <h3 class="personaje-nombre">Skyler White</h3>
+                            <p class="personaje-actor">Interpretada por <em>Anna Gunn</em></p>
+                            <p class="personaje-desc">Esposa de Walt, <strong>figura de moralidad familiar</strong>.
+                                Actúa como la contraparte ética de Walt; su arco va de esposa preocupada a cómplice
+                                forzada, luchando por proteger a su familia.</p>
+                        </div>
+                    </article>
+
+                    <article class="personaje-card">
+                        <figure class="personaje-foto picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/hank-schrader-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/hank-schrader-1024.jpg">
+                                <img src="img/hank-schrader-1680px.jpg"
+                                    alt="Dean Norris como Hank Schrader, agente de la DEA"
+                                    class="media-img personaje-img" width="400" height="220" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="personaje-info">
+                            <h3 class="personaje-nombre">Hank Schrader</h3>
+                            <p class="personaje-actor">Interpretado por <em>Dean Norris</em></p>
+                            <p class="personaje-desc">Agente de la DEA y cuñado de Walt. Representa la <strong>ley y la
+                                    justicia</strong>. Funciona como antagonista dramático involuntario: su cacería de
+                                Heisenberg provee tensión permanente.</p>
+                        </div>
+                    </article>
+
+                    <article class="personaje-card">
+                        <figure class="personaje-foto picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/saul-goodman-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/saul-goodman-1024px.jpg">
+                                <img src="img/saul-goodman-1680px.jpg" alt="Bob Odenkirk como Saul Goodman, abogado"
+                                    class="media-img personaje-img" width="400" height="220" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="personaje-info">
+                            <h3 class="personaje-nombre">Saul Goodman</h3>
+                            <p class="personaje-actor">Interpretado por <em>Bob Odenkirk</em></p>
+                            <p class="personaje-desc">El abogado colorido y oportunista que sirve de <strong>alivio
+                                    cómico</strong> y puente entre legales y criminales. Consigue contactos, blanquea
+                                dinero y encuentra soluciones para Walt y Jesse.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion episodios-section" id="episodios">
+            <div class="container">
+                <div class="seccion-header">
+                    <span class="seccion-numero">05</span>
+                    <h2 class="seccion-titulo">Episodios Destacados</h2>
+                </div>
+                <div class="episodios-grid">
+
+                    <article class="episodio-card">
+                        <figure class="episodio-img-wrap picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/ep-pilot-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/ep-pilot-1024px.jpg">
+                                <img src="img/ep-pilot-1680px.jpg"
+                                    alt="Episodio Pilot T1E1 — Walter White en el desierto" class="media-img ep-img"
+                                    width="160" height="120" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="episodio-info">
+                            <span class="episodio-tag">Temporada 1 · Episodio 1</span>
+                            <h3 class="episodio-titulo">Pilot</h3>
+                            <p>El episodio piloto marca el inicio de toda la historia y presenta la
+                                <strong>transformación inicial</strong> de Walter White. Tras recibir su diagnóstico de
+                                cáncer, Walter toma la decisión de entrar al mundo del narcotráfico junto a Jesse
+                                Pinkman. Este capítulo establece el tono de la serie y plantea el conflicto central: la
+                                lucha entre la <em>moralidad y la supervivencia</em>.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="episodio-card">
+                        <figure class="episodio-img-wrap picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/ep-grilled-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/ep-grilled-1024px.jpg">
+                                <img src="img/ep-grilled-1680px.jpg"
+                                    alt=" Episodio Grilled T2E2 — Walter y Jesse con Tuco Salamanca"
+                                    class="media-img ep-img" width="160" height="120" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="episodio-info">
+                            <span class="episodio-tag">Temporada 2 · Episodio 2</span>
+                            <h3 class="episodio-titulo">Grilled</h3>
+                            <p>Walter y Jesse son capturados por <strong>Tuco Salamanca</strong>, uno de los primeros
+                                grandes antagonistas de la serie. La tensión psicológica domina toda la narrativa,
+                                mientras Walter comienza a demostrar su capacidad de <em>manipulación y sangre fría</em>
+                                para salir de situaciones extremas.</p>
+                        </div>
+                    </article>
+
+                    <article class="episodio-card">
+                        <figure class="episodio-img-wrap picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/ep-face-off-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/ep-face-off-1024px.jpg">
+                                <img src="img/ep-face-off-1680px.jpg"
+                                    alt="Episodio Face Off T4E13 — Walter White vs Gus Fring" class="media-img ep-img"
+                                    width="160" height="120" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="episodio-info">
+                            <span class="episodio-tag">Temporada 4 · Episodio 13</span>
+                            <h3 class="episodio-titulo">Face Off</h3>
+                            <p>El final de la cuarta temporada presenta uno de los enfrentamientos más icónicos:
+                                <strong>Walter White contra Gus Fring</strong>. Este episodio representa un punto de
+                                quiebre definitivo donde Walter demuestra hasta dónde está dispuesto a llegar para ganar
+                                poder.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="episodio-card episodio-card--destacado">
+                        <figure class="episodio-img-wrap picture-media">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="img/ep-ozymandias-600px.jpg">
+                                <source media="(max-width: 1024px)" srcset="img/ep-ozymandias-1024px.jpg">
+                                <img src="img/ep-ozymandias-1680px.jpg"
+                                    alt=" Episodio Ozymandias T5E14 — La caída de Walter White" class="media-img ep-img"
+                                    width="160" height="120" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="episodio-info">
+                            <span class="episodio-tag">Temporada 5 · Episodio 14</span>
+                            <h3 class="episodio-titulo">Ozymandias</h3>
+                            <p>Considerado uno de los <strong>mejores episodios de la televisión</strong>, este capítulo
+                                muestra la caída total de Walter White. Las consecuencias de sus decisiones alcanzan su
+                                punto máximo. Es un episodio <em>emocionalmente devastador</em> que funciona como el
+                                clímax de toda la serie.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion videos-section" id="videos">
+            <div class="container">
+                <div class="seccion-header seccion-header--light">
+                    <span class="seccion-numero">06</span>
+                    <h2 class="seccion-titulo">Videos</h2>
+                </div>
+                <p class="videos-intro">La esencia de la serie es la transformación de <strong>Walter White</strong>, su
+                    compleja relación con Jesse Pinkman y la tensión constante que define su historia. A través de estos
+                    contenidos, vas a poder entender tanto la evolución de los personajes como los puntos más intensos
+                    de la trama.</p>
+                <div class="videos-grid">
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/lGlHZQ1kzrA"
+                                title="Ascenso y caída de Walter White"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <p class="video-desc">Resumen del ascenso y caída de Walter White, ideal para entender toda la
+                            serie rápidamente.</p>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/etGvuMAnU7g" title="Las 5 temporadas resumidas"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <p class="video-desc">Video que repasa las 5 temporadas y los momentos clave de la historia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion contacto-section" id="contacto">
+            <div class="container">
+                <div class="seccion-header">
+                    <span class="seccion-numero">07</span>
+                    <h2 class="seccion-titulo">Sorteo Kit Heisenberg</h2>
+                </div>
+                <div class="contacto-grid">
+                    <div class="contacto-texto">
+                        <h3>Quedan pocos lugares.</h3>
+                        <p>Ingresá al sorteo y llevate tu <strong>kit Heisenberg</strong> exclusivo: sombrero fedora,
+                            polera negra, gafas oscuras y un frasco de cristal azul de recuerdo.</p>
+                        <p>Completá el formulario con tus datos y te contactaremos si resultás ganador/a. El sorteo es
+                            válido solo para residentes de Argentina.</p>
+                    </div>
+                    <div class="contacto-form-wrap">
+                        <div class="contacto-form">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Walter White"
+                                    autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="heisenberg@correo.com"
+                                    autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+54 11 1234-5678"
+                                    autocomplete="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="comentario">¿Por qué merecés el kit?</label>
+                                <textarea id="comentario" name="comentario" rows="4"
+                                    placeholder="Soy el que toca la puerta..."></textarea>
+                            </div>
+                            <button type="button" class="btn-submit">Participar del sorteo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-alumno">
+                    <figure class="alumno-foto picture-media">
+                        <picture>
+                            <img src="img/mi-foto.jpg" alt="Foto del alumno" class="media-img alumno-img"
+                                loading="lazy">
+                        </picture>
+                    </figure>
+                    <div class="alumno-datos">
+                        <h4 class="footer-titulo">Datos de la alumna</h4>
+                        <ul class="footer-lista">
+                            <li><strong>Nombre: </strong>Loreley Priscila Piombo</li>
+                            <li><strong>Fecha de Nacimiento: </strong>11/12/2006</li>
+                            <li><strong>Email:</strong><a
+                                    href="mailto:loreley.piombo@davinci.edu.ar"> loreley.piombo@davinci.edu.ar</a>
+                            </li>
+                        </ul>
+                        <div class="footer-redes">
+                            <a class="redes-a" href="https://www.instagram.com" aria-label="Instagram" target="_blank"
+                                rel="noopener noreferrer"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.twitter.com" aria-label="Twitter/X" target="_blank"
+                                rel="noopener noreferrer"><i class="ri-twitter-x-fill"></i></a>
+                            <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank"
+                                rel="noopener noreferrer"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col footer-davinci">
+                    <h4 class="footer-titulo">Da Vinci</h4>
+                    <p class="footer-escuela">Primera Escuela de Arte Multimedial</p>
+                    <ul class="footer-lista">
+                        <li><strong>Materia:</strong> Interacción con Dispositivos Móviles</li>
+                        <li><strong>Profesor:</strong> Alejandro D'Addezio</li>
+                        <li><strong>Comisión:</strong> DWM2AP</li>
+                        <li><strong>Año:</strong> 2026</li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-nav">
+                    <h4 class="footer-titulo">Navegación</h4>
+                    <ul class="footer-nav-lista">
+                        <li><a href="#introduccion">Introducción</a></li>
+                        <li><a href="#ficha-tecnica">Ficha Técnica</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#personajes">Personajes</a></li>
+                        <li><a href="#episodios">Episodios</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>©Loreley Priscila Piombo-2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#inicio" class="scroll-top" id="scrollTop" aria-label="Volver arriba"><i class="ri-arrow-up-s-line"></i></a>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

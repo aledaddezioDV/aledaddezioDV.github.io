@@ -1,0 +1,591 @@
+:root {
+  --bg: #f3efe6;
+  --panel: #ebe5d7;
+  --panel-2: #ffffff;
+  --borde: #d6cfbf;
+  --texto: #2c2924;
+  --texto-suave: #5f584f;
+  --verde: #5f7446;
+  --verde-oscuro: #495936;
+  --mostaza: #a78635;
+  --blanco: #ffffff;
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --max: 1200px;
+  --radio: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--texto);
+  font-family: 'Source Serif 4', serif;
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contenedor {
+  width: min(100% - 2rem, var(--max));
+  margin: 0 auto;
+}
+
+.seccion {
+  padding: 4rem 0;
+}
+
+.seccion-oscura {
+  background: var(--panel);
+}
+
+.titulo-seccion {
+  margin-bottom: 1.8rem;
+}
+
+.titulo-seccion h2::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 2px;
+  background: var(--verde);
+  margin-top: 0.7rem;
+}
+
+.etiqueta {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--verde);
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+}
+
+h1,
+h2,
+h3,
+.navegacion a,
+.boton,
+.pie-titulo {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 7vw, 4.8rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--blanco);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--verde-oscuro);
+}
+
+h3 {
+  font-size: 1.35rem;
+  color: var(--mostaza);
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.descripcion-seccion {
+  color: var(--texto-suave);
+  max-width: 70ch;
+  margin-bottom: 2rem;
+}
+
+.texto-largo p + p {
+  margin-top: 1rem;
+}
+
+.encabezado-principal {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--borde);
+}
+
+.encabezado-contenido {
+  min-height: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.marca img {
+  height: 40px;
+  width: auto;
+}
+
+.navegacion ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.navegacion a {
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+  color: var(--texto-suave);
+  transition: color 0.2s ease;
+}
+
+.navegacion a:hover,
+.navegacion a:focus {
+  color: var(--verde-oscuro);
+}
+
+.hero {
+  min-height: calc(90vh - 84px);
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(44, 41, 36, 0.78) 0%, rgba(44, 41, 36, 0.62) 45%, rgba(44, 41, 36, 0.3) 100%),
+    url('../img/posters/poster-hero.jpeg') center/cover no-repeat;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.hero-volanta {
+  color: #d9e5ca;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.hero-bajada {
+  font-size: 1.1rem;
+  max-width: 34rem;
+  margin-bottom: 1.8rem;
+  color: #f2ede2;
+}
+
+.hero-bajada strong {
+  color: #f0d890;
+}
+
+.hero-visual {
+  display: none;
+}
+
+.boton {
+  display: inline-block;
+  background: var(--mostaza);
+  color: #1f1c17;
+  border: 1px solid var(--mostaza);
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.boton:hover,
+.boton:focus {
+  background: #b8953d;
+  color: #1f1c17;
+}
+
+.introduccion-grid,
+.historia-grid,
+.contacto-grid,
+.ficha-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.figura-lateral,
+.poster-destacado,
+.galeria-vertical img,
+.imagen-contacto,
+.tarjeta-personaje,
+.tarjeta-episodio,
+.video-card {
+  border-radius: var(--radio);
+  overflow: hidden;
+}
+
+.figura-lateral img,
+.poster-destacado img,
+.galeria-vertical img,
+.imagen-contacto {
+  width: 100%;
+  border: 1px solid var(--borde);
+  box-shadow: var(--sombra);
+}
+
+.figura-lateral figcaption {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  margin-top: 0.8rem;
+}
+
+.ficha-lista {
+  display: grid;
+  gap: 1rem;
+}
+
+.ficha-lista div {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--panel-2);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.ficha-lista dt {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--verde);
+}
+
+.ficha-lista dd {
+  color: var(--texto);
+}
+
+.poster-destacado img {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.galeria-vertical {
+  display: grid;
+  gap: 1rem;
+}
+
+.personajes-grid,
+.episodios-grid,
+.videos-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tarjeta-personaje,
+.tarjeta-episodio,
+.video-card {
+  background: var(--panel-2);
+  border: 1px solid var(--borde);
+  box-shadow: var(--sombra);
+}
+
+.tarjeta-personaje img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.tarjeta-episodio img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.tarjeta-contenido {
+  padding: 1.2rem;
+}
+
+.actor,
+.episodio-meta,
+.video-card p,
+.pie-pagina p {
+  color: var(--texto-suave);
+}
+
+.actor,
+.episodio-meta {
+  font-size: 0.95rem;
+  margin: 0.3rem 0 0.9rem;
+}
+
+
+.video-card h3 {
+  padding: 1rem 1.1rem 0.8rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-card p {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.contacto-grid {
+  align-items: start;
+}
+
+.imagen-contacto {
+  margin-top: 1.5rem;
+}
+
+.formulario {
+  display: grid;
+  gap: 1rem;
+  background: var(--panel-2);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 1.5rem;
+  box-shadow: var(--sombra);
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.campo-formulario label {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85rem;
+  color: var(--verde-oscuro);
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  background: #fbfaf7;
+  color: var(--texto);
+  font: inherit;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+  outline: 1px solid var(--mostaza);
+  border-color: var(--mostaza);
+}
+
+.campo-formulario textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.pie-pagina {
+  border-top: 1px solid var(--borde);
+  padding: 2rem 0;
+  background: #f8f5ee;
+}
+
+.pie-grid {
+  display: grid;
+  gap: 1.6rem;
+  align-items: center;
+  padding: 1.6rem;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  background: var(--panel-2);
+}
+
+.datos-alumno,
+.redes-footer,
+.foto-footer {
+  text-align: center;
+}
+
+.datos-alumno {
+  max-width: 360px;
+}
+
+.datos-alumno p {
+  margin-bottom: 0.45rem;
+  line-height: 1.55;
+}
+
+.datos-alumno a {
+  color: var(--verde-oscuro);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.datos-alumno a:hover,
+.datos-alumno a:focus {
+  color: var(--mostaza);
+}
+
+.redes-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.red-social {
+  width: 210px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  color: var(--texto);
+  background: #fbfaf7;
+  transition: border-color 0.2s ease;
+}
+
+.red-social img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+
+.red-social:hover,
+.red-social:focus {
+  border-color: var(--verde);
+}
+
+.foto-alumno {
+  width: min(100%, 250px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--mostaza);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+}
+
+.pie-titulo {
+  color: var(--verde-oscuro);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  .encabezado-contenido {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-grid,
+  .introduccion-grid,
+  .historia-grid,
+  .contacto-grid,
+  .ficha-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .personajes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .episodios-grid,
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formulario {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ancho-completo {
+    grid-column: 1 / -1;
+  }
+
+  .pie-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 3rem;
+  }
+
+  .datos-alumno {
+    max-width: none;
+    text-align: left;
+  }
+
+  .foto-footer {
+    order: 2;
+    text-align: center;
+  }
+
+  .redes-footer {
+    order: 3;
+    text-align: left;
+    justify-self: end;
+  }
+
+  .redes-lista {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-visual {
+    display: block;
+  }
+
+  .hero-visual img {
+    border-radius: var(--radio);
+    border: 1px solid var(--borde);
+    box-shadow: var(--sombra);
+  }
+
+  .personajes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .episodios-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

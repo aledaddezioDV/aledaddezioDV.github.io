@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de proyectos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- =================================================
+         HEADER
+         ================================================= -->
+    <header>
+        <h1>Catálogo de proyectos</h1>
+        <p>Trabajos realizados por estudiantes</p>
+    </header>
+    <!-- =================================================
+         FILTROS
+         ================================================= -->
+    <div class="contenedor-boton-filtros">
+        <button type="button" id="botonFiltros" class="boton-filtros" aria-expanded="false"
+            aria-controls="contenedorFiltros">
+            <svg class="icono-filtro" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M7 12h10M10 18h4" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+            </svg>
+            <span id="textoBotonFiltros">Filtros</span>
+        </button>
+    </div>
+    <section class="contenedor-filtros" id="contenedorFiltros">
+        <div class="filtros">
+            <div class="campo">
+                <label for="filtroCarrera">Carrera</label>
+                <select id="filtroCarrera" class="filtro">
+                    <option value="">Todas</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="filtroMateria">Materia</label>
+                <select id="filtroMateria" class="filtro">
+                    <option value="">Todas</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="filtroAnio">Año</label>
+                <select id="filtroAnio" class="filtro">
+                    <option value="">Todos</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="filtroCuatrimestre">Cuatrimestre</label>
+                <select id="filtroCuatrimestre" class="filtro">
+                    <option value="">Todos</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="filtroTrabajo">Trabajo</label>
+                <select id="filtroTrabajo" class="filtro">
+                    <option value="">Todos</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="filtroComision">Comisión</label>
+                <select id="filtroComision" class="filtro">
+                    <option value="">Todas</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="buscador">Buscar</label>
+                <input type="search" id="buscador" placeholder="Alumno, tema o trabajo..." />
+            </div>
+            <button type="button" id="limpiarFiltros" class="boton-limpiar">Limpiar filtros</button>
+        </div>
+    </section>
+    <!-- =================================================
+         RESULTADOS
+         ================================================= -->
+    <div class="barra-resultados">
+        <div class="titulo-resultados">
+            <h2>Proyectos</h2>
+            <span id="filtrosActivos"></span>
+        </div>
+        <span id="contadorProyectos">0 proyectos</span>
+    </div>
+    <!-- =================================================
+         CONTENEDOR
+         ================================================= -->
+    <main id="contenedorProyectos">
+        <!-- Las tarjetas se generan con JavaScript -->
+    </main>
+    <!-- =================================================
+         JAVASCRIPT
+         ================================================= -->
+    <script src="app.js"></script>
+
+    <footer class="footer">
+        <p> Desarrollado por <strong>Alejandro D'Addezio</strong>
+        </p>
+        <p>Para estudiantes de la Escuela Da Vinci · Material producido por estudiantes de la Escuela Da Vinci</p>
+    </footer>
+</body>
+
+</html>
