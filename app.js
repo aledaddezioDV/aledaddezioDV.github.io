@@ -353,7 +353,7 @@ function obtenerProyectosFiltrados() {
         // Buscador
         if (filtros.busqueda) {
             const busqueda = filtros.busqueda.toLowerCase().trim();
-            const textoBusqueda = [proyecto.alumno, proyecto.tema, proyecto.trabajo, proyecto.descripcion, proyecto.materia, proyecto.comision]
+            const textoBusqueda = [proyecto.alumno, proyecto.tema, proyecto.trabajo, proyecto.descripcion,proyecto.tecnologias, proyecto.materia, proyecto.comision]
                 .filter((valor) => valor)
                 .join(" ")
                 .toLowerCase();
@@ -448,6 +448,10 @@ function crearTarjeta(proyecto) {
         <span>
             <strong>Trabajo:</strong>
             ${escapeHTML(formatearNombreTrabajo(proyecto.trabajo))}
+        </span>
+        <span>
+            <strong>Tecnologías:</strong>
+            ${escapeHTML(formatearNombreTrabajo(proyecto.tecnologias))}
         </span>
     `;
     // Descripción

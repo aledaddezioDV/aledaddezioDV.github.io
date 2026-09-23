@@ -1,5 +1,6 @@
 {
-    "tema": "Tienda de indumentaria",
-    "descripcion": "Diseño y desarrollo de una One Page para una tienda de indumentaria.",
+    "tema": "The Last of Us",
+    "descripcion": "Diseño y desarrollo de una One Page utilizando la técnica de Diseño Responsive para la serie televisiva The Last of Us.",
+    "tecnologias": "HTML5, CCS3",
     "visible": true
 }

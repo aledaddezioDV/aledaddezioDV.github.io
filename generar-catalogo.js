@@ -27,6 +27,7 @@ const NOMBRES_FOTO = ["foto.jpg", "foto.jpeg", "foto.png", "foto.webp"];
 const PLANTILLA_PROYECTO = {
     tema: "",
     descripcion: "",
+    tecnologias: "",
     visible: true,
 };
 
@@ -111,6 +112,8 @@ function obtenerDatosManuales(rutaProyecto) {
 
             descripcion: typeof datos.descripcion === "string" ? datos.descripcion : "",
 
+            tecnologias: typeof datos.tecnologias === "string" ? datos.tecnologias : "",
+
             visible: typeof datos.visible === "boolean" ? datos.visible : true,
         };
     } catch (error) {
@@ -122,6 +125,8 @@ function obtenerDatosManuales(rutaProyecto) {
             tema: "",
 
             descripcion: "",
+
+            tecnologias: "",
 
             visible: true,
         };
@@ -309,6 +314,8 @@ function recorrerDWIDM() {
                         tema: datosManuales.tema,
 
                         descripcion: datosManuales.descripcion,
+
+                        tecnologias: datosManuales.tecnologias,
 
                         foto: foto,
 
