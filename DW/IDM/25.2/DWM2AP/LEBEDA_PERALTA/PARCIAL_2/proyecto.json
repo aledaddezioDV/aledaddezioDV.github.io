@@ -1,5 +1,6 @@
 {
-    "tema": "",
-    "descripcion": "",
+    "tema": "EchoWay",
+    "descripcion": "Diseño y desarrollo de una One Page utilizando la técnica de Diseño Responsive simulando una tienda online de productos auriculares.",
+    "tecnologias": "HTML5, CCS3, Bootstrap",
     "visible": true
 }

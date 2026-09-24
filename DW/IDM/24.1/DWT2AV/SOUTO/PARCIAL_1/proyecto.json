@@ -1,5 +1,6 @@
 {
-    "tema": "",
-    "descripcion": "",
+    "tema": "Community",
+    "descripcion": "Diseño y desarrollo de una One Page utilizando la técnica de Diseño Responsive para la serie televisiva Community.",
+    "tecnologias": "HTML5, CCS3",
     "visible": true
 }

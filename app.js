@@ -451,7 +451,7 @@ function crearTarjeta(proyecto) {
         </span>
         <span>
             <strong>Tecnologías:</strong>
-            ${escapeHTML(formatearNombreTrabajo(proyecto.tecnologias))}
+            ${escapeHTML(proyecto.tecnologias)}
         </span>
     `;
     // Descripción
